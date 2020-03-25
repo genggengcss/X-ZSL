@@ -5,3 +5,8 @@ We implement the AZSL with two state-of-the-art GCN-based ZSL model -- [GCNZ][ht
 
 
 [我的知乎][zhihu]
+
+|#|语法|效果|
+|---|----|-----|
+|1|`[我的博客](http://blog.csdn.net/guodongxiaren "悬停显示")`|[我的博客](http://blog.csdn.net/guodongxiaren "悬停显示")|
+|2|`[我的知乎][zhihu] `|[我的知乎][zhihu] |
