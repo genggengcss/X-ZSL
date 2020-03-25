@@ -1,5 +1,4 @@
-# coding=gbk
-# -*- coding: utf-8 -*-
+
 
 import argparse
 import os
@@ -17,7 +16,6 @@ from tensorflow.python.ops import variable_scope
 import time
 '''
 extract feature of test images using resnet pre-train model
-with the help of 
 '''
 
 
@@ -44,7 +42,7 @@ def extract_feature(image_list, pool5, image_holder, preprocess, model_path, ima
         t = time.time()
         cnt += 1
 
-        image = preprocess(image_name)  # 预处理图片
+        image = preprocess(image_name)  #
         if image is None:
             print('no image')
             continue
@@ -95,7 +93,7 @@ def init(model_path, sess):
     restorer.restore(sess, model_path)
     print('Initialized')
 
-# 图片预处理
+# image preprocess
 def preprocess_res50(image_name):
     _R_MEAN = 123.68
     _G_MEAN = 116.78
@@ -103,33 +101,33 @@ def preprocess_res50(image_name):
     image = cv2.imread(image_name)
     if image is None:
         return None
-    image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)  # 颜色空间转换函数：opencv中，图像不是用常规的RGB颜色通道来存储，而是用BGR顺序
+    image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     target_size = 256
     crop_size = 224
-    im_size_min = np.min(image.shape[0:2])   # 取三个维度中的最小值，即通道数，这些图片的通道数为 3
+    im_size_min = np.min(image.shape[0:2])   # number of image channels
     im_scale = float(target_size) / float(im_size_min)
 
     # cv2.resize(src, dsize, dst=None, fx=None, fy=None, interpolation=None)
-    # 参数输入：src原图片（宽*高*通道），dsize：输出图像尺寸；fx:沿水平轴的比例因子；fy:沿垂直轴的比例因子；interpolation：插值方法
+    # input: orignal image (w*h*c); dsize: output size; fx: ; fy: ; interpolation: ;
     image = cv2.resize(image, None, None, fx=im_scale, fy=im_scale, interpolation=cv2.INTER_LINEAR)
-    height = image.shape[0]  # 图像的垂直像素
-    width = image.shape[1]   # 图像的 水平像素
+    height = image.shape[0]
+    width = image.shape[1]
     x = int((width - crop_size) / 2)
     y = int((height - crop_size) / 2)
-    image = image[y: y + crop_size, x: x + crop_size]  # 剪裁图片
+    image = image[y: y + crop_size, x: x + crop_size]  # crop image
 
     image = image.astype(np.float32)
     image[:, :, 0] -= _R_MEAN
     image[:, :, 1] -= _G_MEAN
     image[:, :, 2] -= _B_MEAN
-    image = image[np.newaxis, :, :, :]   # np.newaxis 插入新维度
+    image = image[np.newaxis, :, :, :]
     return image
 
 
 
 def run_feat(sess, pool5, image_holder, image):
     feat = sess.run(pool5, feed_dict={image_holder: image})
-    feat = np.squeeze(feat)  # 使 feat变成一个 list
+    feat = np.squeeze(feat)
     # exit()
     return feat
 
@@ -171,7 +169,7 @@ def res50():
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data_root', type=str, default='/home/gyx/X_ZSL/data', help='root directory')
+    parser.add_argument('--data_root', type=str, default='/home/gyx/X-ZSL/data', help='root directory')
     parser.add_argument('--data_dir', type=str, default='GCNZ', help='data directory')
     parser.add_argument('--dataset', type=str, default='ImNet_A', help='ImNet_A, AwA')
     parser.add_argument('--gpu', type=str, default='1',
@@ -181,7 +179,7 @@ if __name__ == '__main__':
 
     DATA_DIR = os.path.join(args.data_root, args.data_dir)
     DATASET = args.dataset
-    # load pre-train model
+    # pre-train model
     MODEL_PATH = os.path.join(DATA_DIR, 'materials', 'resnet_v1_50.ckpt')
     IMAGE_FILE = os.path.join(DATA_DIR, DATASET, 'test_img_list.txt')
 
@@ -194,7 +192,7 @@ if __name__ == '__main__':
 
     os.environ['CUDA_VISIBLE_DEVICES'] = args.gpu
 
-
+    # load cnn model
     pool5, image_holder = res50()
     preprocess = preprocess_res50
 

@@ -15,12 +15,6 @@ test total accuracy of attentive gcn model
 '''
 
 
-#
-# Mat_DATA_DIR = '/home/gyx/X_ZSL/data/materials'
-# DATA_DIR = '/home/gyx/X_ZSL/data/GCNZ'
-# # DATASET = 'ImNet_A'
-# DATASET = 'AwA'
-# EXP_NAME = 'Exp2_AGCN'
 
 def test_imagenet_zero(weight_pred_file, atten_pred_file, has_train=False):
 
@@ -166,7 +160,7 @@ def test_imagenet_zero(weight_pred_file, atten_pred_file, has_train=False):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--data_root', type=str, default='/home/gyx/X_ZSL/data', help='root directory')
+    parser.add_argument('--data_root', type=str, default='/home/gyx/X-ZSL/data', help='root directory')
     parser.add_argument('--data_dir', type=str, default='GCNZ', help='data directory')
     parser.add_argument('--dataset', type=str, default='ImNet_A', help='ImNet_A, AwA')
     parser.add_argument('--feat', type=str, default='', help='the predicted file')

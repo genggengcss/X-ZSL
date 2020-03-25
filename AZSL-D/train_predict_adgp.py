@@ -47,7 +47,6 @@ def mask_matrix(idx, h, w):
     mask /= torch.mean(mask)
     mask = mask * mask.t()
     mask = mask * 5
-    print "mask:", mask
     return mask
 
 
@@ -57,7 +56,7 @@ def mask_matrix(idx, h, w):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--data_root', type=str, default='/home/gyx/X_ZSL/data', help='root directory')
+    parser.add_argument('--data_root', type=str, default='/home/gyx/X-ZSL/data', help='root directory')
     parser.add_argument('--data_dir', type=str, default='DGP', help='data directory')
     parser.add_argument('--dataset', type=str, default='ImNet_A', help='ImNet_A, AwA')
     parser.add_argument('--max_epoch', type=int, default=1500)

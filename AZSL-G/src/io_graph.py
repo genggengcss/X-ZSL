@@ -4,7 +4,8 @@ import pickle as pkl
 import argparse
 import xml.etree.ElementTree as ET
 '''
-prepare_graph(), make_corresp_awa()
+prepare_graph(): construct graph using wordnet tree and prepare node names
+make_corresp_awa(): mark the class index in graph (seen, unseen and others
 '''
 
 
@@ -152,7 +153,7 @@ def make_corresp():
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--data_root', type=str, default='/home/gyx/X_ZSL/data', help='root directory')
+    parser.add_argument('--data_root', type=str, default='/home/gyx/X-ZSL/data', help='root directory')
     parser.add_argument('--data_dir', type=str, default='GCNZ', help='data directory')
     parser.add_argument('--dataset', type=str, default='ImNet_A', help='ImNet_A, AwA')
 

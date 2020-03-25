@@ -1,6 +1,3 @@
-# coding=gbk
-# -*- coding: utf-8 -*-
-
 import argparse
 import re
 import os
@@ -9,26 +6,13 @@ import numpy as np
 import pickle as pkl
 
 
-"""
-for extracting word embedding yourself, please download pretrained model from one of the following links.
-"""
 '''
-original: obtain_word_embedding.py, for get embedding vector of vertives 
+extract word embeddings yourself, please download pre-trained word embedding dictionary Glove
 '''
-url = {'glove': 'http://nlp.stanford.edu/data/glove.6B.zip',
-       'google': 'https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit?usp=sharing',
-       'fasttext': 'https://s3-us-west-1.amazonaws.com/fasttext-vectors/wiki.en.zip'}
 
 WORD_VEC_LEN = 300
 
-# # DATA_DIR_PREFIX = '/Users/geng/Data/Human_X_ZSL_DATA/'
-# # DATA_DIR_PREFIX = '/Users/geng/Data/KG_SS_DATA/ZSL/'
-# # EXP_NAME = 'IMAGENET_Animal/Exp1_GCN'
-# Mat_DATA_DIR = '/home/gyx/X_ZSL/data/materials'
-# DATA_DIR = '/home/gyx/X_ZSL/data/GCNZ'
-# # DATASET = 'ImNet_A'
-# DATASET = 'AwA'
-# # EXP_NAME = 'Exp1_GCN'
+
 
 def embed_text_file(vertices_f, word_vectors, get_vector, save_file):
     with open(vertices_f) as fp:
@@ -135,7 +119,7 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--data_root', type=str, default='/home/gyx/X_ZSL/data', help='root directory')
+    parser.add_argument('--data_root', type=str, default='/home/gyx/X-ZSL/data', help='root directory')
     parser.add_argument('--data_dir', type=str, default='GCNZ', help='data directory')
     parser.add_argument('--dataset', type=str, default='ImNet_A', help='ImNet_A, AwA')
 

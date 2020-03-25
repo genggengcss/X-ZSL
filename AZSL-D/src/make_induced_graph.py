@@ -10,19 +10,12 @@ sys.path.append('../')
 from model import myglove
 
 '''
-input: imagenet-split.json, imagenet-xml-wnids.json
-get:  'imagenet-induced-graph.json'
+input: imagenet-split-animal.json, imagenet-wnids-animal.json (animal subset)
+output:  'induced-graph.json'
 function: construct graph (total nodes) and get node embedding
 '''
 
-# DATA_DIR_PREFIX = '/home/gyx/Data/KG_SS_DATA/ZSL/'
-# # DATA_DIR_PREFIX = '/Users/geng/Data/KG_SS_DATA/ZSL/'
-# EXP_NAME = 'IMAGENET_Animal/Exp1_GPM'
 
-# Mat_DATA_DIR = '/home/gyx/X_ZSL/data/materials'
-# DATA_DIR = '/home/gyx/X_ZSL/data/DGP'
-# DATASET = 'ImNet_A'
-# EXP_NAME = 'Exp1_DGP'
 
 def getnode(x):
     return wn.synset_from_pos_and_offset('n', int(x[1:]))
@@ -65,9 +58,8 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--data_root', type=str, default='/home/gyx/X_ZSL/data', help='root directory')
+    parser.add_argument('--data_root', type=str, default='/home/gyx/X-ZSL/data', help='root directory')
     parser.add_argument('--data_dir', type=str, default='DGP', help='data directory')
-    # parser.add_argument('--dataset', type=str, default='ImNet_A', help='ImNet_A, AwA')
 
     args = parser.parse_args()
 
@@ -77,13 +69,13 @@ if __name__ == '__main__':
     output_file = os.path.join(DATA_DIR, 'materials', 'induced-graph.json')
 
     print('making graph ...')
-    # imagenet animal subset, length: 3969
+    # wnids of imagenet animal subset, total: 3969
     xml_wnids = json.load(open(os.path.join(DATA_DIR, 'materials', 'imagenet-wnids-animal.json'), 'r'))
     print 'xml_nodes:', len(xml_wnids)
     xml_nodes = list(map(getnode, xml_wnids))
     xml_set = set(xml_nodes)  # get wordnet node text
 
-    # imagenet animal subset split
+    # data split (seen: 398; other: 3395)
     js = json.load(open(input_file, 'r'))
     # print js
     train_wnids = js['train']  # 398
@@ -107,16 +99,10 @@ if __name__ == '__main__':
     for u in xml_nodes:
         if u not in s_set:
             s.append(u)
-    '''
-        new s: 32324, xml_nodes: 32295
-        this means 29 nodes of train+test are not among xml_nodes
 
-        the function of above step: construct complete graph (or node set), the total number is: 32324  
-    '''
     print len(s)
 
     wnids = list(map(getwnid, s))  # get s's wnids (graph nodes)
-    # print wnids
     edges = getedges(s)
 
     print('making glove embedding ...')

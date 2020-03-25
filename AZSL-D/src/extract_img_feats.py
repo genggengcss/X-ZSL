@@ -21,11 +21,6 @@ from model import image_folder
 
 
 
-#
-# Mat_DATA_DIR = '/home/gyx/X_ZSL/data/materials'
-# DATA_DIR = '/home/gyx/X_ZSL/data/DGP'
-# Image_DIR = '/home/gyx/Data/Ori_DATA/ImNet_A_Images'
-
 def extract_feat(path, class_name, cnn, feat_dir, stage='train'):
 
     # pre_process begin
@@ -101,7 +96,7 @@ def extract_feat(path, class_name, cnn, feat_dir, stage='train'):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--data_root', type=str, default='/home/gyx/X_ZSL/data', help='root directory')
+    parser.add_argument('--data_root', type=str, default='/home/gyx/X-ZSL/data', help='root directory')
     parser.add_argument('--data_dir', type=str, default='DGP', help='data directory')
     parser.add_argument('--dataset', type=str, default='ImNet_A', help='ImNet_A, AwA')
 

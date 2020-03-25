@@ -7,7 +7,7 @@ we named as **AZSL-G** and **AZSL-D**.
 
 ### Requirements
 * python 2
-* AZSL-G is developed based on TensorFlow 1.4, and AZSL-D is developed based on PyTorch 1.2  
+* AZSL-G is developed with TensorFlow 1.4, and AZSL-D is developed with PyTorch 1.2  
 
 ### Dataset Preparation
 #### Images of Unseen Class
@@ -28,27 +28,15 @@ You can skip this step if you just want to use the AZSL model we trained.
 
 We use word emebddings of class names to initialize the graph, which are trained using Glove model.
 You need to download the pretrained word embedding dictionary from
-[here](http://nlp.stanford.edu/data/glove.6B.zip), and produce the word emebddings of class names yourself.
+[here](http://nlp.stanford.edu/data/glove.6B.zip) and put it in the folder 'data/', and produce the word emebddings of class names yourself.
 The scripts are provided with two AZSL models.
 
-### Results of AZSL
+### Performance of AZSL
 We introduce the training process of AZSL-G and AZSL-D in the corresponding categories.
-Please read [AZSL-G.md](/AZSL-G/readme.md) and [AZSL-D.md](/AZSL-D/readme.md)
-You can run the following commands to test.
+Please read [AZSL-G.md](/AZSL-G/readme.md) and [AZSL-D.md](/AZSL-D/readme.md).  
+
+You can also run the following test commands with the model we trained.
 
 
 
 
-
-
-=======
-We implement the AZSL with two state-of-the-art GCN-based ZSL model -- [GCNZ](https://github.com/genggengcss/X-ZSL) and [DGP]()
-
-
-[我的知乎](http://blog.csdn.net/guodongxiaren)
-
-|#|语法|效果|
-|---|----|-----|
-|1|`[我的博客](http://blog.csdn.net/guodongxiaren "悬停显示")`|[我的博客](http://blog.csdn.net/guodongxiaren "悬停显示")|
-|2|`[我的知乎][zhihu] `|[我的知乎][zhihu] |
->>>>>>> e2a24b296294780336d07b550f4e9b2ddb1a89d4

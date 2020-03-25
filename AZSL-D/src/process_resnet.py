@@ -4,14 +4,14 @@ import os
 
 
 '''
-input: resnet50-raw.pth (resnet pre-train model), imagenet-split.json
-get: `fc-weights.json` and `resnet50-base.pth`
-function: retrive pre-train resnet without last layer and get training classes' supervision (fc-weights)
+input: resnet50-raw.pth (resnet pre-train model), imagenet-split-animal.json
+output: `fc-weights.json` and `resnet50-base.pth`
+function: extract pre-train resnet without last layer and training classes' supervision (fc-weights)
 '''
 
 
 
-data_root = '/home/gyx/X_ZSL/data'
+data_root = '/home/gyx/X-ZSL/data'
 data_dir = 'DGP'
 
 

@@ -1,5 +1,3 @@
-# coding=gbk
-# -*- coding: utf-8 -*-
 
 import argparse
 import json
@@ -16,13 +14,12 @@ convert to gcn data: input, output, graph
 '''
 
 
-
 # save embedding vectors of all the vertices of the graph
 def convert_input(wv_file, save_dir):
     with open(wv_file, 'rb') as fp:
         vertex_vectors = pkl.load(fp)
-    vertex_vectors = vertex_vectors.tolist()   # 数组——>列表
-    sparse_vecs = sparse.csr_matrix(vertex_vectors)  # 压缩矩阵稀疏行
+    vertex_vectors = vertex_vectors.tolist()
+    sparse_vecs = sparse.csr_matrix(vertex_vectors)
     dense_vecs = np.array(vertex_vectors)
 
     sparse_file = os.path.join(save_dir, 'all_x.pkl')
@@ -35,6 +32,7 @@ def convert_input(wv_file, save_dir):
 
     print('Save vectors of all vertices')
 
+# label the graph nodes with seen classifiers
 
 def convert_label(model_path, layer_name, save_dir):  # get output's label and mask
     ''' save visual classifier '''
@@ -43,7 +41,7 @@ def convert_label(model_path, layer_name, save_dir):  # get output's label and m
         corresp_list = json.load(fp)
 
     def get_variables_in_checkpoint_file(file_name):
-        reader = pywrap_tensorflow.NewCheckpointReader(file_name)  # 利用pywrap_tensorflow获取ckpt文件中的所有变量，得到的是variable名字与shape的一个map
+        reader = pywrap_tensorflow.NewCheckpointReader(file_name)
         var_to_shape_map = reader.get_variable_to_shape_map()
         return var_to_shape_map, reader
 
@@ -69,7 +67,7 @@ def convert_label(model_path, layer_name, save_dir):  # get output's label and m
         if vertex_type == 0:
             fc_labels[i, :] = np.copy(fc[:, class_id])
             assert class_id < 398
-    label_file = os.path.join(save_dir, 'train_y.pkl')   #  和all_a_dense.pkl同样的行数，seen classes的feature wegiths写到对应的行，其它的行为0；
+    label_file = os.path.join(save_dir, 'train_y.pkl')
     with open(label_file, 'wb') as fp:
         pkl.dump(fc_labels, fp)
 
@@ -80,7 +78,7 @@ def convert_label(model_path, layer_name, save_dir):  # get output's label and m
             test_index.append(-1)
         else:
             test_index.append(corresp[1])  # corresp[1]: 0/1, the value 0 means seen class, 1 means unseen classes
-    test_file = os.path.join(save_dir, 'test_index.pkl')  # 和all_a_dense.pkl同样的行数
+    test_file = os.path.join(save_dir, 'test_index.pkl')
     with open(test_file, 'wb') as fp:
         pkl.dump(test_index, fp)
 
@@ -93,7 +91,7 @@ def convert_graph(save_dir):
     if os.path.exists(save_file):
         cmd = 'rm  %s' % save_file
         os.system(cmd)
-    cmd = 'ln -s %s %s' % (graph_file, save_file)  # 软链接，将 原来的imagenet_graph.pkl，链接到目标文件夹下
+    cmd = 'ln -s %s %s' % (graph_file, save_file)  # soft link
     os.system(cmd)
 
 
@@ -101,7 +99,7 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--data_root', type=str, default='/home/gyx/X_ZSL/data', help='root directory')
+    parser.add_argument('--data_root', type=str, default='/home/gyx/X-ZSL/data', help='root directory')
     parser.add_argument('--data_dir', type=str, default='GCNZ', help='data directory')
     parser.add_argument('--dataset', type=str, default='ImNet_A', help='ImNet_A, AwA')
 
@@ -126,8 +124,8 @@ if __name__ == '__main__':
     convert_input(wv_file, save_dir)
 
     print('Converting graph')
-    convert_graph(save_dir) # not need soft link, graph file is imagenet_graph.pkl
+    convert_graph(save_dir)
 
     print('Converting label')
-    convert_label(model_path, layer_name, save_dir)
+    convert_label(model_path, layer_name, save_dir)  # label the graph nodes with seen classifiers
     print('Prepared data to %s' % save_dir)
