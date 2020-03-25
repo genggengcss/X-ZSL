@@ -14,14 +14,14 @@ We start with ImNet_A dataset, AwA is processes by specifying the parameter `--d
 During testing, the model first uses pre-trained CNN model (e.g., ResNet) to extract the features of testing images, and then conduct nearest neighbor classification.  
 
 1. Download pre-trained CNN model ([ResNet-50](https://download.pytorch.org/models/resnet50-19c8e357.pth) implemented with PyTorch)
-and put it to the folder 'data/AZSL-D/materials/'.
+and put it to the folder `'data/AZSL-D/materials/'`.
 
 2. Extract base model and fc-weights
 ```
 python src/process_resnet.py
 ```
 3. Extract feature.
-Extract features of unseen images and save them to the corresponding dataset directory ('data/AZSL-D/*/Test_DATA_feats').
+Extract features of unseen images and save them to the corresponding dataset directory (`'data/AZSL-D/*/Test_DATA_feats'`).
 ```
 python src/extract_img_feats.py
 ```

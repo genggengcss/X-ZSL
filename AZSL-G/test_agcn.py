@@ -161,7 +161,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
 
     parser.add_argument('--data_root', type=str, default='/home/gyx/X-ZSL/data', help='root directory')
-    parser.add_argument('--data_dir', type=str, default='GCNZ', help='data directory')
+    parser.add_argument('--data_dir', type=str, default='AZSL-G', help='data directory')
     parser.add_argument('--dataset', type=str, default='ImNet_A', help='ImNet_A, AwA')
     parser.add_argument('--feat', type=str, default='', help='the predicted file')
 

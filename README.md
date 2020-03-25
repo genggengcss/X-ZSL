@@ -1,9 +1,9 @@
 # X-ZSL
 The code and data is for the paper "Explainable Zero-shot Learning via Attentive Graph Convolutional Network and Knowledge Graphs".  
 
-<<<<<<< HEAD
+
 We implement the AZSL with two state-of-the-art GCN-based ZSL model -- [GCNZ](https://arxiv.org/abs/1803.08035) and [DGP](https://arxiv.org/abs/1805.11724),
-we named as **AZSL-G** and **AZSL-D**.
+i.e., **AZSL-G** and **AZSL-D**.
 
 ### Requirements
 * python 2
@@ -12,23 +12,24 @@ we named as **AZSL-G** and **AZSL-D**.
 ### Dataset Preparation
 #### Images of Unseen Class
 We test the model on two datasets -- AwA and ImageNet animal subset (ImNet_A).  
-**AwA**: Download [AwA](http://cvml.ist.ac.at/AwA2/AwA2-data.zip)(13GB!) and uncompress it to the folder 'data/images/'. Note that we rename the awa class to its wordnet ID for conveniently running code.   
+ 
+**AwA**: Download [AwA](http://cvml.ist.ac.at/AwA2/AwA2-data.zip) (13GB!) and uncompress it to the folder `'data/images/'`. Note that we rename the awa class to its wordnet ID for conveniently running code.   
 ```
 python data/process_awa.py
 ```
 **ImNet_A**: The original images of ImageNet can be downloaded from [image-net.org](http://image-net.org/download-images), you need to register a pair of username and access key to acquire
-and put them into the folder 'data/images/'.  
+and put them into the folder `'data/images/'`.  
 ```
 python data/download_ImNet.py --user $YOUR_USER_NAME --key $YOUR_ACCESS_KEY
 ```
-* Note that all images of ImageNet take about 1.1T, we only download the unseen classes we tested.
+* Note that all images of ImageNet take about 1.1 T, we only download the unseen classes we tested.
 
 #### Word Embeddings of Class
 You can skip this step if you just want to use the AZSL model we trained.
 
 We use word emebddings of class names to initialize the graph, which are trained using Glove model.
 You need to download the pretrained word embedding dictionary from
-[here](http://nlp.stanford.edu/data/glove.6B.zip) and put it in the folder 'data/', and produce the word emebddings of class names yourself.
+[here](http://nlp.stanford.edu/data/glove.6B.zip) and put it in the folder `'data/'`, and produce the word emebddings of class names yourself.
 The scripts are provided with two AZSL models.
 
 ### Performance of AZSL
@@ -37,6 +38,20 @@ Please read [AZSL-G.md](/AZSL-G/readme.md) and [AZSL-D.md](/AZSL-D/readme.md).
 
 You can also run the following test commands with the model we trained.
 
-
-
+* AZSL-G on ImNet_A 
+```
+python AZSL-G/test_agcn.py --feat 
+```
+* AZSL-G on AwA
+```
+python AZSL-G/test_agcn.py --dataset AwA --feat 
+```
+* AZSL-D on ImNet_A 
+```
+python AZSL-G/test_adgp.py --pred 
+```
+* AZSL-D on AwA 
+```
+python AZSL-G/test_agcn.py --dataset AwA --pred 
+```
 
