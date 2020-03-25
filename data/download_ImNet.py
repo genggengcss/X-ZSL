@@ -6,8 +6,10 @@ import glob
 
 import cv2
 import numpy as np
+
+
 '''
-download original images of ImageNet
+download original images of ImageNet with class list 'ImNet_A_unseen.txt'
 '''
 
 
@@ -108,14 +110,16 @@ if __name__ == '__main__':
 
     parser.add_argument('--data_root', type=str, default='/home/gyx/X_ZSL/data', help='root directory')
     parser.add_argument('--dataset', type=str, default='ImNet_A', help='ImNet_A')
-    parser.add_argument('--user', type=str, default='gengyuxia',
+    parser.add_argument('--user', type=str, default='',
                         help='your username', required=False)
-    parser.add_argument('--key', type=str, default='42dfda0e646dde203191e4e2e7106daec6a032ca',
+    parser.add_argument('--key', type=str, default='',
                         help='your access key', required=False)
     args = parser.parse_args()
 
+    # the dir to save images
     SAVE_PATH = os.path.join(args.data_root, 'images', args.dataset)
-    # class list
+
+    # class list to be downloaded
     class_list_file = os.path.join(args.data_root, 'ImNet_A_unseen.txt')
 
     download(class_list_file)

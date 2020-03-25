@@ -1,7 +1,42 @@
 # X-ZSL
 The code and data is for the paper "Explainable Zero-shot Learning via Attentive Graph Convolutional Network and Knowledge Graphs".  
 
-We implement the AZSL with two state-of-the-art GCN-based ZSL model -- [GCNZ][https://github.com/genggengcss/X-ZSL] and DGP
+We implement the AZSL with two state-of-the-art GCN-based ZSL model -- [GCNZ](https://arxiv.org/abs/1803.08035) and [DGP](https://arxiv.org/abs/1805.11724),
+we named as **AZSL-G** and **AZSL-D**.
+
+### Requirements
+* python 2
+* AZSL-G is developed based on TensorFlow 1.4, and AZSL-D is developed based on PyTorch 1.2  
+
+### Dataset Preparation
+#### Images of Unseen Class
+We test the model on two datasets -- AwA and ImageNet animal subset (ImNet_A).  
+**AwA**: Download [AwA](http://cvml.ist.ac.at/AwA2/AwA2-data.zip)(13GB!) and uncompress it to the folder 'data/images/'. Note that we rename the awa class to its wordnet ID for conveniently running code.   
+```
+python data/process_awa.py
+```
+**ImNet_A**: The original images of ImageNet can be downloaded from [image-net.org](http://image-net.org/download-images), you need to register a pair of username and access key to acquire
+and put them into the folder 'data/images/'.  
+```
+python data/download_ImNet.py --user $YOUR_USER_NAME --key $YOUR_ACCESS_KEY
+```
+* Note that all images of ImageNet take about 1.1T, we only download the unseen classes we tested.
+
+#### Word Embeddings of Class
+You can skip this step if you just want to use the AZSL model we trained.
+
+We use word emebddings of class names to initialize the graph, which are trained using Glove model.
+You need to download the pretrained word embedding dictionary from
+[here](http://nlp.stanford.edu/data/glove.6B.zip), and produce the word emebddings of class names yourself.
+The scripts are provided with two AZSL models.
+
+### Results of AZSL
+We introduce the training process of AZSL-G and AZSL-D in the corresponding categories.
+Please read [AZSL-G.md](/AZSL-G/readme.md) and [AZSL-D.md](/AZSL-D/readme.md)
+You can run the following commands to test.
 
 
-[我的知乎][zhihu]
+
+
+
+
