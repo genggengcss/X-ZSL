@@ -18,7 +18,7 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--data_root', type=str, default='/home/gyx/X_ZSL/data', help='root directory')
+    parser.add_argument('--data_root', type=str, default='/home/gyx/X-ZSL/data', help='root directory')
     parser.add_argument('--data_dir', type=str, default='DGP', help='data directory')
     parser.add_argument('--dataset', type=str, default='ImNet_A', help='ImNet_A, AwA')
     parser.add_argument('--gpu', default='0')
@@ -41,8 +41,8 @@ if __name__ == '__main__':
         data_split = os.path.join(DATA_DIR, DATASET, 'awa2-split.json')
 
     # predict classifiers
-    # awa:
-    # ImNet: 680
+    # awa: 1200
+    # ImNet: 680: 34.48
     pred_file = os.path.join(DATA_DIR, DATASET, EXP_NAME, 'epoch-' + args.pred + '.pred')
 
 
