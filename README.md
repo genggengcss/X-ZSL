@@ -1,6 +1,7 @@
 # X-ZSL
 The code and data is for the paper "Explainable Zero-shot Learning via Attentive Graph Convolutional Network and Knowledge Graphs".  
 
+<<<<<<< HEAD
 We implement the AZSL with two state-of-the-art GCN-based ZSL model -- [GCNZ](https://arxiv.org/abs/1803.08035) and [DGP](https://arxiv.org/abs/1805.11724),
 we named as **AZSL-G** and **AZSL-D**.
 
@@ -40,3 +41,14 @@ You can run the following commands to test.
 
 
 
+=======
+We implement the AZSL with two state-of-the-art GCN-based ZSL model -- [GCNZ](https://github.com/genggengcss/X-ZSL) and [DGP]()
+
+
+[我的知乎](http://blog.csdn.net/guodongxiaren)
+
+|#|语法|效果|
+|---|----|-----|
+|1|`[我的博客](http://blog.csdn.net/guodongxiaren "悬停显示")`|[我的博客](http://blog.csdn.net/guodongxiaren "悬停显示")|
+|2|`[我的知乎][zhihu] `|[我的知乎][zhihu] |
+>>>>>>> e2a24b296294780336d07b550f4e9b2ddb1a89d4
