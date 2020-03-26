@@ -14,7 +14,6 @@ import sys
 import argparse
 
 
-# from IMAGENET_Animal.Exp_Test.test_in_train import test_imagenet_zero
 '''
     agcn model
 '''

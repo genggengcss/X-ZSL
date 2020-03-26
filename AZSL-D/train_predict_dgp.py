@@ -12,13 +12,12 @@ import torch.nn.functional as F
 from model import gcn
 from model import utils
 
+'''
+input: induced-graph.json, fc-weights.json (training supervision)
+output: predicted classifiers
+function: train with gcn(2 layers) and predict unseen classifiers
 
 '''
-input: imagenet-induced-animal-graph.json, fc-weights.json
-get: save prediction model file
-function: train with gcn(2 layers) and predict testing features
-'''
-
 
 
 

@@ -9,7 +9,6 @@ import torch.nn.functional as F
 
 
 
-# sys.path.append('../../../../')
 from model import agcn
 from model import utils
 import test_in_train
