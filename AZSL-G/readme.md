@@ -6,8 +6,8 @@ The code is for AZSL based on GCNZ.
 * python 2
 * TensorFlow 1.4
 
-### Dataset Process
-We start with ImNet_A dataset, AwA is processes by specifying the parameter `--dataset AwA`. 
+### Data Preprocess
+We start with ImNet_A dataset, AwA is processed by specifying the parameter `--dataset AwA`. 
 
 #### Extract CNN Features of Images
 During testing, the model first uses pre-trained CNN model (e.g., ResNet) to extract the features of testing images, and then conduct nearest neighbor classification.  
@@ -17,17 +17,18 @@ and put it to the folder `'data/AZSL-G/materials/'`.
 2. Extract feature.
 * Prepare image list and make labels.
 We provide the list (`'test_img_list.txt'`) in the corresponding dataset directory (`'data/AZSL-G/*/'`).
+You can also run the following script to produce.
 ```
 python src/pre_test_img_list.py
 ```
-* Extract features of unseen images and save them to the corresponding dataset directory (`'data/AZSL-G/*/Test_DATA_feats'`).
+* Extract features of unseen images and save them to the corresponding dataset directory (`'data/AZSL-G/*/Test_DATA_feats/'`).
 ```
 python src/extract_img_feats.py
 ```
 
 #### Prepare AGCN Training Data
 
-1. Build Graph with animal subset.
+1. Build Graph with wordnet tree.
 ```
 python src/io_graph.py
 ```
@@ -35,7 +36,7 @@ python src/io_graph.py
 ```
 python src/io_embed.py
 ```
-3. Label Graph (input and output).
+3. Label Graph (seen classifiers are taken as supervision of graph).
 ```
 python src/io_train_sample.py
 ```
