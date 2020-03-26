@@ -16,7 +16,7 @@ During testing, the model first uses pre-trained CNN model (e.g., ResNet) to ext
 1. Download pre-trained CNN model ([ResNet-50](https://download.pytorch.org/models/resnet50-19c8e357.pth) implemented with PyTorch)
 and put it to the folder `'data/AZSL-D/materials/'`.
 
-2. Extract ResNet base model and fc-weights
+2. Extract ResNet base model and fc-weights.
 ```
 python src/process_resnet.py
 ```
@@ -27,7 +27,7 @@ python src/extract_img_feats.py
 
 #### Prepare AGCN Training Data
 
-* Build Graph and Initialize graph nodes.
+* Build Graph and Initialize graph nodes (prepare pre-trained Glove embeddings in advance).
 ```
 python src/make_induced_graph.py
 ```
@@ -36,7 +36,8 @@ python src/make_induced_graph.py
 
 ```
 python train_predict_adgp.py
-python test_adgp.py
+python test_adgp.py --pred 680
 ```
+* You can run the testing commands with the predicted model we trained (the file `'epoch-680.pred'`).
 * Note that `train_predict_dgp.py` and `test_dgp.py` is the original implementation of DGP. 
 

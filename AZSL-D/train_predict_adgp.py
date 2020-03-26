@@ -12,12 +12,13 @@ import torch.nn.functional as F
 # sys.path.append('../../../../')
 from model import agcn
 from model import utils
-# from ZSL.IMAGENET_Animal.ZSL_Model.Exp1_GPM import test_in_train
 import test_in_train
+
+
 '''
-input: imagenet-induced-graph.json, fc-weights.json
-get: save prediction model file
-function: train with gcn(2 layers) and predict testing features
+input: induced-graph.json, fc-weights.json (training supervision)
+output: predicted classifiers
+function: train with gcn(2 layers) and predict unseen classifiers
 additional attention layer
 '''
 
@@ -51,7 +52,6 @@ def mask_matrix(idx, h, w):
 
 
 
-# save_epochs = [10, 300, 350, 400, 450, 500]
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -86,9 +86,6 @@ if __name__ == '__main__':
     save_path = os.path.join(DATA_DIR, DATASET, EXP_NAME)
 
 
-    # needed?
-    # set_gpu(args.gpu)
-
     utils.ensure_path(save_path)
 
     graph = json.load(open(graph_file, 'r'))
@@ -117,7 +114,7 @@ if __name__ == '__main__':
 
 
 
-    # seen + unseen mask begin
+    # seen + unseen mask
     # get seen+unseen index from wnids
     split = json.load(open(data_split, 'r'))
     seen_wnids = train_wnids   # seen
@@ -132,12 +129,9 @@ if __name__ == '__main__':
     for wnid in unseen_wnids:
         mask_index.append(wnids.index(wnid))
         unseen_index.append(wnids.index(wnid))
-    # print "seen index:", seen_index
-    # print "unseen index:", unseen_index
 
     mask = mask_matrix(mask_index, word_vectors.shape[0], word_vectors.shape[0])  # (3969, 2049)
 
-    # mask = mask_matrix1(mask_index, seen_index, unseen_index, word_vectors.shape[0], word_vectors.shape[0])  # (3969, 3969)
 
     # construct gcn model
     hidden_layers = 'd2048,d'
@@ -152,11 +146,11 @@ if __name__ == '__main__':
 
     # split seen nodes into training set and validation set
     v_train, v_val = map(float, args.trainval.split(','))  # 10, 0
-    n_trainval = len(fc_vectors)  # 1000, training number?
+    n_trainval = len(fc_vectors)  # 398 training number
     n_train = int(round(n_trainval * (v_train / (v_train + v_val))))
     print('num train: {}, num val: {}'.format(n_train, n_trainval - n_train))  # 1000, 0
 
-    tlist = list(range(len(fc_vectors)))  # 1000
+    tlist = list(range(len(fc_vectors)))  # 398
     # print "tlist:", tlist
     random.shuffle(tlist)
 
@@ -193,23 +187,22 @@ if __name__ == '__main__':
 
 
             train_loss = mask_l2_loss(output_vectors, fc_vectors, tlist[:n_train]).item()
-            # if v_val > 0:
-            #     val_loss = mask_l2_loss(output_vectors, fc_vectors, tlist[n_train:]).item()
-            #     loss = val_loss
-            # else:
-            #     val_loss = 0
-            #     loss = train_loss
-            print('epoch {}, train_loss={:.4f}, lr={:.4f}'.format(epoch, train_loss, args.lr))
+            if v_val > 0:
+                val_loss = mask_l2_loss(output_vectors, fc_vectors, tlist[n_train:]).item()
+                loss = val_loss
+            else:
+                val_loss = 0
+                loss = train_loss
+            # print('epoch {}, train_loss={:.4f}, lr={:.4f}'.format(epoch, train_loss, args.lr))
+            print('epoch {}, train_loss={:.4f}, val_loss={:.4f}'.format(epoch, train_loss, val_loss))
 
             trlog['train_loss'].append(train_loss)
-            # trlog['val_loss'].append(val_loss)
+            trlog['val_loss'].append(val_loss)
             trlog['min_loss'] = min_loss
             torch.save(trlog, os.path.join(save_path, 'trlog'))
 
         # save intermediate output_vector of each node of the graph
-        # if epoch % args.save_epoch == 0:
         if epoch >= args.save_epoch and epoch % 10 == 0:
-        # if epoch in save_epochs:
             if args.no_pred:
                 pred_obj = None
             else:
@@ -220,56 +213,12 @@ if __name__ == '__main__':
                 }
         # if epoch % args.save_epoch == 0:
         if epoch >= args.save_epoch and epoch % 10 == 0:
-        # if epoch in save_epochs:
             save_checkpoint('epoch-{}'.format(epoch))
 
         pred_obj = None
 
-        # # if epoch == 10 or (epoch >= 100 and epoch % 10 == 0):
-        if epoch == 10 or (epoch >= 800 and epoch % 10 == 0):
-            if args.no_pred:
-                pred_obj = None
-            else:
-                pred_obj = {
-                    'wnids': wnids,
-                    'pred': output_vectors
-                }
-            test_in_train.test_in_train(pred_obj)
-        pred_obj = None
-
-        # if epoch == 10 or (epoch >= 100 and epoch % 10 == 0):
-        # if epoch >= 400 and epoch % 10 == 0:
-        #     if args.no_pred:
-        #         pred_obj = None
-        #     else:
-        #         pred_obj = {
-        #             'wnids': wnids,
-        #             'pred': output_vectors,
-        #             'coef': coefs
-        #         }
-        #     test_in_train.test_in_train(pred_obj)
-        # pred_obj = None
-
-        # # calculate loss on training (and validation) seen nodes
-        # if epoch % args.evaluate_epoch == 0:
-        #     gcn.eval()
-        #     output_vectors = gcn(word_vectors)
-        #     train_loss = mask_l2_loss(output_vectors, fc_vectors, tlist[:n_train]).item()
-        #     if v_val > 0:
-        #         val_loss = mask_l2_loss(output_vectors, fc_vectors, tlist[n_train:]).item()
-        #         loss = val_loss
-        #     else:
-        #         val_loss = 0
-        #         loss = train_loss
-        #     print('epoch {}, train_loss={:.4f}, val_loss={:.4f}'.format(epoch, train_loss, val_loss))
-        #
-        #     trlog['train_loss'].append(train_loss)
-        #     trlog['val_loss'].append(val_loss)
-        #     trlog['min_loss'] = min_loss
-        #     torch.save(trlog, os.path.join(save_path, 'trlog'))
-        #
-        # save intermediate output_vector of each node of the graph
-        # if epoch % args.save_epoch == 0:
+        # # while training, while testing
+        # if epoch == 10 or (epoch >= 800 and epoch % 10 == 0):
         #     if args.no_pred:
         #         pred_obj = None
         #     else:
@@ -277,8 +226,7 @@ if __name__ == '__main__':
         #             'wnids': wnids,
         #             'pred': output_vectors
         #         }
-        # if epoch % args.save_epoch == 0:
-        #     save_checkpoint('epoch-{}'.format(epoch))
-
+        #     test_in_train.test_in_train(pred_obj)
         # pred_obj = None
+
 

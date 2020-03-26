@@ -37,22 +37,5 @@ The scripts are provided with two AZSL models.
 We introduce the training process of AZSL-G and AZSL-D in the corresponding directories.
 Please read [AZSL-G.md](/AZSL-G/readme.md) and [AZSL-D.md](/AZSL-D/readme.md).  
 
-You can also run the following test commands with the model we trained.
 
-* AZSL-G on ImNet_A 
-```
-python AZSL-G/test_agcn.py --feat 
-```
-* AZSL-G on AwA
-```
-python AZSL-G/test_agcn.py --dataset AwA --feat 
-```
-* AZSL-D on ImNet_A 
-```
-python AZSL-G/test_adgp.py --pred 
-```
-* AZSL-D on AwA 
-```
-python AZSL-G/test_agcn.py --dataset AwA --pred 
-```
 

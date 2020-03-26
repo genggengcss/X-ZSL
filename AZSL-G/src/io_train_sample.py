@@ -91,6 +91,7 @@ def convert_graph(save_dir):
     if os.path.exists(save_file):
         cmd = 'rm  %s' % save_file
         os.system(cmd)
+
     cmd = 'ln -s %s %s' % (graph_file, save_file)  # soft link
     os.system(cmd)
 

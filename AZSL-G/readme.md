@@ -45,8 +45,9 @@ python src/io_train_sample.py
 
 ```
 python train_predict_agcn.py
-python test_agcn.py
+python test_agcn.py --feat 1500
 ```
+* You can run the testing commands with the predicted model we trained (the file `'feat_1500.pkl'`).
 * Note that `train_predict_gcn.py` and `test_gcn.py` is the original implementation of GCNZ. 
 
 

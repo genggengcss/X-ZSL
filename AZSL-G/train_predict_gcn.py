@@ -17,7 +17,6 @@ from model.utils import create_config_proto
 from model.utils import construct_feed_dict
 from model.gcn import GCN_dense_mse
 
-# from IMAGENET_Animal.Exp_Test.test_in_train import test_imagenet_zero
 
 '''
 train gcn
@@ -118,7 +117,7 @@ sess.run(tf.global_variables_initializer())
 
 cost_val = []
 
-# save_epochs = [300, 400, 500]
+
 
 if not os.path.exists(out_path):
     os.makedirs(out_path)
@@ -128,7 +127,7 @@ else:
 
 # Train model
 now_lr = args.learning_rate
-for epoch in range(args.epochs):
+for epoch in range(1, args.epochs+1):
     t = time.time()
 
     # Construct feed dictionary
@@ -143,7 +142,7 @@ for epoch in range(args.epochs):
     outs = sess.run([model.opt_op, model.loss, model.accuracy, model.optimizer._lr], feed_dict=feed_dict)
 
     if epoch % 20 == 0:
-        print("Epoch:", '%04d' % (epoch + 1), "train_loss=", "{:.5f}".format(outs[1]),
+        print("Epoch:", '%04d' % epoch, "train_loss=", "{:.5f}".format(outs[1]),
               "train_loss_nol2=", "{:.5f}".format(outs[2]),
               "time=", "{:.5f}".format(time.time() - t),
               "lr=", "{:.5f}".format(float(outs[3])))
@@ -151,9 +150,9 @@ for epoch in range(args.epochs):
 
     # Predicting step
     # --save outputs
-    if (epoch + 1) >= args.save_epoch and (epoch + 1) % 100 == 0:
+    if epoch >= args.save_epoch and epoch % 50 == 0:
         outs = sess.run(model.outputs, feed_dict=feed_dict)
-        filename = os.path.join(out_path, ('feat_%d' % (epoch+1)))
+        filename = os.path.join(out_path, ('feat_%d' % epoch))
         print(time.strftime('[%X %x %Z]\t') + 'save to: ' + filename)
 
         filehandler = open(filename, 'wb')
@@ -162,16 +161,6 @@ for epoch in range(args.epochs):
 
     
 
-    # -- while training, while testing
-    # if (epoch + 1) >= 300 and (epoch + 1) % 100 == 0:
-    # # if (epoch + 1) % 100 == 0:
-    #     outs = sess.run(model.outputs, feed_dict=feed_dict)
-    #     # test
-    #     result = test_imagenet_zero(weight_pred=outs)
-    #
-    #     output = ['{:.2f}'.format(i * 100) for i in result[0]]
-    #     print('-----------Testing: Epoch = ', (epoch + 1), ' | accuracy = ',
-    #           output)
 
 
 print("Optimization Finished!")

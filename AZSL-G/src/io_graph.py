@@ -5,7 +5,7 @@ import argparse
 import xml.etree.ElementTree as ET
 '''
 prepare_graph(): construct graph using wordnet tree and prepare node names
-make_corresp_awa(): mark the class index in graph (seen, unseen and others
+make_corresp_awa(): mark the class type and index in graph (seen, unseen and others)
 '''
 
 

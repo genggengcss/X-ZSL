@@ -1,5 +1,3 @@
-# coding=gbk
-# -*- coding: utf-8 -*-
 from __future__ import division
 from __future__ import print_function
 
@@ -30,9 +28,7 @@ from model.utils import create_config_proto
 from model.utils import construct_feed_dict_agcn
 from model.agcn import GCN_dense_mse
 from model.utils import adj_to_bias
-
-
-
+import test_in_train
 
 
 
@@ -136,7 +132,6 @@ sess.run(tf.global_variables_initializer())
 
 cost_val = []
 
-# save_epochs = [1000, 1200, 1500, 1800, 2000]
 
 if not os.path.exists(out_path):
     os.makedirs(out_path)
@@ -146,7 +141,7 @@ else:
 
 # Train model
 now_lr = args.learning_rate
-for epoch in range(args.epochs):
+for epoch in range(1, args.epochs+1):
     t = time.time()
 
     # Construct feed dictionary
@@ -161,45 +156,40 @@ for epoch in range(args.epochs):
     # trainval_adj_mask_f = tf.cast(trainval_adj_mask, dtype=tf.float32)
     # print(sess.run(trainval_adj_mask_f))
     if epoch % 20 == 0:
-        print("Epoch:", '%04d' % (epoch + 1), "train_loss=", "{:.5f}".format(outs[1]),
+        print("Epoch:", '%04d' % epoch, "train_loss=", "{:.5f}".format(outs[1]),
               "train_loss_nol2=", "{:.5f}".format(outs[2]),
               "time=", "{:.5f}".format(time.time() - t),
               "lr=", "{:.5f}".format(float(outs[3])))
-        # print(sess.run(model.outputs, feed_dict=feed_dict))
-        # print("trainval_adj_mask:", sess.run(tf.cast(trainval_adj_mask, dtype=tf.float32)))
-        # print("train type:", type(tf.cast(trainval_adj_mask, dtype=tf.float32)))
-        # print("biase type:", type(tf.cast(biases_mask, dtype=tf.float32)))
-        # print("biase_mask:", sess.run(tf.cast(biases_mask, dtype=tf.float32)))
 
 
-    # Predicting step
-    if (epoch+1) >= args.save_epoch and (epoch+1) % 100 == 0:
+    # # Predicting step
+    if epoch >= args.save_epoch and epoch % 100 == 0:
         ###  save outputs
         outs = sess.run(model.outputs_atten, feed_dict=feed_dict)
 
 
-        filename = os.path.join(out_path, ('feat_%d' % (epoch+1)))
+        filename = os.path.join(out_path, ('feat_%d' % epoch))
         print(time.strftime('[%X %x %Z]\t') + 'save to: ' + filename)
-
         filehandler = open(filename, 'wb')
         pkl.dump(outs, filehandler)
         filehandler.close()
 
         ### save attention weights
         attens = sess.run(model.coefs, feed_dict=feed_dict)
-        filename_atten = os.path.join(out_path, ('coef_%d' % (epoch+1)))
+        filename_atten = os.path.join(out_path, ('coef_%d' % epoch))
         filehandler = open(filename_atten, 'wb')
         pkl.dump(attens, filehandler)
         filehandler.close()
 
-    # # -- while training, while testing
-    # if (epoch + 1) >= 800 and (epoch + 1) % 100 == 0:
+    # -- while training, while testing
+
+    # if epoch >= args.save_epoch and epoch % 50 == 0:
     #     outs = sess.run(model.outputs_atten, feed_dict=feed_dict)
     #     # test
-    #     result = test_imagenet_zero(weight_pred=outs)
+    #     result = test_in_train.test_imagenet_zero(weight_pred=outs)
     #
     #     output = ['{:.2f}'.format(i * 100) for i in result[0]]
-    #     print('-----------Testing: Epoch = ', (epoch + 1), ' | accuracy = ',
+    #     print('-----------Testing: Epoch = ', epoch, ' | accuracy = ',
     #           output)
 
 print("Optimization Finished!")

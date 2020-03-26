@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e290638-0105-4aac-b7a0-f85b30d5c31c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/AZSL-G/test_in_train.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AZSL-D/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/AZSL-D/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AZSL-D/test_adgp.py" beforeDir="false" afterPath="$PROJECT_DIR$/AZSL-D/test_adgp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AZSL-D/train_predict_adgp.py" beforeDir="false" afterPath="$PROJECT_DIR$/AZSL-D/train_predict_adgp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AZSL-D/train_predict_dgp.py" beforeDir="false" afterPath="$PROJECT_DIR$/AZSL-D/train_predict_dgp.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AZSL-G/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/AZSL-G/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AZSL-G/src/io_embed.py" beforeDir="false" afterPath="$PROJECT_DIR$/AZSL-G/src/io_embed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AZSL-G/src/io_graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/AZSL-G/src/io_graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AZSL-G/src/io_train_sample.py" beforeDir="false" afterPath="$PROJECT_DIR$/AZSL-G/src/io_train_sample.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AZSL-G/test_agcn.py" beforeDir="false" afterPath="$PROJECT_DIR$/AZSL-G/test_agcn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AZSL-G/test_gcn.py" beforeDir="false" afterPath="$PROJECT_DIR$/AZSL-G/test_gcn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AZSL-G/train_predict_agcn.py" beforeDir="false" afterPath="$PROJECT_DIR$/AZSL-G/train_predict_agcn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AZSL-G/train_predict_gcn.py" beforeDir="false" afterPath="$PROJECT_DIR$/AZSL-G/train_predict_gcn.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,33 +58,33 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="md" value="16" />
-          <entry key="py" value="228" />
+          <entry key="md" value="20" />
+          <entry key="py" value="262" />
           <entry key="txt" value="1" />
           <entry key="yaml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Markdown" value="16" />
+          <entry key="Markdown" value="20" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="228" />
+          <entry key="Python" value="262" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="88" />
-          <entry key="md" value="3446" />
-          <entry key="py" value="4449" />
-          <entry key="txt" value="104" />
+          <entry key="md" value="3616" />
+          <entry key="py" value="5338" />
+          <entry key="txt" value="119" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="3446" />
-          <entry key="PLAIN_TEXT" value="192" />
-          <entry key="Python" value="4449" />
+          <entry key="Markdown" value="3616" />
+          <entry key="PLAIN_TEXT" value="207" />
+          <entry key="Python" value="5338" />
         </counts>
       </usages-collector>
     </session>
@@ -84,11 +95,59 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AZSL-G/readme.md">
+        <entry file="file://$PROJECT_DIR$/AZSL-D/readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="421">
-                <caret line="26" column="3" lean-forward="true" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+              <first_editor relative-caret-position="471">
+                <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AZSL-D/train_predict_dgp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1686">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AZSL-D/test_dgp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AZSL-D/test_adgp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="393">
+              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="437">
+                <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
               </first_editor>
               <second_editor />
             </state>
@@ -96,13 +155,58 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/AZSL-D/readme.md">
+        <entry file="file://$PROJECT_DIR$/AZSL-G/readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="369">
-                <caret line="36" column="3" lean-forward="true" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
+              <first_editor relative-caret-position="453">
+                <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IMAGENET_Animal/ZSL_Model/Exp1_GPM/test_imagenet_per.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IMAGENET_Animal/ZSL_Model/Exp1_GPM/test_imagenet_per_att.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1923">
+              <caret line="26" column="20" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AZSL-D/train_predict_adgp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AZSL-G/train_predict_agcn.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2373">
+              <caret line="169" lean-forward="true" selection-start-line="169" selection-end-line="169" />
             </state>
           </provider>
         </entry>
@@ -118,9 +222,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>testlist_folder</find>
-      <find>save_epoch</find>
-      <find>utils</find>
       <find>myglove</find>
       <find>imagenet-train-test-split.json</find>
       <find>load_data_vis_multi</find>
@@ -138,7 +239,6 @@
       <find>Mat_DATA_DIR</find>
       <find>FLAGS</find>
       <find>dataset</find>
-      <find>out_path</find>
       <find>done</find>
       <find>args.</find>
       <find>output</find>
@@ -148,6 +248,10 @@
       <find>url</find>
       <find>GCNZ</find>
       <find>mask:</find>
+      <find>outputs1</find>
+      <find>mask</find>
+      <find>out_path</find>
+      <find>pred_obj</find>
     </findStrings>
     <replaceStrings>
       <replace>slef</replace>
@@ -162,7 +266,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../X_ZSL/DGP/test_dgp_awa.py" />
         <option value="$PROJECT_DIR$/../X_ZSL/DGP/train_predict_gpm_att.py" />
         <option value="$PROJECT_DIR$/../X_ZSL/DGP/train_predict_adgp_awa.py" />
         <option value="$PROJECT_DIR$/../X_ZSL/data/download_image.py" />
@@ -197,22 +300,23 @@
         <option value="$PROJECT_DIR$/AZSL-D/src/extract_img_feats.py" />
         <option value="$PROJECT_DIR$/AZSL-D/src/make_induced_graph.py" />
         <option value="$PROJECT_DIR$/AZSL-D/src/process_resnet.py" />
-        <option value="$PROJECT_DIR$/AZSL-D/train_predict_dgp.py" />
-        <option value="$PROJECT_DIR$/AZSL-D/train_predict_adgp.py" />
         <option value="$PROJECT_DIR$/AZSL-D/test_dgp.py" />
-        <option value="$PROJECT_DIR$/AZSL-D/test_adgp.py" />
         <option value="$PROJECT_DIR$/AZSL-G/src/extract_img_feats.py" />
+        <option value="$PROJECT_DIR$/AZSL-G/src/pre_test_img_list.py" />
         <option value="$PROJECT_DIR$/AZSL-G/src/io_embed.py" />
         <option value="$PROJECT_DIR$/AZSL-G/src/io_graph.py" />
-        <option value="$PROJECT_DIR$/AZSL-G/src/io_train_sample.py" />
-        <option value="$PROJECT_DIR$/AZSL-G/src/pre_test_img_list.py" />
+        <option value="$PROJECT_DIR$/AZSL-G/train_predict_gcn.py" />
         <option value="$PROJECT_DIR$/AZSL-G/test_agcn.py" />
         <option value="$PROJECT_DIR$/AZSL-G/test_gcn.py" />
+        <option value="$PROJECT_DIR$/AZSL-G/src/io_train_sample.py" />
+        <option value="$PROJECT_DIR$/AZSL-G/test_in_train.py" />
         <option value="$PROJECT_DIR$/AZSL-G/train_predict_agcn.py" />
-        <option value="$PROJECT_DIR$/AZSL-G/train_predict_gcn.py" />
+        <option value="$PROJECT_DIR$/AZSL-D/train_predict_dgp.py" />
+        <option value="$PROJECT_DIR$/AZSL-D/train_predict_adgp.py" />
+        <option value="$PROJECT_DIR$/AZSL-D/test_adgp.py" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/AZSL-G/readme.md" />
         <option value="$PROJECT_DIR$/AZSL-D/readme.md" />
+        <option value="$PROJECT_DIR$/AZSL-G/readme.md" />
       </list>
     </option>
   </component>
@@ -256,13 +360,32 @@
             <path>
               <item name="X-ZSL" type="b2602c69:ProjectViewProjectNode" />
               <item name="X-ZSL" type="462c0819:PsiDirectoryNode" />
-              <item name="AZSL-D" type="462c0819:PsiDirectoryNode" />
+              <item name="AWA2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="X-ZSL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="X-ZSL" type="462c0819:PsiDirectoryNode" />
+              <item name="AWA2" type="462c0819:PsiDirectoryNode" />
+              <item name="ZSL_Model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="X-ZSL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="X-ZSL" type="462c0819:PsiDirectoryNode" />
+              <item name="AWA2" type="462c0819:PsiDirectoryNode" />
+              <item name="ZSL_Model" type="462c0819:PsiDirectoryNode" />
+              <item name="Exp1_GCN" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="X-ZSL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="X-ZSL" type="462c0819:PsiDirectoryNode" />
+              <item name="AWA2" type="462c0819:PsiDirectoryNode" />
+              <item name="ZSL_Model" type="462c0819:PsiDirectoryNode" />
+              <item name="Exp2_AGCN" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="X-ZSL" type="b2602c69:ProjectViewProjectNode" />
               <item name="X-ZSL" type="462c0819:PsiDirectoryNode" />
               <item name="AZSL-D" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="X-ZSL" type="b2602c69:ProjectViewProjectNode" />
@@ -279,6 +402,12 @@
               <item name="X-ZSL" type="b2602c69:ProjectViewProjectNode" />
               <item name="X-ZSL" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="X-ZSL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="X-ZSL" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="AZSL-D" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="X-ZSL" type="b2602c69:ProjectViewProjectNode" />
@@ -297,6 +426,25 @@
               <item name="X-ZSL" type="b2602c69:ProjectViewProjectNode" />
               <item name="X-ZSL" type="462c0819:PsiDirectoryNode" />
               <item name="IMAGENET_Animal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="X-ZSL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="X-ZSL" type="462c0819:PsiDirectoryNode" />
+              <item name="IMAGENET_Animal" type="462c0819:PsiDirectoryNode" />
+              <item name="X_ZSL" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="X-ZSL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="X-ZSL" type="462c0819:PsiDirectoryNode" />
+              <item name="IMAGENET_Animal" type="462c0819:PsiDirectoryNode" />
+              <item name="ZSL_Model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="X-ZSL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="X-ZSL" type="462c0819:PsiDirectoryNode" />
+              <item name="IMAGENET_Animal" type="462c0819:PsiDirectoryNode" />
+              <item name="ZSL_Model" type="462c0819:PsiDirectoryNode" />
+              <item name="Exp1_GPM" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="X-ZSL" type="b2602c69:ProjectViewProjectNode" />
@@ -475,7 +623,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585151564500</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="readme update">
+      <created>1585190697342</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1585190697343</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -491,7 +646,7 @@
     <frame x="0" y="23" width="1389" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49936306" visible="true" weight="0.20341499" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49936306" visible="true" weight="0.25538233" />
       <window_info id="Structure" order="1" sideWeight="0.50063694" side_tool="true" weight="0.20044543" />
       <window_info id="Favorites" order="2" sideWeight="0.50063694" side_tool="true" weight="0.20044543" />
       <window_info anchor="bottom" id="File Transfer" order="0" visible="true" weight="0.20636943" />
@@ -530,71 +685,11 @@
     <MESSAGE value="overall readme file" />
     <MESSAGE value="Merge branch 'master' of https://github.com/genggengcss/X-ZSL&#10;&#10;# Conflicts:&#10;#&#9;README.md" />
     <MESSAGE value="readme files and materials" />
-    <MESSAGE value="readme update" />
     <MESSAGE value="data folder update" />
-    <option name="LAST_COMMIT_MESSAGE" value="data folder update" />
+    <MESSAGE value="readme update" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme update" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../X_ZSL/GCNZ/configs_g.yaml" />
-    <entry file="file://$PROJECT_DIR$/../X_ZSL/AWA2/ZSL_Model/Exp1_GCN/io_train_sample.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-753">
-          <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../X_ZSL/AWA2/ZSL_Model/Exp1_GCN/io_graph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2327" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../X_ZSL/AWA2/ZSL_Model/Exp1_GCN/io_embed.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1956" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../X_ZSL/GCNZ/src/pre_test_img_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../X_ZSL/GCNZ/src/io_graph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="162" lean-forward="true" selection-start-line="162" selection-end-line="162" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../X_ZSL/GCNZ/src/io_embed.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="155" column="40" selection-start-line="155" selection-start-column="40" selection-end-line="155" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../X_ZSL/GCNZ/model/agcn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../X_ZSL/GCNZ/train_predict_agcn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../X_ZSL/GCNZ/model/gcn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="244" column="12" selection-start-line="244" selection-start-column="12" selection-end-line="244" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../X_ZSL/GCNZ/test_gcn.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
@@ -725,13 +820,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AZSL-D/src/make_induced_graph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="67" column="45" lean-forward="true" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AZSL-D/src/process_resnet.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
@@ -739,106 +827,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AZSL-D/train_predict_dgp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="37" column="63" selection-start-line="37" selection-start-column="63" selection-end-line="37" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AZSL-D/train_predict_adgp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="60" column="44" lean-forward="true" selection-start-line="60" selection-start-column="44" selection-end-line="60" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AZSL-D/test_in_train.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AZSL-D/test_dgp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="25" column="63" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AZSL-D/test_adgp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="21" column="63" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AZSL-G/src/extract_img_feats.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="344">
           <caret line="176" column="30" lean-forward="true" selection-start-line="176" selection-start-column="30" selection-end-line="176" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AZSL-G/src/io_embed.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1989">
-          <caret line="122" column="63" selection-start-line="122" selection-start-column="63" selection-end-line="122" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AZSL-G/src/io_graph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2584">
-          <caret line="156" column="48" selection-start-line="156" selection-start-column="48" selection-end-line="156" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AZSL-G/src/io_train_sample.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1581">
-          <caret line="102" column="63" selection-start-line="102" selection-start-column="63" selection-end-line="102" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AZSL-G/src/pre_test_img_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="40" column="47" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AZSL-G/test_agcn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2635">
-          <caret line="163" column="63" selection-start-line="163" selection-start-column="63" selection-end-line="163" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AZSL-G/test_gcn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2652">
-          <caret line="164" column="63" selection-start-line="164" selection-start-column="63" selection-end-line="164" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AZSL-G/train_predict_agcn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="47" column="59" selection-start-line="47" selection-start-column="59" selection-end-line="47" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AZSL-G/train_predict_gcn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="46" column="41" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -852,28 +844,223 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/AZSL-G/src/io_embed.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="140" column="20" selection-start-line="140" selection-start-column="20" selection-end-line="140" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AZSL-D/src/make_induced_graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-201">
+          <caret line="79" column="14" lean-forward="true" selection-start-line="79" selection-start-column="14" selection-end-line="79" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/data/process_awa.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+        <state relative-caret-position="171">
+          <caret line="31" column="35" lean-forward="true" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AZSL-G/model/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="209" column="49" selection-start-line="209" selection-start-column="36" selection-end-line="209" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AZSL-G/model/gcn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="202" column="53" lean-forward="true" selection-start-line="202" selection-start-column="53" selection-end-line="202" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AZSL-D/test_in_train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="20" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AWA2/ZSL_Model/Exp1_GCN/io_train_sample.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1155" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AWA2/ZSL_Model/Exp2_AGCN/test_in_train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2669">
+          <caret line="159" column="16" selection-start-line="159" selection-start-column="16" selection-end-line="159" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AWA2/ZSL_Model/Exp2_AGCN/train_predict_agcn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2861">
+          <caret line="186" selection-start-line="186" selection-end-line="186" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AZSL-G/train_predict_gcn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="163" selection-start-line="163" selection-end-line="163" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AZSL-G/src/io_graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2178">
+          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AZSL-G/test_gcn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="174" selection-start-line="174" selection-end-line="174" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AZSL-G/src/pre_test_img_list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="564">
+          <caret line="40" column="47" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AZSL-G/src/io_train_sample.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="96" selection-start-line="96" selection-end-line="96" />
+          <folding>
+            <element signature="e#1#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AZSL-G/model/agcn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="310" selection-start-line="310" selection-end-line="310" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AZSL-G/test_in_train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AZSL-G/test_agcn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="196" lean-forward="true" selection-start-line="196" selection-end-line="196" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AZSL-D/test_dgp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AZSL-G/train_predict_agcn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2373">
+          <caret line="169" lean-forward="true" selection-start-line="169" selection-end-line="169" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/torch/nn/modules/module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="587" column="8" selection-start-line="587" selection-start-column="8" selection-end-line="587" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AZSL-D/train_predict_adgp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AZSL-D/train_predict_dgp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1686">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IMAGENET_Animal/ZSL_Model/Exp1_GPM/test_imagenet_per.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IMAGENET_Animal/ZSL_Model/Exp1_GPM/test_imagenet_per_att.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1923">
+          <caret line="26" column="20" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AZSL-D/test_adgp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="195">
-            <caret line="13" column="75" selection-start-line="13" selection-start-column="75" selection-end-line="13" selection-end-column="75" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AZSL-G/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="421">
-            <caret line="26" column="3" lean-forward="true" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+          <first_editor relative-caret-position="437">
+            <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
           </first_editor>
           <second_editor />
         </state>
@@ -882,8 +1069,18 @@
     <entry file="file://$PROJECT_DIR$/AZSL-D/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="369">
-            <caret line="36" column="3" lean-forward="true" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
+          <first_editor relative-caret-position="471">
+            <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AZSL-G/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="453">
+            <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
           </first_editor>
           <second_editor />
         </state>

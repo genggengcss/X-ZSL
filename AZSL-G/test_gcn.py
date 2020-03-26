@@ -1,5 +1,3 @@
-# coding=gbk
-# -*- coding: utf-8 -*-
 
 from __future__ import print_function
 import argparse
@@ -18,20 +16,20 @@ test the total accuracy of gcn model
 
 
 
-def test_imagenet_zero(weight_pred_file, has_train=False):
+def test_imagenet_zero(weight_pred_file):
     test_feat_file_path = []
     testlabels = []
     print('test file: ....', testlist_folder)
-    with open(testlist_folder) as fp:  # test_image_list.txt  测试数据文件
+    with open(testlist_folder) as fp:  # test_image_list.txt
         for line in fp:
             fname, lbl = line.split()  # n03236735/n03236735_4047.JPEG 398
 
             assert int(lbl) >= 398
             # feat_name = os.path.join(feat_folder, fname.replace('.JPEG', '.mat'))
             if DATASET == 'ImNet_A':
-                feat_name = os.path.join(test_img_feat_folder, fname.replace('.JPEG', '.npz'))  # 获取对应图片的特征文
+                feat_name = os.path.join(test_img_feat_folder, fname.replace('.JPEG', '.npz'))
             if DATASET == 'AwA':
-                feat_name = os.path.join(test_img_feat_folder, fname.replace('.jpg', '.npz'))  # 获取对应图片的特征文件
+                feat_name = os.path.join(test_img_feat_folder, fname.replace('.jpg', '.npz'))
 
             if not os.path.exists(feat_name):
                 print('no feature', feat_name)
@@ -59,16 +57,12 @@ def test_imagenet_zero(weight_pred_file, has_train=False):
     weight_pred_testval = []  # zsl: unseen output feature
     for j in range(len(classids)):
         t_wpt = weight_pred[j]
-        if has_train:
-            if classids[j][0] < 0:
-                continue
-        else:
-            if classids[j][1] == 0:
-                continue
+        if classids[j][1] == 0:
+            continue
 
         if classids[j][0] >= 0:
             t_wv = word2vec_feat[j]
-            if np.linalg.norm(t_wv) == 0:  # 求范数
+            if np.linalg.norm(t_wv) == 0:
                 invalid_wv = invalid_wv + 1
                 continue
             labels_testval.append(classids[j][0])
@@ -99,7 +93,7 @@ def test_imagenet_zero(weight_pred_file, has_train=False):
             valid_class[classids[j][0]] = 1
 
 
-    ## imagenet 2-hops topK result
+    # topK result
     topKs = [1]
     top_retrv = [1, 2, 3, 5, 10, 20]
     hit_count = np.zeros((len(topKs), len(top_retrv)))
@@ -144,11 +138,11 @@ def test_imagenet_zero(weight_pred_file, has_train=False):
                   inter / (j - 1) * (len(testlabels) - j))
 
     # save to file
-    lab = 'label.txt'
-    wr_fp = open(lab, 'w')
-    for lal in lbl_list:
-        wr_fp.write('%s\n' % lal)
-    wr_fp.close()
+    # lab = 'label.txt'
+    # wr_fp = open(lab, 'w')
+    # for lal in lbl_list:
+    #     wr_fp.write('%s\n' % lal)
+    # wr_fp.close()
 
     hit_count = hit_count * 1.0 / cnt_valid
     # print(hit_count)
@@ -176,8 +170,8 @@ if __name__ == '__main__':
     feat_dim = 2048
     word2vec_file = os.path.join(DATA_DIR, DATASET, 'glove_w2v.pkl')
     classids_file_retrain = os.path.join(DATA_DIR, DATASET, 'corresp.json')
-    # testlist_folder = os.path.join(DATA_DIR, DATASET, 'test_img_list_100.txt')
-    testlist_folder = os.path.join(DATA_DIR, DATASET, 'test_img_list.txt')
+    testlist_folder = os.path.join(DATA_DIR, DATASET, 'test_img_list_100.txt')
+    # testlist_folder = os.path.join(DATA_DIR, DATASET, 'test_img_list.txt')
 
     test_img_feat_folder = os.path.join(DATA_DIR, DATASET, 'Test_DATA_feats')  # img features of test images
 
@@ -186,13 +180,11 @@ if __name__ == '__main__':
 
     training_outputs = os.path.join(DATA_DIR, DATASET, EXP_NAME, 'feat_' + args.feat)
 
-
     print('\nEvaluating ...\nPlease be patient for it takes a few minutes...')
 
     res = test_imagenet_zero(weight_pred_file=training_outputs)
 
     output = ['{:.2f}'.format(i * 100) for i in res[0]]
-
 
     print('----------------------')
     print('model : ', training_outputs)

@@ -41,18 +41,15 @@ if __name__ == '__main__':
         data_split = os.path.join(DATA_DIR, DATASET, 'awa2-split.json')
 
     # predict classifiers
-    # awa: 1200
-    # ImNet: 680: 34.48
+    # awa: 1200 - 85.52
+    # ImNet: 680
     pred_file = os.path.join(DATA_DIR, DATASET, EXP_NAME, 'epoch-' + args.pred + '.pred')
 
 
 
 
-    # set_gpu(args.gpu)
-    '''
-    split.json:
-    split[train], split[test]
-    '''
+
+    # split.json: train, test
 
     split = json.load(open(data_split, 'r'))
     train_wnids = split['train']
@@ -75,7 +72,6 @@ if __name__ == '__main__':
     m = len(test_wnids)
 
 
-    # test_names = awa2_split['test_names']
 
     ave_acc = 0
     ave_acc_n = 0
@@ -83,8 +79,6 @@ if __name__ == '__main__':
     results = {}
 
     # the directory of AWA2 testing data features
-
-
     # total_hits, total_imgs = 0, 0
     total_hits = torch.FloatTensor([0, 0, 0, 0, 0])  # top 1 2 5 10 20
     total_imgs = 0

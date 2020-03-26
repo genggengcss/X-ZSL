@@ -12,8 +12,25 @@ test total accuracy of attentive gcn model
 '''
 
 
+DATA_DIR = '/home/gyx/X-ZSL/data/AZSL-G'
+# DATASET = 'ImNet_A'
+DATASET = 'AwA'
 
-def test_imagenet_zero(weight_pred_file, atten_pred_file):
+feat_dim = 2048  # the dimension of CNN features
+# the word embedidngs of graph nodes, to ensure that the testing classes have initialization
+word2vec_file = os.path.join(DATA_DIR, DATASET, 'glove_w2v.pkl')
+# mark the type of graph nodes (seen, unseen, others)
+classids_file_retrain = os.path.join(DATA_DIR, DATASET, 'corresp.json')
+
+# testing image list
+# testlist_folder = os.path.join(DATA_DIR, DATASET, 'test_img_list_100.txt')
+testlist_folder = os.path.join(DATA_DIR, DATASET, 'test_img_list.txt')
+
+# img features of test images
+test_img_feat_folder = os.path.join(DATA_DIR, DATASET, 'Test_DATA_feats')
+
+
+def test_imagenet_zero(weight_pred):
 
     test_feat_file_path = []
     testlabels = []
@@ -41,11 +58,10 @@ def test_imagenet_zero(weight_pred_file, atten_pred_file):
         word2vec_feat = pkl.load(fp)
 
     # obtain predicted (unseen) classifiers
-    with open(weight_pred_file, 'rb') as fp:  #
-        weight_pred = pkl.load(fp)
+
     weight_pred = np.array(weight_pred)
 
-    print('weight_pred output', weight_pred.shape)
+    # print('weight_pred output', weight_pred.shape)
 
 
 
@@ -71,12 +87,12 @@ def test_imagenet_zero(weight_pred_file, atten_pred_file):
             t_wpt = t_wpt[feat_len - feat_dim: feat_len]
             weight_pred_testval.append(t_wpt)
     weight_pred_testval = np.array(weight_pred_testval)
-    print('skip candidate class due to no word embedding: %d / %d:' % (invalid_wv, len(labels_testval) + invalid_wv))
-    print('candidate class shape: ', weight_pred_testval.shape)
+    # print('skip candidate class due to no word embedding: %d / %d:' % (invalid_wv, len(labels_testval) + invalid_wv))
+    # print('candidate class shape: ', weight_pred_testval.shape)
 
     weight_pred_testval = weight_pred_testval.T
     labels_testval = np.array(labels_testval)
-    print('final test classes: ', len(labels_testval))
+    # print('final test classes: ', len(labels_testval))
 
     # remove invalid unseen classes(wv = 0)
     valid_class = np.zeros(22000)
@@ -132,10 +148,10 @@ def test_imagenet_zero(weight_pred_file, atten_pred_file):
                         hit_count[top][k] = hit_count[top][k] + 1
                         break
 
-        if j % 10000 == 0:
-            inter = time.time() - t
-            print('processing %d / %d ' % (j, len(testlabels)), ', Estimated time: ',
-                  inter / (j - 1) * (len(testlabels) - j))
+        # if j % 10000 == 0:
+        #     inter = time.time() - t
+        #     print('processing %d / %d ' % (j, len(testlabels)), ', Estimated time: ',
+        #           inter / (j - 1) * (len(testlabels) - j))
 
     # save to file
     # lab = 'label.txt'
@@ -146,58 +162,13 @@ def test_imagenet_zero(weight_pred_file, atten_pred_file):
 
     hit_count = hit_count * 1.0 / cnt_valid
     # print(hit_count)
-    print('total: %d', cnt_valid)
+    # print('total: %d', cnt_valid)
+
     return hit_count
-
-
-
-
-if __name__ == '__main__':
-    parser = argparse.ArgumentParser()
-
-    parser.add_argument('--data_root', type=str, default='/home/gyx/X-ZSL/data', help='root directory')
-    parser.add_argument('--data_dir', type=str, default='AZSL-G', help='data directory')
-    parser.add_argument('--dataset', type=str, default='ImNet_A', help='ImNet_A, AwA')
-    parser.add_argument('--feat', type=str, default='', help='the predicted file')
-
-    args = parser.parse_args()
-
-    DATA_DIR = os.path.join(args.data_root, args.data_dir)
-    DATASET = args.dataset
-
-    EXP_NAME = 'Exp2_AGCN'
-
-    feat_dim = 2048  # the dimension of CNN features
-    # the word embedidngs of graph nodes, to ensure that the testing classes have initialization
-    word2vec_file = os.path.join(DATA_DIR, DATASET, 'glove_w2v.pkl')
-    # mark the type of graph nodes (seen, unseen, others)
-    classids_file_retrain = os.path.join(DATA_DIR, DATASET, 'corresp.json')
-
-    # testing image list
-    # testlist_folder = os.path.join(DATA_DIR, DATASET, 'test_img_list_100.txt')
-    testlist_folder = os.path.join(DATA_DIR, DATASET, 'test_img_list.txt')
-
-    # img features of test images
-    test_img_feat_folder = os.path.join(DATA_DIR, DATASET, 'Test_DATA_feats')
-
-
-    # ImNet_A: python test_gcn.py --feat 1500
-    # AwA: python test_gcn.py --dataset AwA --feat
-    training_outputs = os.path.join(DATA_DIR, DATASET, EXP_NAME, 'feat_' + args.feat)
-    # the trained attention weights
-    training_coefs = os.path.join(DATA_DIR, DATASET, EXP_NAME, 'coef_' + args.feat)
-
-
-    print('\nEvaluating ...\nPlease be patient for it takes a few minutes...')
-
-    res = test_imagenet_zero(weight_pred_file=training_outputs, atten_pred_file=training_coefs)
-
-    output = ['{:.2f}'.format(i * 100) for i in res[0]]
-
-
-    print('----------------------')
-    print('model : ', training_outputs)
-    print('result: ', output)
-    print('----------------------')
+    # output = ['{:.2f}'.format(i * 100) for i in hit_count[0]]
+    #
+    #
+    # print('--> result: ', output)
+    # print('----------------------')
 
 

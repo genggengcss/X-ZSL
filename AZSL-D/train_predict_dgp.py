@@ -11,7 +11,8 @@ import torch.nn.functional as F
 
 from model import gcn
 from model import utils
-# from ZSL.IMAGENET_Animal.ZSL_Model.Exp1_GPM import test_in_train
+
+
 '''
 input: imagenet-induced-animal-graph.json, fc-weights.json
 get: save prediction model file

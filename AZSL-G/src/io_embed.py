@@ -132,6 +132,7 @@ if __name__ == '__main__':
     vertices_file = os.path.join(DATA_DIR, DATASET, 'invdict_wordntext.json')
 
     save_file = os.path.join(DATA_DIR, DATASET, 'glove_w2v.pkl')
+
     if not os.path.exists(save_file):
         word_vectors = get_glove_dict(os.path.join(args.data_root))
         get_vector = glove_google
