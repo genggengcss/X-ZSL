@@ -1,6 +1,0 @@
-
-
-
-'''
-read dataset
-'''

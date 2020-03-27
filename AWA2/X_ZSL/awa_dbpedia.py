@@ -6,8 +6,6 @@ import torch
 
 from nltk.corpus import wordnet as wn
 
-sys.path.append('../../../../')
-from ZSL.gpm import myglove
 
 '''
 input: imagenet-split.json, imagenet-xml-wnids.json
@@ -136,7 +134,7 @@ def getNeightborN(test_wn_name):
 
 
 ## get hypernyms
-test_wn_name = 'polar+bear'
+test_wn_name = 'sheep'
 # getNeightbor(test_wn_name)
 getNeightborN(test_wn_name)
 
