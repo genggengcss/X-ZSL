@@ -5,6 +5,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/X_ZSL/query_triples.py" beforeDir="false" afterPath="$PROJECT_DIR$/X_ZSL/query_triples.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/X_ZSL/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/X_ZSL/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/X_ZSL/wnid2entity.py" beforeDir="false" afterPath="$PROJECT_DIR$/X_ZSL/wnid2entity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/X_ZSL/IMSC2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/X_ZSL/example/IMSC.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/X_ZSL/example/agcn_seen_class1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/X_ZSL/example/wnid-dbEntity.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +57,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="md" value="21" />
+          <entry key="json" value="1" />
+          <entry key="md" value="22" />
           <entry key="py" value="312" />
           <entry key="txt" value="1" />
           <entry key="yaml" value="1" />
@@ -60,7 +66,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Markdown" value="21" />
+          <entry key="JSON" value="1" />
+          <entry key="Markdown" value="22" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Python" value="312" />
           <entry key="YAML" value="1" />
@@ -69,16 +76,16 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="88" />
-          <entry key="md" value="4151" />
-          <entry key="py" value="8559" />
+          <entry key="md" value="5199" />
+          <entry key="py" value="8809" />
           <entry key="txt" value="202" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="4151" />
+          <entry key="Markdown" value="5199" />
           <entry key="PLAIN_TEXT" value="290" />
-          <entry key="Python" value="8559" />
+          <entry key="Python" value="8809" />
         </counts>
       </usages-collector>
     </session>
@@ -101,15 +108,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/process_awa.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="46" selection-start-line="46" selection-end-line="46" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/X_ZSL/IMSC.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="292">
@@ -124,8 +122,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/X_ZSL/wnid2entity.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="115" selection-start-line="72" selection-end-line="115" />
+            <state relative-caret-position="148">
+              <caret line="68" column="72" lean-forward="true" selection-start-line="68" selection-start-column="3" selection-end-line="68" selection-end-column="72" />
               <folding>
                 <element signature="e#58#73#0" expanded="true" />
               </folding>
@@ -136,8 +134,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/X_ZSL/get_abstract_text.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="78" selection-start-line="8" selection-end-line="78" />
+            <state relative-caret-position="730">
+              <caret line="71" column="23" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="23" />
               <folding>
                 <element signature="e#58#71#0" expanded="true" />
                 <marker date="1585271299744" expanded="true" signature="1218:1573" ph="..." />
@@ -146,25 +144,37 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/X_ZSL/query_triples.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="84" column="43" selection-start-line="84" selection-start-column="43" selection-end-line="84" selection-end-column="43" />
+            <state relative-caret-position="360">
+              <caret line="127" column="26" selection-start-line="127" selection-start-column="26" selection-end-line="127" selection-end-column="26" />
               <folding>
                 <element signature="e#43#54#0" expanded="true" />
-                <marker date="1585305333769" expanded="true" signature="2692:4811" ph="..." />
+                <marker date="1585308560955" expanded="true" signature="2371:4490" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/X_ZSL/readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="255">
-                <caret line="15" column="345" selection-start-line="15" selection-start-column="345" selection-end-line="15" selection-end-column="345" />
+              <first_editor relative-caret-position="195">
+                <caret line="12" column="141" selection-start-line="12" selection-start-column="141" selection-end-line="12" selection-end-column="141" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor>
+                <caret selection-end-column="7" />
               </first_editor>
               <second_editor />
             </state>
@@ -179,18 +189,6 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AWA2/Data_Pre/data_split.py">
           <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AZSL-D/train_predict_adgp.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="89" column="4" selection-start-line="89" selection-start-column="4" selection-end-line="89" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
         </entry>
       </file>
     </leaf>
@@ -231,9 +229,9 @@
       <find>n02342885</find>
       <find>n02330245</find>
       <find>json</find>
-      <find>requests</find>
       <find>imageCaption</find>
       <find>ordoAuthority</find>
+      <find>requests</find>
     </findStrings>
     <replaceStrings>
       <replace>slef</replace>
@@ -293,12 +291,12 @@
         <option value="$PROJECT_DIR$/AZSL-D/test_w.py" />
         <option value="$PROJECT_DIR$/AWA2/Data_Pre/data_overlap_awa_imagenet.py" />
         <option value="$PROJECT_DIR$/AWA2/X_ZSL/awa_dbpedia.py" />
-        <option value="$PROJECT_DIR$/X_ZSL/wnid2entity.py" />
         <option value="$PROJECT_DIR$/X_ZSL/get_abstract_text.py" />
         <option value="$PROJECT_DIR$/X_ZSL/IMSC.py" />
         <option value="$PROJECT_DIR$/data/images/test.py" />
-        <option value="$PROJECT_DIR$/X_ZSL/query_triples.py" />
+        <option value="$PROJECT_DIR$/X_ZSL/wnid2entity.py" />
         <option value="$PROJECT_DIR$/X_ZSL/readme.md" />
+        <option value="$PROJECT_DIR$/X_ZSL/query_triples.py" />
       </list>
     </option>
   </component>
@@ -388,13 +386,13 @@
             <path>
               <item name="X-ZSL" type="b2602c69:ProjectViewProjectNode" />
               <item name="X-ZSL" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
               <item name="X_ZSL" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="X-ZSL" type="b2602c69:ProjectViewProjectNode" />
               <item name="X-ZSL" type="462c0819:PsiDirectoryNode" />
               <item name="X_ZSL" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="X-ZSL" type="b2602c69:ProjectViewProjectNode" />
@@ -715,7 +713,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585301487287</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="readme update">
+      <created>1585305922654</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1585305922654</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView">
@@ -729,6 +734,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1397" height="877" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49936306" visible="true" weight="0.2494465" />
       <window_info id="Structure" order="1" sideWeight="0.50063694" side_tool="true" weight="0.20044543" />
@@ -778,16 +784,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="readme update" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/AZSL-G/src/io_graph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2178">
-          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AZSL-G/src/pre_test_img_list.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="564">
@@ -837,16 +833,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="482">
             <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="454">
-            <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
           </first_editor>
           <second_editor />
         </state>
@@ -1141,16 +1127,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/X_ZSL/wnid2entity.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="115" selection-start-line="72" selection-end-line="115" />
-          <folding>
-            <element signature="e#58#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AWA2/Data_Pre/data_split.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1160,17 +1136,6 @@
           <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/X_ZSL/get_abstract_text.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="78" selection-start-line="8" selection-end-line="78" />
-          <folding>
-            <element signature="e#58#71#0" expanded="true" />
-            <marker date="1585271299744" expanded="true" signature="1218:1573" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1188,24 +1153,58 @@
     <entry file="file://$PROJECT_DIR$/data/images/test.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/X_ZSL/query_triples.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="84" column="43" selection-start-line="84" selection-start-column="43" selection-end-line="84" selection-end-column="43" />
-          <folding>
-            <element signature="e#43#54#0" expanded="true" />
-            <marker date="1585305333769" expanded="true" signature="2692:4811" ph="..." />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret selection-end-column="7" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/X_ZSL/IMSC2.json">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/X_ZSL/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="255">
-            <caret line="15" column="345" selection-start-line="15" selection-start-column="345" selection-end-line="15" selection-end-column="345" />
+          <first_editor relative-caret-position="195">
+            <caret line="12" column="141" selection-start-line="12" selection-start-column="141" selection-end-line="12" selection-end-column="141" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/X_ZSL/wnid2entity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="68" column="72" lean-forward="true" selection-start-line="68" selection-start-column="3" selection-end-line="68" selection-end-column="72" />
+          <folding>
+            <element signature="e#58#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/X_ZSL/get_abstract_text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="730">
+          <caret line="71" column="23" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="23" />
+          <folding>
+            <element signature="e#58#71#0" expanded="true" />
+            <marker date="1585271299744" expanded="true" signature="1218:1573" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/X_ZSL/query_triples.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="127" column="26" selection-start-line="127" selection-start-column="26" selection-end-line="127" selection-end-column="26" />
+          <folding>
+            <element signature="e#43#54#0" expanded="true" />
+            <marker date="1585308560955" expanded="true" signature="2371:4490" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

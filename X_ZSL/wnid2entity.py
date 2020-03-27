@@ -5,20 +5,10 @@ Match class with DBpedia entity using wordnet ID
 import requests
 import re
 import xml.etree.ElementTree as ET
-import os
 import json
 
-DATA_DIR = '/Users/geng/Data/X_ZSL_DATA_NAACL/'
-# DATA_DIR = '/home/gyx/Data/Exp_DATA/X_ZSL_DATA_NAACL/'
 
-class_wnid_file = os.path.join(DATA_DIR, 'tools', 'example', 'unseen_seen_classes_wnids.txt')
-WN_Text_URL = os.path.join(DATA_DIR, 'materials', 'words.txt')
-save_wnid_dbEntity = \
-    os.path.join(DATA_DIR, 'tools', 'example', 'wnid-dbEntity-all.txt')
-
-
-
-
+# load class names
 def getName(file):
     file_object = open(file, 'rU')
     wnid_word = dict()  # wnid - class name
@@ -72,17 +62,18 @@ def lookup_resources(name, cat):
 
 if __name__ == '__main__':
     # load class
-    # IMSC_file = '../data/X_ZSL/IMSC.json'
-    # IMSCs = json.load(open(IMSC_file, 'r'))
-    #
-    # class_list = list()
-    # for unseen, seens in IMSCs.items():
-    #     class_list.append(unseen)
-    #     class_list.extend(seens)
-    # print('total classes: ', len(class_list))
-    class_list = ['n02127482', 'n02123394', 'n02123597', 'n02439033', 'n02430045', 'n02374451', 'n02391049', 'n02331046', 'n02363005', 'n02342885', 'n02330245', 'n02355227', 'n02064816', 'n02065726', 'n02068974', 'n02071294', 'n02411705', 'n02419796']
+    IMSC_file = '../data/X_ZSL/IMSC.json'
+    IMSCs = json.load(open(IMSC_file, 'r'))
 
-    # load class name
+    class_list = list()
+    # each item is an unseen class with its impressive seen classes list
+    for unseen, seens in IMSCs.items():
+        class_list.append(unseen)
+        class_list.extend(seens)
+    print('total classes: ', len(class_list))
+    # class_list = ['n02127482', 'n02123394', 'n02123597', 'n02439033', 'n02430045', 'n02374451', 'n02391049', 'n02331046', 'n02363005', 'n02342885', 'n02330245', 'n02355227', 'n02064816', 'n02065726', 'n02068974', 'n02071294', 'n02411705', 'n02419796']
+
+    # load class <wnid, name> dict
     wnid_name_file = '../data/AZSL-G/materials/words.txt'
     wnid2name = getName(wnid_name_file)
 
@@ -108,8 +99,9 @@ if __name__ == '__main__':
 
     print("total:", len(items))
 
-    # store matched results
-    # wr_fp = open(save_wnid_dbEntity, 'w')
+    # save_wnid_dbEntity_file = '../data/X_ZSL/wnid-dbEntity.txt'
+    ## store matched results
+    # wr_fp = open(save_wnid_dbEntity_file, 'w')
     # for l in items:
     #     wr_fp.write('%s\n' % l)
     # wr_fp.close()

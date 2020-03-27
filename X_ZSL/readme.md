@@ -1,7 +1,28 @@
+# Explanation Generation
 
-#### examples of rule pattern
+We extract domain-specific knowledge and general knowledge from Attribute Graph and DBpedia.
+* Attribute Graph
+* DBpedia: online
 
-Taking following classes as examples.
+Extract Knowledge from DBpedia
+------
+#### Match ZSL class with DBpedia Entity
+We use [DBpedia Lookup service](https://github.com/DBpedia/lookup) to match, which is based on the index of DBpedia Spotlight.
+
+You can refer to the script `wnid2entity.py`.
+With matched entities, we manually remove the incorrect matching results, we provide the final results in `'../data/X_ZSL/wnid-dbEntity.txt'`.
+#### Extract keywords from Abstract Text of DBpedia Entity
+
+#### Extract triples using SPARQL Query 
+For extracting valid triples which describe the knowledge of seen and unseen classes, 
+we design some triple pattern and transform them into SPARQL queries to query knowledge from DBpedia.
+
+The code is provided in `query_triples.py`.
+
+**The following is the designed triple patterns and some queried results.**
+##### Examples of Rule Pattern
+
+Taking the following classes as examples.
 * Unseen class *Crab* (*dbr:Crab*) and its impressive seen class *Fiddler crab* (*dbr:Fiddler_crab*).
 * Unseen class *Indian mongoose* (*dbr:Small_Asian_mongoose*) and its impressive seen class *Mongoose* (*dbr:Mongoose*).
 * Unseen class *Guanaco* (*dbr:Guanaco*) and its impressive seen class *Llama* (*dbr:Llama*).
@@ -16,4 +37,5 @@ Taking following classes as examples.
 |<img src="img/code3.png" width="120"/>|<img src="img/rule3.png" width = "80"/>|(*dbr:Guanaco, hypernym, dbr:Camelid*) & <br> (*dbr:Llama, hypernym, dbr:Camelid*)<br><br>(*dbr:Smooth_hammerhead, hypernym, dbr:Shark*) & <br> (*dbr:Hammerhead_shark, dbo:order, dbr:Shark*)|*Guanaco* and *Llama* are both the members of *Camelid*. <br><br><br><br> *Smooth hammerhead* and *Hammerhead shark* are both relevant to *Shark* via relation *hypernym* and *order*.|
 |<img src="img/code4.png" width="120"/>|<img src="img/rule4.png" width = "80"/>|(*dbr:Formica, dbp:typeSpecies, Formica rufa*) &<br> (*dbr:Ant, dbp:typeSpecies, Formica rufa*)|*Wood ant* and *Ant* both have property *species type* and share the same property value *Formica rufa*.|
 |<img src="img/code5.png" width="250"/>|<img src="img/rule5.png" width = "80"/>|(*dbr:Fiddler_crab, dbo:family, dbr:Ocypodidae*) &<br>(*dbr:Ocypodidae, dbo:order, dbr:Crab*)|*Fiddler crab* and *Crab* is related via a transitional entity *Ocypodidae*.|
+
 

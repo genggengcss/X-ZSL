@@ -11,6 +11,8 @@ stopRelations = ['http://dbpedia.org/ontology/wikiPageWikiLink', 'http://www.w3.
                  'http://dbpedia.org/property/infraordoAuthority', 'http://dbpedia.org/ontology/binomialAuthority',
                  'http://dbpedia.org/ontology/wikiPageExternalLink', 'http://dbpedia.org/property/imageWidth',
                  'http://dbpedia.org/property/imageCaption', 'http://dbpedia.org/property/ordoAuthority']
+sparql = SPARQLWrapper("http://dbpedia.org/sparql")
+
 
 def loadUri(file):
     with open(file, 'r') as fp:
@@ -18,28 +20,15 @@ def loadUri(file):
         wnid2Uri = dict()
         wnid2Name = dict()
         for line in lines:
+            # each line consists of [wnid, class name, entity name, entity URI]
             line = line.strip().split('\t')
-            uri = line[3]
             wnid2Uri[line[0]] = line[3]  # 'wnid': 'entity uri'
             wnid2Name[line[0]] = line[1]
     return wnid2Uri, wnid2Name
 
 
-sparql = SPARQLWrapper("http://dbpedia.org/sparql")
 
-
-def queryAbstractText(uri):
-    query = "SELECT ?a WHERE { <" + str(uri) + "> <http://dbpedia.org/ontology/abstract> ?a }"
-    sparql.setQuery(query)
-    sparql.setReturnFormat(JSON)
-    results = sparql.query().convert()
-    print(results)
-
-    for result in results["results"]["bindings"]:
-        if result["a"]["xml:lang"] == 'en':
-            print(result["a"]["value"])
-
-# rule: (s,r,u)
+# rule1: (s,r,u)
 def queryRule1(unseen, seen):
         query = "SELECT ?r WHERE { <" + str(seen) + "> ?r <" + str(unseen) + ">}"
         sparql.setQuery(query)
@@ -53,7 +42,7 @@ def queryRule1(unseen, seen):
                     continue
                 print("------ > rule1: (%s, %s, %s)" % (seen, query_r, unseen))
 
-# rule: (u,r,s)
+# rule2: (u,r,s)
 def queryRule2(unseen, seen):
     query = "SELECT ?r WHERE { <" + str(unseen) + "> ?r <" + str(seen) + ">}"
     sparql.setQuery(query)
@@ -124,23 +113,20 @@ if __name__ == '__main__':
     IMSC_file = '../data/X_ZSL/IMSC.json'
     IMSCs = json.load(open(IMSC_file, 'r'))
 
-
-
-    # load entity
+    # load matched entities
     Entity_file = '../data/X_ZSL/wnid-dbEntity.txt'
     wnid_entity, wnid_name = loadUri(Entity_file)
 
-
-
+    # each item is an unseen class with its impressive seen classes list
     for unseen, seens in IMSCs.items():
         if unseen in wnid_entity:
             print("unseen >", wnid_name[unseen])
             for seen in seens:
                 if seen in wnid_entity:
-                    # queryRule1(wnid_entity[unseen], wnid_entity[seen])
-                    # queryRule2(wnid_entity[unseen], wnid_entity[seen])
+                    queryRule1(wnid_entity[unseen], wnid_entity[seen])
+                    queryRule2(wnid_entity[unseen], wnid_entity[seen])
                     queryRule3(wnid_entity[unseen], wnid_entity[seen])
-                    # queryRule5(wnid_entity[unseen], wnid_entity[seen])
+                    queryRule5(wnid_entity[unseen], wnid_entity[seen])
 
 
 
