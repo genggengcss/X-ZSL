@@ -7,4 +7,5 @@
 |$(u, r, s)$|![rule1](img/rule1.png "rule1")|
 |$(s, r_1, t) \wedge (u, r_2, t)$|![rule3](img/rule3.png "rule3")|
 |$(s, p, v) \wedge (u, p, v)$|![rule4](img/rule4.png "rule4")|
-|$(s, r_1, t) \wedge (t, r_2, u)$|![rule5](img/rule5.png "rule5")|
+|$$ (s, r_1, t) \wedge (t, r_2, u)$$|![rule5](img/rule5.png){:height="100px" width="400px"}|
+||<img src="img/rule5.png" width = "300" height = "200"  align=center />||
