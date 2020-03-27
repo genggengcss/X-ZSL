@@ -1,26 +1,24 @@
 # Explanation Generation
 
-We extract domain-specific knowledge and general knowledge from Attribute Graph and DBpedia.
+We extract domain-specific knowledge and general knowledge from Attribute Graph and DBpedia, respectively.
 * Attribute Graph
 * DBpedia: online
 
 Extract Knowledge from DBpedia
 ------
-#### Match ZSL class with DBpedia Entity
+### Match ZSL class with DBpedia Entity
 We use [DBpedia Lookup service](https://github.com/DBpedia/lookup) to match, which is based on the index of DBpedia Spotlight.
-
 You can refer to the script `wnid2entity.py`.
-With matched entities, we manually remove the incorrect matching results, we provide the final results in `'../data/X_ZSL/wnid-dbEntity.txt'`.
-#### Extract keywords from Abstract Text of DBpedia Entity
 
-#### Extract triples using SPARQL Query 
+With matched entities, we manually remove the incorrect ones, the final results is provided in `'../data/X_ZSL/wnid-dbEntity.txt'`.
+### Extract keywords from Abstract Text of DBpedia Entity
+
+### Extract triples using SPARQL Query 
 For extracting valid triples which describe the knowledge of seen and unseen classes, 
-we design some triple pattern and transform them into SPARQL queries to query knowledge from DBpedia.
+we design some triple patterns and transform them into SPARQL queries to query knowledge from DBpedia.
 
-The code is provided in `query_triples.py`.
-
-**The following is the designed triple patterns and some queried results.**
-##### Examples of Rule Pattern
+The code is in `query_triples.py`, we show the designed triple patterns and some queried results as follows.
+#### Examples of Rule Pattern
 
 Taking the following classes as examples.
 * Unseen class *Crab* (*dbr:Crab*) and its impressive seen class *Fiddler crab* (*dbr:Fiddler_crab*).

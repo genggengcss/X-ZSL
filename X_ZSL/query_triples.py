@@ -1,5 +1,6 @@
 '''
 query triples with triple pattern
+input: IMSC.json (unseen classes and their impressive seen classes), wnid-dbEntity.txt (matched entities)
 '''
 
 import json

@@ -1,5 +1,7 @@
 '''
 Match class with DBpedia entity using wordnet ID
+input: IMSC.json (unseen classes and their impressive seen classes), words.txt (class wordnet ids and names)
+output: matched dbpedia entity (with entity name and entity uri)
 '''
 
 import requests
