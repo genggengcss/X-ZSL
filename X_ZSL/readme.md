@@ -11,9 +11,9 @@ Taking following classes as examples.
 
 |Triple Pattern|Diagram|Examples|Illustration|
 |----|-----|----|-----|
-|<img src="img/code1.png" width = "60"/>|<img src="img/rule1.png" width = "80"/>|(*dbr:Fiddler_crab, dbo:order, dbr:Crab*)|*Fiddler crab* is directly related with *Crab* via relation *hypernym*.|
-|<img src="img/code2.png" width = "60"/>|<img src="img/rule2.png" width = "80"/>|(*dbr:Small_Asian_mongoose, hypernym, dbr:Mongoose*)|*Indian mongoose* is directly related with *Mongoose* via relation *hypernym*.|
-|<img src="img/code3.png" width = "100"/>|<img src="img/rule3.png" width = "80"/>|(*dbr:Guanaco, hypernym, dbr:Camelid*) & <br> (*dbr:Llama, hypernym, dbr:Camelid*)<br><br>(*dbr:Smooth_hammerhead, hypernym, dbr:Shark*) & <br> (*dbr:Hammerhead_shark, dbo:order, dbr:Shark*)|*Guanaco* and *Llama* are both the members of *Camelid*. <br><br><br><br> *Smooth hammerhead* and *Hammerhead shark* are both relevant to *Shark* via relation *hypernym* and *order*.|
-|<img src="img/code4.png" width = "100"/>|<img src="img/rule4.png" width = "80"/>|(*dbr:Formica, dbp:typeSpecies, Formica rufa*) &<br> (*dbr:Ant, dbp:typeSpecies, Formica rufa*)|*Wood ant* and *Ant* both have property *species type* and share the same property value *Formica rufa*.|
-|<img src="img/code5.png" width = "100"/>|<img src="img/rule5.png" width = "80"/>|(*dbr:Fiddler_crab, dbo:family, dbr:Ocypodidae*) &<br>(*dbr:Ocypodidae, dbo:order, dbr:Crab*)|*Fiddler crab* and *Crab* is related via a transitional entity *Ocypodidae*.|
+|(s, r, u)|<img src="img/rule1.png" width = "80"/>|(*dbr:Fiddler_crab, dbo:order, dbr:Crab*)|*Fiddler crab* is directly related with *Crab* via relation *hypernym*.|
+|(u, r, s)|<img src="img/rule2.png" width = "80"/>|(*dbr:Small_Asian_mongoose, hypernym, dbr:Mongoose*)|*Indian mongoose* is directly related with *Mongoose* via relation *hypernym*.|
+|<img src="img/code3.png" width="120"/>|<img src="img/rule3.png" width = "80"/>|(*dbr:Guanaco, hypernym, dbr:Camelid*) & <br> (*dbr:Llama, hypernym, dbr:Camelid*)<br><br>(*dbr:Smooth_hammerhead, hypernym, dbr:Shark*) & <br> (*dbr:Hammerhead_shark, dbo:order, dbr:Shark*)|*Guanaco* and *Llama* are both the members of *Camelid*. <br><br><br><br> *Smooth hammerhead* and *Hammerhead shark* are both relevant to *Shark* via relation *hypernym* and *order*.|
+|<img src="img/code4.png" width="120"/>|<img src="img/rule4.png" width = "80"/>|(*dbr:Formica, dbp:typeSpecies, Formica rufa*) &<br> (*dbr:Ant, dbp:typeSpecies, Formica rufa*)|*Wood ant* and *Ant* both have property *species type* and share the same property value *Formica rufa*.|
+|<img src="img/code5.png" width="250"/>|<img src="img/rule5.png" width = "80"/>|(*dbr:Fiddler_crab, dbo:family, dbr:Ocypodidae*) &<br>(*dbr:Ocypodidae, dbo:order, dbr:Crab*)|*Fiddler crab* and *Crab* is related via a transitional entity *Ocypodidae*.|
 
