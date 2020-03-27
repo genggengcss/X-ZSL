@@ -10,7 +10,7 @@ stopRelations = ['http://dbpedia.org/ontology/wikiPageWikiLink', 'http://www.w3.
                  'http://dbpedia.org/property/statusSystem', 'http://dbpedia.org/ontology/wikiPageRedirects',
                  'http://dbpedia.org/property/infraordoAuthority', 'http://dbpedia.org/ontology/binomialAuthority',
                  'http://dbpedia.org/ontology/wikiPageExternalLink', 'http://dbpedia.org/property/imageWidth',
-                 'http://dbpedia.org/property/imageCaption']
+                 'http://dbpedia.org/property/imageCaption', 'http://dbpedia.org/property/ordoAuthority']
 
 def loadUri(file):
     with open(file, 'r') as fp:
