@@ -1,53 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e290638-0105-4aac-b7a0-f85b30d5c31c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/X-ZSL.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/X-ZSL.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="1e290638-0105-4aac-b7a0-f85b30d5c31c" name="Default Changelist" comment="explanation scripts update">
+      <change afterPath="$PROJECT_DIR$/X_ZSL/img/rule1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/X_ZSL/img/rule2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/X_ZSL/img/rule3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/X_ZSL/img/rule4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/X_ZSL/img/rule5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/X_ZSL/IMSC.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/X_ZSL/IMSC2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/X_ZSL/agcn_seen_class1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/X_ZSL/example/IMSC.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/X_ZSL/example/agcn_seen_class1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/X_ZSL/example/wnid-dbEntity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/X_ZSL/wnid-dbEntity.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWA2/Data_Pre/data_overlap_awa_imagenet.py" beforeDir="false" afterPath="$PROJECT_DIR$/AWA2/Data_Pre/data_overlap_awa_imagenet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWA2/Data_Pre/pre_extract_img_feats.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWA2/Data_Pre/pre_test_img_list.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWA2/X_ZSL/awa_dbpedia.py" beforeDir="false" afterPath="$PROJECT_DIR$/AWA2/X_ZSL/awa_dbpedia.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMAGENET/Data_Pre/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/AZSL-D/test_w.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMAGENET/Data_Pre/pre_download_test_img_list.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMAGENET/ZSL_Model/Exp1_GCN/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/X_ZSL/IMSC.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMAGENET/ZSL_Model/Exp1_GCN/io_embed.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMAGENET/ZSL_Model/Exp1_GCN/io_graph.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMAGENET/ZSL_Model/Exp1_GCN/io_train_sample.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMAGENET/ZSL_Model/Exp1_GCN/test_gcn.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMAGENET/ZSL_Model/Exp1_GCN/train_predict_gcn.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMAGENET/ZSL_Model/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/X_ZSL/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMAGENET/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/X_ZSL/get_abstract_text.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMAGENET_Animal/Data_Pre/GPM/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/X_ZSL/query_triples.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMAGENET_Animal/Data_Pre/GPM/imagenet-animal-split.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMAGENET_Animal/Data_Pre/GPM/imagenet-train-test-split.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMAGENET_Animal/Data_Pre/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/X_ZSL/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMAGENET_Animal/X_ZSL/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/X_ZSL/wnid2entity.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMAGENET_Animal/X_ZSL/dataset_overlap.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMAGENET_Animal/ZSL_Model/Exp1_GPM/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMAGENET_Animal/ZSL_Model/Exp1_GPM/out2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMAGENET_Animal/ZSL_Model/Exp1_GPM/process_resnet.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMAGENET_Animal/ZSL_Model/Exp1_GPM/test_imagenet_per.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMAGENET_Animal/ZSL_Model/Exp1_GPM/test_imagenet_per_att.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMAGENET_Animal/ZSL_Model/Exp1_GPM/test_in_train.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMAGENET_Animal/ZSL_Model/Exp1_GPM_Awa/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMAGENET_Animal/ZSL_Model/Exp1_GPM_Awa/make_induced_graph.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMAGENET_Animal/ZSL_Model/Exp1_GPM_Awa/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMAGENET_Animal/ZSL_Model/Exp1_GPM_Awa/train_predict_gpm.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMAGENET_Animal/ZSL_Model/Exp_ConSE/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMAGENET_Animal/ZSL_Model/Exp_ConSE/class_embed.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMAGENET_Animal/ZSL_Model/Exp_ConSE/class_name.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMAGENET_Animal/ZSL_Model/Exp_ConSE/test_conse.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMAGENET_Animal/ZSL_Model/Exp_DeVise/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMAGENET_Animal/ZSL_Model/Exp_DeVise/train_test_devise.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMAGENET_Animal/ZSL_Model/Exp_Test/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMAGENET_Animal/ZSL_Model/Exp_Test/test_in_train.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMAGENET_Animal/ZSL_Model/Exp_Test/test_per_class.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMAGENET_Animal/ZSL_Model/Exp_Test/utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMAGENET_Animal/ZSL_Model/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMAGENET_Animal/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/X_ZSL/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/X_ZSL/readme.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -112,15 +80,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="88" />
-          <entry key="md" value="3769" />
+          <entry key="md" value="3856" />
           <entry key="py" value="8505" />
-          <entry key="txt" value="150" />
+          <entry key="txt" value="178" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="3769" />
-          <entry key="PLAIN_TEXT" value="238" />
+          <entry key="Markdown" value="3856" />
+          <entry key="PLAIN_TEXT" value="266" />
           <entry key="Python" value="8505" />
         </counts>
       </usages-collector>
@@ -218,8 +186,8 @@
         <entry file="file://$PROJECT_DIR$/X_ZSL/readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="85">
-                <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+              <first_editor relative-caret-position="170">
+                <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
               </first_editor>
               <second_editor />
             </state>
@@ -254,7 +222,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>test_feat</find>
       <find>DATASET</find>
       <find>scratch_dir</find>
       <find>weasel</find>
@@ -284,6 +251,7 @@
       <find>n02330245</find>
       <find>json</find>
       <find>requests</find>
+      <find>imageCaption</find>
     </findStrings>
     <replaceStrings>
       <replace>slef</replace>
@@ -434,12 +402,6 @@
               <item name="data" type="462c0819:PsiDirectoryNode" />
               <item name="AZSL-G" type="462c0819:PsiDirectoryNode" />
               <item name="materials" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="X-ZSL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="X-ZSL" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="X_ZSL" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="X-ZSL" type="b2602c69:ProjectViewProjectNode" />
@@ -722,7 +684,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585206940887</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="explanation scripts update">
+      <created>1585298783766</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1585298783767</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView">
@@ -743,7 +712,7 @@
       <window_info anchor="bottom" id="File Transfer" order="0" weight="0.26624203" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.3299363" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.3299363" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4996288" weight="0.3299363" />
@@ -752,7 +721,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3299363" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5003712" side_tool="true" weight="0.34012738" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.4996288" weight="0.20764332" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.4996288" visible="true" weight="0.20764332" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.3299363" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -780,7 +749,8 @@
     <MESSAGE value="readme update" />
     <MESSAGE value="testing files update" />
     <MESSAGE value="annotation update" />
-    <option name="LAST_COMMIT_MESSAGE" value="annotation update" />
+    <MESSAGE value="explanation scripts update" />
+    <option name="LAST_COMMIT_MESSAGE" value="explanation scripts update" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/AWA2/ZSL_Model/Exp2_AGCN/train_predict_agcn.py">
@@ -1211,8 +1181,8 @@
     <entry file="file://$PROJECT_DIR$/X_ZSL/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="85">
-            <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+          <first_editor relative-caret-position="170">
+            <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           </first_editor>
           <second_editor />
         </state>

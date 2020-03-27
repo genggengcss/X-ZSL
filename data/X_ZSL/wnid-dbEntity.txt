@@ -1,0 +1,532 @@
+n02274822	nymphalid, nymphalid butterfly, brush-footed butterfly, four-footed butterfly	Nymphalidae	http://dbpedia.org/resource/Nymphalidae
+n02391373	mountain zebra, Equus zebra zebra	Mountain zebra	http://dbpedia.org/resource/Mountain_zebra
+n02448885	hog badger, hog-nosed badger, sand badger, Arctonyx collaris	Hog badger	http://dbpedia.org/resource/Hog_badger
+n01976146	decapod crustacean, decapod	Decapoda	http://dbpedia.org/resource/Decapoda
+n02486908	mandrill, Mandrillus sphinx	Mandrill	http://dbpedia.org/resource/Mandrill
+n01808140	red-legged partridge, Alectoris ruffa	Red-legged Partridge	http://dbpedia.org/resource/Red-legged_Partridge
+n01752165	viper	Pit viper	http://dbpedia.org/resource/Pit_viper
+n02190790	housefly, house fly, Musca domestica	Housefly	http://dbpedia.org/resource/Housefly
+n01669372	Western box turtle, Terrapene ornata	Terrapene ornata	http://dbpedia.org/resource/Terrapene_ornata
+n01529672	finch	Estrildid finch	http://dbpedia.org/resource/Estrildid_finch
+n02233943	oriental cockroach, oriental roach, Asiatic cockroach, blackbeetle, Blatta orientalis	Oriental cockroach	http://dbpedia.org/resource/Oriental_cockroach
+n02055803	penguin	Penguin	http://dbpedia.org/resource/Penguin
+n02234355	American cockroach, Periplaneta americana	American cockroach	http://dbpedia.org/resource/American_cockroach
+n02108254	mastiff	Western mastiff bat	http://dbpedia.org/resource/Western_mastiff_bat
+n02078292	South American sea lion, Otaria Byronia	South American sea lion	http://dbpedia.org/resource/South_American_sea_lion
+n02192814	tachina fly	Tachinidae	http://dbpedia.org/resource/Tachinidae
+n01609062	swallow-tailed kite, swallow-tailed hawk, Elanoides forficatus	Swallow-tailed Kite	http://dbpedia.org/resource/Swallow-tailed_Kite
+n02326862	European hare, Lepus europaeus	European Hare	http://dbpedia.org/resource/European_Hare
+n02443346	ferret	Ferret	http://dbpedia.org/resource/Ferret
+n01804478	bobwhite, bobwhite quail, partridge	Northern Bobwhite	http://dbpedia.org/resource/Northern_Bobwhite
+n02127678	caracal, desert lynx, Lynx caracal	Caracal	http://dbpedia.org/resource/Caracal
+n02167505	bombardier beetle	Bombardier beetle	http://dbpedia.org/resource/Bombardier_beetle
+n01932936	trichina, Trichinella spiralis	Trichinella spiralis	http://dbpedia.org/resource/Trichinella_spiralis
+n02488894	guereza, Colobus guereza	Eastern black-and-white colobus	http://dbpedia.org/resource/Eastern_black-and-white_colobus
+n02127808	big cat, cat	Panthera	http://dbpedia.org/resource/Panthera
+n02084071	dog, domestic dog, Canis familiaris	Dog	http://dbpedia.org/resource/Dog
+n02456275	pichiciago, pichiciego, fairy armadillo, chlamyphore, Chlamyphorus truncatus	Pink fairy armadillo	http://dbpedia.org/resource/Pink_fairy_armadillo
+n01604330	bird of prey, raptor, raptorial bird	Falcon	http://dbpedia.org/resource/Falcon
+n02605316	butterfly fish	Butterflyfish	http://dbpedia.org/resource/Butterflyfish
+n01878929	rock wallaby, rock kangaroo	Rock-wallaby	http://dbpedia.org/resource/Rock-wallaby
+n02448633	ferret badger	Ferret-badger	http://dbpedia.org/resource/Ferret-badger
+n02222321	bulldog ant	Myrmecia	http://dbpedia.org/resource/Myrmecia
+n02482060	western chimpanzee, Pan troglodytes verus	Western chimpanzee	http://dbpedia.org/resource/Western_chimpanzee
+n02026059	sandpiper	Sandpiper	http://dbpedia.org/resource/Sandpiper
+n02280458	pierid, pierid butterfly	Pieridae	http://dbpedia.org/resource/Pieridae
+n02117900	spotted hyena, laughing hyena, Crocuta crocuta	Spotted hyena	http://dbpedia.org/resource/Spotted_hyena
+n01881171	phalanger, opossum, possum	Phalanger	http://dbpedia.org/resource/Phalanger
+n02282385	copper	Lycaena phlaeas	http://dbpedia.org/resource/Lycaena_phlaeas
+n01879509	tree wallaby, tree kangaroo	Tree-kangaroo	http://dbpedia.org/resource/Tree-kangaroo
+n02447021	spotted skunk, little spotted skunk, Spilogale putorius	Spotted skunk	http://dbpedia.org/resource/Spotted_skunk
+n01613294	eagle, bird of Jove	Eagle	http://dbpedia.org/resource/Eagle
+n02456008	giant armadillo, tatou, tatu, Priodontes giganteus	Giant Armadillo	http://dbpedia.org/resource/Giant_Armadillo
+n01858441	swan	Swan	http://dbpedia.org/resource/Swan
+n01776705	hard tick, ixodid	Ixodidae	http://dbpedia.org/resource/Ixodidae
+n02640626	Pacific sturgeon, white sturgeon, Sacramento sturgeon, Acipenser transmontanus	White sturgeon	http://dbpedia.org/resource/White_sturgeon
+n02343320	golden hamster, Syrian hamster, Mesocricetus auratus	Golden hamster	http://dbpedia.org/resource/Golden_hamster
+n01498699	butterfly ray	Butterfly ray	http://dbpedia.org/resource/Butterfly_ray
+n01775370	European wolf spider, tarantula, Lycosa tarentula	Lycosa tarantula	http://dbpedia.org/resource/Lycosa_tarantula
+n02327842	snowshoe hare, snowshoe rabbit, varying hare, Lepus americanus	Snowshoe hare	http://dbpedia.org/resource/Snowshoe_hare
+n02167820	calosoma	Calosoma	http://dbpedia.org/resource/Calosoma
+n02448060	Eurasian badger, Meles meles	European badger	http://dbpedia.org/resource/European_badger
+n01772222	spider	Spider	http://dbpedia.org/resource/Spider
+n01854415	merganser, fish duck, sawbill, sheldrake	Common Merganser	http://dbpedia.org/resource/Common_Merganser
+n01922303	worm	Polychaete	http://dbpedia.org/resource/Polychaete
+n02117512	striped hyena, Hyaena hyaena	Striped hyena	http://dbpedia.org/resource/Striped_hyena
+n02446645	hog-nosed skunk, hognosed skunk, badger skunk, rooter skunk, Conepatus leuconotus	Hog-nosed skunk	http://dbpedia.org/resource/Hog-nosed_skunk
+n02410900	wisent, aurochs, Bison bonasus	European bison	http://dbpedia.org/resource/European_bison
+n02019190	great bustard, Otis tarda	Great Bustard	http://dbpedia.org/resource/Great_Bustard
+n02112497	griffon, Brussels griffon, Belgian griffon	Griffon Vulture	http://dbpedia.org/resource/Griffon_Vulture
+n02503517	elephant	Asian elephant	http://dbpedia.org/resource/Asian_elephant
+n02221414	wood ant, Formica rufa	Formica	http://dbpedia.org/resource/Formica
+n02361587	groundhog, woodchuck, Marmota monax	Groundhog	http://dbpedia.org/resource/Groundhog
+n01931140	chicken roundworm, Ascaridia galli	Ascaridia galli	http://dbpedia.org/resource/Ascaridia_galli
+n01676755	iguanid, iguanid lizard	Iguanidae	http://dbpedia.org/resource/Iguanidae
+n01686808	checkered whiptail, Cnemidophorus tesselatus	Common Checkered Whiptail	http://dbpedia.org/resource/Common_Checkered_Whiptail
+n02481103	western lowland gorilla, Gorilla gorilla gorilla	Western lowland gorilla	http://dbpedia.org/resource/Western_lowland_gorilla
+n02211627	mason bee	Mason bee	http://dbpedia.org/resource/Mason_bee
+n01857851	barnacle goose, barnacle, Branta leucopsis	Barnacle Goose	http://dbpedia.org/resource/Barnacle_Goose
+n02209354	carpenter bee	Carpenter bee	http://dbpedia.org/resource/Carpenter_bee
+n02606384	damselfish, demoiselle	Pomacentridae	http://dbpedia.org/resource/Pomacentridae
+n01930852	common roundworm, Ascaris lumbricoides	Ascaris	http://dbpedia.org/resource/Ascaris
+n02446352	hooded skunk, Mephitis macroura	Hooded skunk	http://dbpedia.org/resource/Hooded_skunk
+n02361850	yellowbelly marmot, rockchuck, Marmota flaviventris	Yellow-bellied marmot	http://dbpedia.org/resource/Yellow-bellied_marmot
+n02485225	talapoin, Cercopithecus talapoin	Angolan talapoin	http://dbpedia.org/resource/Angolan_talapoin
+n02052204	white pelican, Pelecanus erythrorhynchos	American White Pelican	http://dbpedia.org/resource/American_White_Pelican
+n02438272	alpaca, Lama pacos	Alpaca	http://dbpedia.org/resource/Alpaca
+n02234848	German cockroach, Croton bug, crotonbug, water bug, Blattella germanica	German cockroach	http://dbpedia.org/resource/German_cockroach
+n02438173	guanaco, Lama guanicoe	Guanaco	http://dbpedia.org/resource/Guanaco
+n01982650	lobster	Lobster	http://dbpedia.org/resource/Lobster
+n01494882	smalleye hammerhead, Sphyrna tudes	Smalleye hammerhead	http://dbpedia.org/resource/Smalleye_hammerhead
+n01933151	hookworm	Hookworm	http://dbpedia.org/resource/Hookworm
+n02132788	Alaskan brown bear, Kodiak bear, Kodiak, Ursus middendorffi, Ursus arctos middendorffi	Kodiak bear	http://dbpedia.org/resource/Kodiak_bear
+n02209624	bumblebee, humblebee	Bumblebee	http://dbpedia.org/resource/Bumblebee
+n02456962	sloth, tree sloth	Sloth	http://dbpedia.org/resource/Sloth
+n02211444	leaf-cutting bee, leaf-cutter, leaf-cutter bee	Megachilidae	http://dbpedia.org/resource/Megachilidae
+n02319829	heart urchin	Spatangoida	http://dbpedia.org/resource/Spatangoida
+n02118176	aardwolf, Proteles cristata	Aardwolf	http://dbpedia.org/resource/Aardwolf
+n02220518	army ant, driver ant, legionary ant	Dorylus	http://dbpedia.org/resource/Dorylus
+n02234570	Australian cockroach, Periplaneta australasiae	Australian cockroach	http://dbpedia.org/resource/Australian_cockroach
+n01878639	nail-tailed wallaby, nail-tailed kangaroo	Bridled nail-tail wallaby	http://dbpedia.org/resource/Bridled_nail-tail_wallaby
+n02361706	hoary marmot, whistler, whistling marmot, Marmota caligata	Hoary marmot	http://dbpedia.org/resource/Hoary_marmot
+n01494757	smooth hammerhead, Sphyrna zygaena	Smooth hammerhead	http://dbpedia.org/resource/Smooth_hammerhead
+n02485688	green monkey, African green monkey, Cercopithecus aethiops sabaeus	Chlorocebus	http://dbpedia.org/resource/Chlorocebus
+n02079005	Steller sea lion, Steller's sea lion, Eumetopias jubatus	Steller sea lion	http://dbpedia.org/resource/Steller_sea_lion
+n01823013	cuckoo	Cuckoo	http://dbpedia.org/resource/Cuckoo
+n01933478	filaria	Wuchereria bancrofti	http://dbpedia.org/resource/Wuchereria_bancrofti
+n01668091	diamondback terrapin, Malaclemys centrata	Diamondback terrapin	http://dbpedia.org/resource/Diamondback_terrapin
+n01856890	blue goose, Chen caerulescens	Snow Goose	http://dbpedia.org/resource/Snow_Goose
+n01618922	New World vulture, cathartid	New World vulture	http://dbpedia.org/resource/New_World_vulture
+n02319308	edible sea urchin, Echinus esculentus	Echinus esculentus	http://dbpedia.org/resource/Echinus_esculentus
+n02127381	Canada lynx, Lynx canadensis	Canada lynx	http://dbpedia.org/resource/Canada_lynx
+n02487079	drill, Mandrillus leucophaeus	Drill (mammal)	http://dbpedia.org/resource/Drill_(mammal)
+n02441326	musteline mammal, mustelid, musteline	Mustelidae	http://dbpedia.org/resource/Mustelidae
+n02482474	central chimpanzee, Pan troglodytes troglodytes	Central chimpanzee	http://dbpedia.org/resource/Central_chimpanzee
+n01749742	black mamba, Dendroaspis augusticeps	Black mamba	http://dbpedia.org/resource/Black_mamba
+n02002075	stork	Ciconiiformes	http://dbpedia.org/resource/Ciconiiformes
+n02033208	greyback, grayback, Limnodromus griseus	Cane beetle	http://dbpedia.org/resource/Cane_beetle
+n01968315	cephalopod, cephalopod mollusk	Hamites	http://dbpedia.org/resource/Hamites
+n02454794	peba, nine-banded armadillo, Texas armadillo, Dasypus novemcinctus	Sagittala	http://dbpedia.org/resource/Sagittala
+n02408817	carabao	Carabao	http://dbpedia.org/resource/Carabao
+n02006985	common spoonbill, Platalea leucorodia	Eurasian Spoonbill	http://dbpedia.org/resource/Eurasian_Spoonbill
+n02442668	longtail weasel, long-tailed weasel, Mustela frenata	Long-tailed weasel	http://dbpedia.org/resource/Long-tailed_weasel
+n02133400	cinnamon bear	Cinnamon bear	http://dbpedia.org/resource/Cinnamon_bear
+n01806847	California quail, Lofortyx californicus	California Quail	http://dbpedia.org/resource/California_Quail
+n02165877	two-spotted ladybug, Adalia bipunctata	Adalia bipunctata	http://dbpedia.org/resource/Adalia_bipunctata
+n02210921	Nomia melanderi, alkali bee	Alkali bee	http://dbpedia.org/resource/Alkali_bee
+n02482286	eastern chimpanzee, Pan troglodytes schweinfurthii	Eastern chimpanzee	http://dbpedia.org/resource/Eastern_chimpanzee
+n01592257	black-capped chickadee, blackcap, Parus atricapillus	Black-capped Chickadee	http://dbpedia.org/resource/Black-capped_Chickadee
+n02281136	large white, Pieris brassicae	Pieris brassicae	http://dbpedia.org/resource/Pieris_brassicae
+n02487675	bonnet macaque, bonnet monkey, capped macaque, crown monkey, Macaca radiata	Bonnet macaque	http://dbpedia.org/resource/Bonnet_macaque
+n01686609	western whiptail, Cnemidophorus tigris	Western whiptail	http://dbpedia.org/resource/Western_whiptail
+n02209964	cuckoo-bumblebee	Psithyrus	http://dbpedia.org/resource/Psithyrus
+n01743605	python	Pythonidae	http://dbpedia.org/resource/Pythonidae
+n01992423	sea louse, sea slater	Sea louse	http://dbpedia.org/resource/Sea_louse
+n02192513	flesh fly, Sarcophaga carnaria	Flesh-fly	http://dbpedia.org/resource/Flesh-fly
+n02419796	antelope	Chamois	http://dbpedia.org/resource/Chamois
+n01686044	racerunner, race runner, six-lined racerunner, Cnemidophorus sexlineatus	Cnemidophorus	http://dbpedia.org/resource/Cnemidophorus
+n02221083	fire ant	Fire ant	http://dbpedia.org/resource/Fire_ant
+n02137888	ichneumon, Herpestes ichneumon	Ichneumonidae	http://dbpedia.org/resource/Ichneumonidae
+n02181235	darkling beetle, darkling groung beetle, tenebrionid	Darkling beetle	http://dbpedia.org/resource/Darkling_beetle
+n01808596	mountain quail, mountain partridge, Oreortyx picta palmeri	Mountain Quail	http://dbpedia.org/resource/Mountain_Quail
+n01560105	nightingale, Luscinia megarhynchos	Nightingale	http://dbpedia.org/resource/Nightingale
+n01856553	greylag, graylag, greylag goose, graylag goose, Anser anser	Greylag Goose	http://dbpedia.org/resource/Greylag_Goose
+n02347744	New World porcupine	New World porcupine	http://dbpedia.org/resource/New_World_porcupine
+n02534734	salmon	Rainbow trout	http://dbpedia.org/resource/Rainbow_trout
+n01693783	chameleon, chamaeleon	Chameleon	http://dbpedia.org/resource/Chameleon
+n02423589	springbok, springbuck, Antidorcas marsupialis, Antidorcas euchore	Springbok	http://dbpedia.org/resource/Springbok
+n02078738	Australian sea lion, Zalophus lobatus	Australian sea lion	http://dbpedia.org/resource/Australian_sea_lion
+n01877134	kangaroo	Kangaroo	http://dbpedia.org/resource/Kangaroo
+n01942177	gastropod, univalve	Murex	http://dbpedia.org/resource/Murex
+n01785667	house centipede, Scutigera coleoptrata	Scutigera coleoptrata	http://dbpedia.org/resource/Scutigera_coleoptrata
+n01944812	edible snail, Helix pomatia	Helix (gastropod)	http://dbpedia.org/resource/Helix_(gastropod)
+n01944955	garden snail	Helix aspersa	http://dbpedia.org/resource/Helix_aspersa
+n02058747	black-footed albatross, gooney, gooney bird, goonie, goony, Diomedea nigripes	Black-footed Albatross	http://dbpedia.org/resource/Black-footed_Albatross
+n01816887	parrot	Parrot	http://dbpedia.org/resource/Parrot
+n02485536	vervet, vervet monkey, Cercopithecus aethiops pygerythrus	Vervet monkey	http://dbpedia.org/resource/Vervet_monkey
+n02445171	Eurasian otter, Lutra lutra	European otter	http://dbpedia.org/resource/European_otter
+n01667432	musk turtle, stinkpot	Kinosternidae	http://dbpedia.org/resource/Kinosternidae
+n02033324	red-breasted snipe, Limnodromus scolopaceus	Long-billed Dowitcher	http://dbpedia.org/resource/Long-billed_Dowitcher
+n01779463	soft tick, argasid	Argasidae	http://dbpedia.org/resource/Argasidae
+n02423362	Gazella subgutturosa	Goitered gazelle	http://dbpedia.org/resource/Goitered_gazelle
+n01698434	alligator, gator	Alligator snapping turtle	http://dbpedia.org/resource/Alligator_snapping_turtle
+n02220055	pharaoh ant, pharaoh's ant, Monomorium pharaonis	Pharaoh ant	http://dbpedia.org/resource/Pharaoh_ant
+n02488003	crab-eating macaque, croo monkey, Macaca irus	Crab-eating macaque	http://dbpedia.org/resource/Crab-eating_macaque
+n02526818	common eel, freshwater eel	Anguillidae	http://dbpedia.org/resource/Anguillidae
+n01798839	lesser prairie chicken, Tympanuchus pallidicinctus	Lesser Prairie Chicken	http://dbpedia.org/resource/Lesser_Prairie_Chicken
+n02481366	mountain gorilla, Gorilla gorilla beringei	Mountain gorilla	http://dbpedia.org/resource/Mountain_gorilla
+n02129837	Bengal tiger	Bengal tiger	http://dbpedia.org/resource/Bengal_tiger
+n01857325	brant, brant goose, brent, brent goose	Brant Goose	http://dbpedia.org/resource/Brant_Goose
+n01857632	honker, Canada goose, Canadian goose, Branta canadensis	Canada Goose	http://dbpedia.org/resource/Canada_Goose
+n02363351	New World beaver, Castor canadensis	North American Beaver	http://dbpedia.org/resource/North_American_Beaver
+n02008796	egret	Egret	http://dbpedia.org/resource/Egret
+n01734637	common kingsnake, Lampropeltis getulus	Lampropeltis getula	http://dbpedia.org/resource/Lampropeltis_getula
+n01735439	common garter snake, Thamnophis sirtalis	Common Garter Snake	http://dbpedia.org/resource/Common_Garter_Snake
+n02018027	coot	Rallidae	http://dbpedia.org/resource/Rallidae
+n01621127	owl, bird of Minerva, bird of night, hooter	Barn Owl	http://dbpedia.org/resource/Barn_Owl
+n02063224	baleen whale, whalebone whale	Baleen whale	http://dbpedia.org/resource/Baleen_whale
+n02166826	vedalia, Rodolia cardinalis	Rodolia cardinalis	http://dbpedia.org/resource/Rodolia_cardinalis
+n02246011	homopterous insect, homopteran	Hemiptera	http://dbpedia.org/resource/Hemiptera
+n01735728	Western ribbon snake, Thamnophis proximus	Thamnophis proximus	http://dbpedia.org/resource/Thamnophis_proximus
+n02488415	entellus, hanuman, Presbytes entellus, Semnopithecus entellus	Northern plains gray langur	http://dbpedia.org/resource/Northern_plains_gray_langur
+n02166567	Hippodamia convergens	Hippodamia convergens	http://dbpedia.org/resource/Hippodamia_convergens
+n01940736	mollusk, mollusc, shellfish	Triton (gastropod)	http://dbpedia.org/resource/Triton_(gastropod)
+n01537134	bunting	Emberizidae	http://dbpedia.org/resource/Emberizidae
+n02011943	European bittern, Botaurus stellaris	Eurasian Bittern	http://dbpedia.org/resource/Eurasian_Bittern
+n01871875	monotreme, egg-laying mammal	Monotreme	http://dbpedia.org/resource/Monotreme
+n02220804	carpenter ant	Carpenter ant	http://dbpedia.org/resource/Carpenter_ant
+n02191773	blowfly, blow fly	Calliphoridae	http://dbpedia.org/resource/Calliphoridae
+n02642644	scorpaenid, scorpaenid fish	Scorpaenidae	http://dbpedia.org/resource/Scorpaenidae
+n02008041	heron	Heron	http://dbpedia.org/resource/Heron
+n02195819	bee fly	Bombyliidae	http://dbpedia.org/resource/Bombyliidae
+n02230480	tree cricket	Oecanthus fultoni	http://dbpedia.org/resource/Oecanthus_fultoni
+n01730307	rough green snake, Opheodrys aestivus	Opheodrys aestivus	http://dbpedia.org/resource/Opheodrys_aestivus
+n01525720	oscine, oscine bird	Songbird	http://dbpedia.org/resource/Songbird
+n01807828	Hungarian partridge, grey partridge, gray partridge, Perdix perdix	Grey Partridge	http://dbpedia.org/resource/Grey_Partridge
+n02607201	clown anemone fish, Amphiprion percula	Percula clownfish	http://dbpedia.org/resource/Percula_clownfish
+n01874434	marsupial, pouched mammal	Dasyuridae	http://dbpedia.org/resource/Dasyuridae
+n01820801	varied Lorikeet, Glossopsitta versicolor	Varied Lorikeet	http://dbpedia.org/resource/Varied_Lorikeet
+n02327656	polar hare, Arctic hare, Lepus arcticus	Arctic hare	http://dbpedia.org/resource/Arctic_hare
+n02132580	grizzly, grizzly bear, silvertip, silver-tip, Ursus horribilis, Ursus arctos horribilis	Grizzly bear	http://dbpedia.org/resource/Grizzly_bear
+n02169023	sawyer, sawyer beetle	Monochamus	http://dbpedia.org/resource/Monochamus
+n01629276	salamander	Lungless salamander	http://dbpedia.org/resource/Lungless_salamander
+n01592540	Carolina chickadee, Parus carolinensis	Carolina Chickadee	http://dbpedia.org/resource/Carolina_Chickadee
+n02127292	common lynx, Lynx lynx	Lynx	http://dbpedia.org/resource/Lynx
+n02007284	roseate spoonbill, Ajaia ajaja	Roseate Spoonbill	http://dbpedia.org/resource/Roseate_Spoonbill
+n02265330	brown lacewing, hemerobiid, hemerobiid fly	Hemerobiidae	http://dbpedia.org/resource/Hemerobiidae
+n02442172	ermine, shorttail weasel, Mustela erminea	Stoat	http://dbpedia.org/resource/Stoat
+n02182930	rice weevil, black weevil, Sitophylus oryzae	Rice weevil	http://dbpedia.org/resource/Rice_weevil
+n01819115	cockatoo	Cockatoo	http://dbpedia.org/resource/Cockatoo
+n02363245	Old World beaver, Castor fiber	Eurasian Beaver	http://dbpedia.org/resource/Eurasian_Beaver
+n02355477	tree squirrel	Brooke's Squirrel	http://dbpedia.org/resource/Brooke's_Squirrel
+n01734808	milk snake, house snake, milk adder, checkered adder, Lampropeltis triangulum	Milk snake	http://dbpedia.org/resource/Milk_snake
+n01498406	roughtail stingray, Dasyatis centroura	Roughtail stingray	http://dbpedia.org/resource/Roughtail_stingray
+n01640846	true frog, ranid	True frog	http://dbpedia.org/resource/True_frog
+n02137722	Indian mongoose, Herpestes nyula	Small Asian mongoose	http://dbpedia.org/resource/Small_Asian_mongoose
+n02486657	chacma, chacma baboon, Papio ursinus	Chacma baboon	http://dbpedia.org/resource/Chacma_baboon
+n01933988	Guinea worm, Dracunculus medinensis	Dracunculus medinensis	http://dbpedia.org/resource/Dracunculus_medinensis
+n02169974	Colorado potato beetle, Colorado beetle, potato bug, potato beetle, Leptinotarsa decemlineata	Colorado potato beetle	http://dbpedia.org/resource/Colorado_potato_beetle
+n02481235	eastern lowland gorilla, Gorilla gorilla grauri	Eastern lowland gorilla	http://dbpedia.org/resource/Eastern_lowland_gorilla
+n01582498	American magpie, Pica pica hudsonia	Black-billed Magpie	http://dbpedia.org/resource/Black-billed_Magpie
+n01582398	European magpie, Pica pica	Eurasian Magpie	http://dbpedia.org/resource/Eurasian_Magpie
+n01439121	cyprinid, cyprinid fish	Cyprinidae	http://dbpedia.org/resource/Cyprinidae
+n01602209	American water ouzel, Cinclus mexicanus	American Dipper	http://dbpedia.org/resource/American_Dipper
+n02164464	beetle	Beetle	http://dbpedia.org/resource/Beetle
+n01694709	monitor, monitor lizard, varan	Monitor lizard	http://dbpedia.org/resource/Monitor_lizard
+n01737728	water moccasin	Agkistrodon piscivorus	http://dbpedia.org/resource/Agkistrodon_piscivorus
+n01834540	thornbill	Western Thornbill	http://dbpedia.org/resource/Western_Thornbill
+n01483522	mackerel shark	Lamniformes	http://dbpedia.org/resource/Lamniformes
+n01609391	white-tailed kite, Elanus leucurus	White-tailed Kite	http://dbpedia.org/resource/White-tailed_Kite
+n01608814	black kite, Milvus migrans	Black Kite	http://dbpedia.org/resource/Black_Kite
+n02169705	flea beetle	Flea beetle	http://dbpedia.org/resource/Flea_beetle
+n02166229	Mexican bean beetle, bean beetle, Epilachna varivestis	Epilachna varivestis	http://dbpedia.org/resource/Epilachna_varivestis
+n01916925	stony coral, madrepore, madriporian coral	Madrepore	http://dbpedia.org/resource/Madrepore
+n02058594	wandering albatross, Diomedea exulans	Wandering Albatross	http://dbpedia.org/resource/Wandering_Albatross
+n01557185	thrush	Thrush (bird)	http://dbpedia.org/resource/Thrush_(bird)
+n02487847	Barbary ape, Macaca sylvana	Barbary macaque	http://dbpedia.org/resource/Barbary_macaque
+n02279637	danaid, danaid butterfly	Milkweed butterfly	http://dbpedia.org/resource/Milkweed_butterfly
+n02182045	seed beetle, seed weevil	Bean weevil	http://dbpedia.org/resource/Bean_weevil
+n01697178	crocodile	Saltwater crocodile	http://dbpedia.org/resource/Saltwater_crocodile
+n01821076	rainbow lorikeet, Trichoglossus moluccanus	Rainbow Lorikeet	http://dbpedia.org/resource/Rainbow_Lorikeet
+n02207179	drone	Eristalis tenax	http://dbpedia.org/resource/Eristalis_tenax
+n01991028	woodlouse, slater	Woodlouse	http://dbpedia.org/resource/Woodlouse
+n02490811	pygmy marmoset, Cebuella pygmaea	Pygmy marmoset	http://dbpedia.org/resource/Pygmy_marmoset
+n02482650	pygmy chimpanzee, bonobo, Pan paniscus	Bonobo	http://dbpedia.org/resource/Bonobo
+n02199502	horn fly, Haematobia irritans	Haematobia irritans	http://dbpedia.org/resource/Haematobia_irritans
+n02346998	Old World porcupine	Old World porcupine	http://dbpedia.org/resource/Old_World_porcupine
+n01754876	rattlesnake, rattler	Rattlesnake	http://dbpedia.org/resource/Rattlesnake
+n01796519	red grouse, moorfowl, moorbird, moor-bird, moorgame, Lagopus scoticus	Red Grouse	http://dbpedia.org/resource/Red_Grouse
+n01795088	grouse	Grouse	http://dbpedia.org/resource/Grouse
+n02527622	conger, conger eel	Conger	http://dbpedia.org/resource/Conger
+n01769347	arachnid, arachnoid	Rhagodia (arachnid)	http://dbpedia.org/resource/Rhagodia_(arachnid)
+n02491107	tamarin, lion monkey, lion marmoset, leoncita	Tamarin	http://dbpedia.org/resource/Tamarin
+n02235205	giant cockroach	Giant cockroach	http://dbpedia.org/resource/Giant_cockroach
+n02316707	echinoderm	Echinoderm	http://dbpedia.org/resource/Echinoderm
+n02640857	beluga, hausen, white sturgeon, Acipenser huso	Beluga (sturgeon)	http://dbpedia.org/resource/Beluga_(sturgeon)
+n02484473	Old World monkey, catarrhine	Old World monkey	http://dbpedia.org/resource/Old_World_monkey
+n02447762	American badger, Taxidea taxus	American badger	http://dbpedia.org/resource/American_badger
+n02078574	California sea lion, Zalophus californianus, Zalophus californicus	California sea lion	http://dbpedia.org/resource/California_sea_lion
+n01767661	arthropod	Arthropod	http://dbpedia.org/resource/Arthropod
+n01686403	Chihuahuan spotted whiptail, Cnemidophorus exsanguis	Chihuahuan spotted whiptail	http://dbpedia.org/resource/Chihuahuan_spotted_whiptail
+n01878335	hare wallaby, kangaroo hare	Rufous hare-wallaby	http://dbpedia.org/resource/Rufous_hare-wallaby
+n01843719	toucanet	Emerald Toucanet	http://dbpedia.org/resource/Emerald_Toucanet
+n01602080	European water ouzel, Cinclus aquaticus	White-throated Dipper	http://dbpedia.org/resource/White-throated_Dipper
+n02480153	great ape, pongid	Hominidae	http://dbpedia.org/resource/Hominidae
+n02485371	grivet, Cercopithecus aethiops	Grivet	http://dbpedia.org/resource/Grivet
+n02402425	cattle, cows, kine, oxen, Bos taurus	Cattle	http://dbpedia.org/resource/Cattle
+n01674990	gecko	Gecko	http://dbpedia.org/resource/Gecko
+n02496913	lemur	Lemur	http://dbpedia.org/resource/Lemur
+n01737875	grass snake, ring snake, ringed snake, Natrix natrix	Grass Snake	http://dbpedia.org/resource/Grass_Snake
+n02210427	andrena, andrenid, mining bee	Andrena	http://dbpedia.org/resource/Andrena
+n01495006	shovelhead, bonnethead, bonnet shark, Sphyrna tiburo	Flathead catfish	http://dbpedia.org/resource/Flathead_catfish
+n02011805	American bittern, stake driver, Botaurus lentiginosus	American Bittern	http://dbpedia.org/resource/American_Bittern
+n02455135	apar, three-banded armadillo, Tolypeutes tricinctus	Tolypeutes	http://dbpedia.org/resource/Tolypeutes
+n01795900	Asian black grouse, Lyrurus mlokosiewiczi	Caucasian Grouse	http://dbpedia.org/resource/Caucasian_Grouse
+n02343058	Eurasian hamster, Cricetus cricetus	European hamster	http://dbpedia.org/resource/European_hamster
+n02423218	Thomson's gazelle, Gazella thomsoni	Thomson's gazelle	http://dbpedia.org/resource/Thomson's_gazelle
+n01616764	Old World vulture	Old World vulture	http://dbpedia.org/resource/Old_World_vulture
+n02012185	least bittern, Ixobrychus exilis	Least Bittern	http://dbpedia.org/resource/Least_Bittern
+n02324045	rabbit, coney, cony	Rabbit	http://dbpedia.org/resource/Rabbit
+n02129923	tigress	Tiger	http://dbpedia.org/resource/Tiger
+n02264885	green lacewing, chrysopid, stink fly	Chrysopidae	http://dbpedia.org/resource/Chrysopidae
+n02115335	wild dog	Canidae	http://dbpedia.org/resource/Canidae
+n02220225	little black ant, Monomorium minimum	Little black ant	http://dbpedia.org/resource/Little_black_ant
+n01735577	ribbon snake, Thamnophis sauritus	Eastern Ribbon Snake	http://dbpedia.org/resource/Eastern_Ribbon_Snake
+n02323902	leporid, leporid mammal	Leporidae	http://dbpedia.org/resource/Leporidae
+n01581166	Canada jay, grey jay, gray jay, camp robber, whisker jack, Perisoreus canadensis	Gray Jay	http://dbpedia.org/resource/Gray_Jay
+n02527271	moray, moray eel	Moray eel	http://dbpedia.org/resource/Moray_eel
+n01808291	Greek partridge, rock partridge, Alectoris graeca	Rock Partridge	http://dbpedia.org/resource/Rock_Partridge
+n02022684	shorebird, shore bird, limicoline bird	Wader	http://dbpedia.org/resource/Wader
+n02191273	tsetse fly, tsetse, tzetze fly, tzetze, glossina	Tsetse fly	http://dbpedia.org/resource/Tsetse_fly
+n01846331	duck	Duck	http://dbpedia.org/resource/Duck
+n01488918	requiem shark	Requiem shark	http://dbpedia.org/resource/Requiem_shark
+n02319555	sand dollar	Sand dollar	http://dbpedia.org/resource/Sand_dollar
+n02013177	whooping crane, whooper, Grus americana	Whooping Crane	http://dbpedia.org/resource/Whooping_Crane
+n02446206	striped skunk, Mephitis mephitis	Striped skunk	http://dbpedia.org/resource/Striped_skunk
+n02282903	hairstreak, hairstreak butterfly	Theclinae	http://dbpedia.org/resource/Theclinae
+n02257284	seventeen-year locust, periodical cicada, Magicicada septendecim	Magicicada	http://dbpedia.org/resource/Magicicada
+n02178717	boll weevil, Anthonomus grandis	Boll weevil	http://dbpedia.org/resource/Boll_weevil
+n02085936	Maltese dog, Maltese terrier, Maltese	Peregrine Falcon	http://dbpedia.org/resource/Peregrine_Falcon
+n01930112	nematode, nematode worm, roundworm	Caenorhabditis elegans	http://dbpedia.org/resource/Caenorhabditis_elegans
+n02133161	American black bear, black bear, Ursus americanus, Euarctos americanus	American black bear	http://dbpedia.org/resource/American_black_bear
+n02110341	dalmatian, coach dog, carriage dog	Dalmatian Pelican	http://dbpedia.org/resource/Dalmatian_Pelican
+n01871265	tusker	Sri Lankan elephant	http://dbpedia.org/resource/Sri_Lankan_elephant
+n01807496	partridge	Partridge	http://dbpedia.org/resource/Partridge
+n02119789	kit fox, Vulpes macrotis	Kit fox	http://dbpedia.org/resource/Kit_fox
+n01945685	slug	Nudibranch	http://dbpedia.org/resource/Nudibranch
+n02489166	proboscis monkey, Nasalis larvatus	Proboscis monkey	http://dbpedia.org/resource/Proboscis_monkey
+n01704323	triceratops	Christophia triceratops	http://dbpedia.org/resource/Christophia_triceratops
+n02018207	American coot, marsh hen, mud hen, water hen, Fulica americana	American Coot	http://dbpedia.org/resource/American_Coot
+n01847000	drake	Red-throated Loon	http://dbpedia.org/resource/Red-throated_Loon
+n01688243	frilled lizard, Chlamydosaurus kingi	Frill-necked lizard	http://dbpedia.org/resource/Frill-necked_lizard
+n01641577	bullfrog, Rana catesbeiana	Bullfrog	http://dbpedia.org/resource/Bullfrog
+n01818515	macaw	Macaw	http://dbpedia.org/resource/Macaw
+n02011460	bittern	Bittern	http://dbpedia.org/resource/Bittern
+n01774750	tarantula	Mexican redknee tarantula	http://dbpedia.org/resource/Mexican_redknee_tarantula
+n02457408	three-toed sloth, ai, Bradypus tridactylus	Brown-throated sloth	http://dbpedia.org/resource/Brown-throated_sloth
+n02115913	dhole, Cuon alpinus	Dhole	http://dbpedia.org/resource/Dhole
+n02012849	crane	Crane (bird)	http://dbpedia.org/resource/Crane_(bird)
+n01682714	American chameleon, anole, Anolis carolinensis	Polychrotidae	http://dbpedia.org/resource/Polychrotidae
+n01518878	ostrich, Struthio camelus	Ostrich	http://dbpedia.org/resource/Ostrich
+n01440764	tench, Tinca tinca	Tench	http://dbpedia.org/resource/Tench
+n01773797	garden spider, Aranea diademata	Argiope argentata	http://dbpedia.org/resource/Argiope_argentata
+n01496331	electric ray, crampfish, numbfish, torpedo	Electric ray	http://dbpedia.org/resource/Electric_ray
+n01632458	spotted salamander, Ambystoma maculatum	Spotted Salamander	http://dbpedia.org/resource/Spotted_Salamander
+n02256656	cicada, cicala	Cicada	http://dbpedia.org/resource/Cicada
+n01677366	common iguana, iguana, Iguana iguana	Iguana	http://dbpedia.org/resource/Iguana
+n02002724	black stork, Ciconia nigra	Black Stork	http://dbpedia.org/resource/Black_Stork
+n02484975	guenon, guenon monkey	Guenon	http://dbpedia.org/resource/Guenon
+n01955084	chiton, coat-of-mail shell, sea cradle, polyplacophore	Gumboot chiton	http://dbpedia.org/resource/Gumboot_chiton
+n02132136	brown bear, bruin, Ursus arctos	Brown bear	http://dbpedia.org/resource/Brown_bear
+n01734418	king snake, kingsnake	Kingsnake	http://dbpedia.org/resource/Kingsnake
+n02002556	white stork, Ciconia ciconia	White Stork	http://dbpedia.org/resource/White_Stork
+n01968897	chambered nautilus, pearly nautilus, nautilus	Nautilus	http://dbpedia.org/resource/Nautilus
+n01843065	jacamar	Jacamar	http://dbpedia.org/resource/Jacamar
+n02169497	leaf beetle, chrysomelid	Leaf beetle	http://dbpedia.org/resource/Leaf_beetle
+n02346627	porcupine, hedgehog	North American Porcupine	http://dbpedia.org/resource/North_American_Porcupine
+n02364673	guinea pig, Cavia cobaya	Guinea pig	http://dbpedia.org/resource/Guinea_pig
+n02483362	gibbon, Hylobates lar	Gibbon	http://dbpedia.org/resource/Gibbon
+n02128757	snow leopard, ounce, Panthera uncia	Snow leopard	http://dbpedia.org/resource/Snow_leopard
+n02279972	monarch, monarch butterfly, milkweed butterfly, Danaus plexippus	Monarch (butterfly)	http://dbpedia.org/resource/Monarch_(butterfly)
+n01735189	garter snake, grass snake	Garter snake	http://dbpedia.org/resource/Garter_snake
+n01828970	bee eater	Bee-eater	http://dbpedia.org/resource/Bee-eater
+n02514041	barracouta, snoek	Thyrsites atun	http://dbpedia.org/resource/Thyrsites_atun
+n02281787	lycaenid, lycaenid butterfly	Lycaenidae	http://dbpedia.org/resource/Lycaenidae
+n01985128	crayfish, crawfish, crawdad, crawdaddy	Crayfish	http://dbpedia.org/resource/Crayfish
+n01877812	wallaby, brush kangaroo	Red-necked wallaby	http://dbpedia.org/resource/Red-necked_wallaby
+n01943899	conch	Mussel	http://dbpedia.org/resource/Mussel
+n02342885	hamster	Hamster	http://dbpedia.org/resource/Hamster
+n02655020	puffer, pufferfish, blowfish, globefish	Tetraodontidae	http://dbpedia.org/resource/Tetraodontidae
+n01990800	isopod	Isopoda	http://dbpedia.org/resource/Isopoda
+n01817953	African grey, African gray, Psittacus erithacus	African Grey Parrot	http://dbpedia.org/resource/African_Grey_Parrot
+n02361337	marmot	Prairie dog	http://dbpedia.org/resource/Prairie_dog
+n02396427	wild boar, boar, Sus scrofa	Wild boar	http://dbpedia.org/resource/Wild_boar
+n01629819	European fire salamander, Salamandra salamandra	Fire Salamander	http://dbpedia.org/resource/Fire_Salamander
+n01616318	vulture	Vulture	http://dbpedia.org/resource/Vulture
+n02486410	baboon	Baboon	http://dbpedia.org/resource/Baboon
+n01855032	red-breasted merganser, Mergus serrator	Red-breasted Merganser	http://dbpedia.org/resource/Red-breasted_Merganser
+n02168699	long-horned beetle, longicorn, longicorn beetle	Longhorn beetle	http://dbpedia.org/resource/Longhorn_beetle
+n02037110	oystercatcher, oyster catcher	Oystercatcher	http://dbpedia.org/resource/Oystercatcher
+n02497673	Madagascar cat, ring-tailed lemur, Lemur catta	Ring-tailed lemur	http://dbpedia.org/resource/Ring-tailed_lemur
+n02454379	armadillo	Nine-banded Armadillo	http://dbpedia.org/resource/Nine-banded_Armadillo
+n01978455	rock crab, Cancer irroratus	Grapsus grapsus	http://dbpedia.org/resource/Grapsus_grapsus
+n02190166	fly	Tephritidae	http://dbpedia.org/resource/Tephritidae
+n01774384	black widow, Latrodectus mactans	Latrodectus	http://dbpedia.org/resource/Latrodectus
+n01944390	snail	Conus	http://dbpedia.org/resource/Conus
+n02641379	gar, garfish, garpike, billfish, Lepisosteus osseus	Gar	http://dbpedia.org/resource/Gar
+n01924916	flatworm, platyhelminth	Planaria	http://dbpedia.org/resource/Planaria
+n01770393	scorpion	Scorpion	http://dbpedia.org/resource/Scorpion
+n01582220	magpie	Magpie	http://dbpedia.org/resource/Magpie
+n02172182	dung beetle	Dung beetle	http://dbpedia.org/resource/Dung_beetle
+n01978287	Dungeness crab, Cancer magister	Dungeness crab	http://dbpedia.org/resource/Dungeness_crab
+n02481823	chimpanzee, chimp, Pan troglodytes	Chimpanzee	http://dbpedia.org/resource/Chimpanzee
+n01729322	hognose snake, puff adder, sand viper	Heterodon platirhinos	http://dbpedia.org/resource/Heterodon_platirhinos
+n01601694	water ouzel, dipper	Dipper	http://dbpedia.org/resource/Dipper
+n02606052	rock beauty, Holocanthus tricolor	Rock beauty	http://dbpedia.org/resource/Rock_beauty
+n02056570	king penguin, Aptenodytes patagonica	King Penguin	http://dbpedia.org/resource/King_Penguin
+n01739381	vine snake	Ahaetulla nasuta	http://dbpedia.org/resource/Ahaetulla_nasuta
+n01744401	rock python, rock snake, Python sebae	Python molurus	http://dbpedia.org/resource/Python_molurus
+n02488702	colobus, colobus monkey	Black-and-white colobus	http://dbpedia.org/resource/Black-and-white_colobus
+n02128925	jaguar, panther, Panthera onca, Felis onca	Jaguar	http://dbpedia.org/resource/Jaguar
+n02643566	lionfish	Pterois	http://dbpedia.org/resource/Pterois
+n02058221	albatross, mollymawk	Albatross	http://dbpedia.org/resource/Albatross
+n02128385	leopard, Panthera pardus	Leopard	http://dbpedia.org/resource/Leopard
+n01740131	night snake, Hypsiglena torquata	Hypsiglena torquata	http://dbpedia.org/resource/Hypsiglena_torquata
+n02233338	cockroach, roach	Cockroach	http://dbpedia.org/resource/Cockroach
+n02077923	sea lion	Sea lion	http://dbpedia.org/resource/Sea_lion
+n01667778	terrapin	Red-eared slider	http://dbpedia.org/resource/Red-eared_slider
+n02134418	sloth bear, Melursus ursinus, Ursus ursinus	Sloth bear	http://dbpedia.org/resource/Sloth_bear
+n02490219	marmoset	Marmoset	http://dbpedia.org/resource/Marmoset
+n01751748	sea snake	Hydrophiinae	http://dbpedia.org/resource/Hydrophiinae
+n01530575	brambling, Fringilla montifringilla	Brambling	http://dbpedia.org/resource/Brambling
+n01860187	black swan, Cygnus atratus	Black Swan	http://dbpedia.org/resource/Black_Swan
+n01797886	ruffed grouse, partridge, Bonasa umbellus	Ruffed Grouse	http://dbpedia.org/resource/Ruffed_Grouse
+n01829413	hornbill	Hornbill	http://dbpedia.org/resource/Hornbill
+n02051845	pelican	Pelican	http://dbpedia.org/resource/Pelican
+n02319095	sea urchin	Sea urchin	http://dbpedia.org/resource/Sea_urchin
+n01983481	American lobster, Northern lobster, Maine lobster, Homarus americanus	American lobster	http://dbpedia.org/resource/American_lobster
+n01532829	house finch, linnet, Carpodacus mexicanus	House Finch	http://dbpedia.org/resource/House_Finch
+n01531178	goldfinch, Carduelis carduelis	European Goldfinch	http://dbpedia.org/resource/European_Goldfinch
+n01843383	toucan	Toucan	http://dbpedia.org/resource/Toucan
+n02006656	spoonbill	Spoonbill	http://dbpedia.org/resource/Spoonbill
+n02486261	patas, hussar monkey, Erythrocebus patas	Patas monkey	http://dbpedia.org/resource/Patas_monkey
+n01775062	wolf spider, hunting spider	Wolf spider	http://dbpedia.org/resource/Wolf_spider
+n02033041	dowitcher	Dowitcher	http://dbpedia.org/resource/Dowitcher
+n01773549	barn spider, Araneus cavaticus	Barn spider	http://dbpedia.org/resource/Barn_spider
+n02018795	bustard	Bustard	http://dbpedia.org/resource/Bustard
+n02480495	orangutan, orang, orangutang, Pongo pygmaeus	Orangutan	http://dbpedia.org/resource/Orangutan
+n02328150	Angora, Angora rabbit	Angora loach	http://dbpedia.org/resource/Angora_loach
+n01728920	ringneck snake, ring-necked snake, ring snake	Diadophis punctatus	http://dbpedia.org/resource/Diadophis_punctatus
+n02363005	beaver	Beaver	http://dbpedia.org/resource/Beaver
+n01692333	Gila monster, Heloderma suspectum	Gila monster	http://dbpedia.org/resource/Gila_monster
+n02009229	little blue heron, Egretta caerulea	Little Blue Heron	http://dbpedia.org/resource/Little_Blue_Heron
+n01753488	horned viper, cerastes, sand viper, horned asp, Cerastes cornutus	Vipera ammodytes	http://dbpedia.org/resource/Vipera_ammodytes
+n01689811	alligator lizard	Abronia (animal)	http://dbpedia.org/resource/Abronia_(animal)
+n01592084	chickadee	Tit (bird)	http://dbpedia.org/resource/Tit_(bird)
+n01784675	centipede	Centipede	http://dbpedia.org/resource/Centipede
+n02437616	llama	Llama	http://dbpedia.org/resource/Llama
+n01667114	mud turtle	Mud turtle	http://dbpedia.org/resource/Mud_turtle
+n02066245	grey whale, gray whale, devilfish, Eschrichtius gibbosus, Eschrichtius robustus	Gray whale	http://dbpedia.org/resource/Gray_whale
+n02504458	African elephant, Loxodonta africana	North African elephant	http://dbpedia.org/resource/North_African_elephant
+n02167151	ground beetle, carabid beetle	Ground beetle	http://dbpedia.org/resource/Ground_beetle
+n01694178	African chameleon, Chamaeleo chamaeleon	Chamaeleo chamaeleon	http://dbpedia.org/resource/Chamaeleo_chamaeleon
+n02397096	warthog	Warthog	http://dbpedia.org/resource/Warthog
+n01917289	brain coral	Brain coral	http://dbpedia.org/resource/Brain_coral
+n01614925	bald eagle, American eagle, Haliaeetus leucocephalus	Bald Eagle	http://dbpedia.org/resource/Bald_Eagle
+n02488291	langur	Colobinae	http://dbpedia.org/resource/Colobinae
+n01986214	hermit crab	Hermit crab	http://dbpedia.org/resource/Hermit_crab
+n02356798	fox squirrel, eastern fox squirrel, Sciurus niger	Fox squirrel	http://dbpedia.org/resource/Fox_squirrel
+n01491361	tiger shark, Galeocerdo cuvieri	Tiger shark	http://dbpedia.org/resource/Tiger_shark
+n02389026	sorrel	Enteucha acetosae	http://dbpedia.org/resource/Enteucha_acetosae
+n01882714	koala, koala bear, kangaroo bear, native bear, Phascolarctos cinereus	Koala	http://dbpedia.org/resource/Koala
+n01756291	sidewinder, horned rattlesnake, Crotalus cerastes	Crotalus cerastes	http://dbpedia.org/resource/Crotalus_cerastes
+n02028035	redshank, Tringa totanus	Common Redshank	http://dbpedia.org/resource/Common_Redshank
+n01695060	Komodo dragon, Komodo lizard, dragon lizard, giant lizard, Varanus komodoensis	Komodo dragon	http://dbpedia.org/resource/Komodo_dragon
+n02123597	Siamese cat, Siamese	Siamese fighting fish	http://dbpedia.org/resource/Siamese_fighting_fish
+n01768244	trilobite	Cheiruridae	http://dbpedia.org/resource/Cheiruridae
+n02114548	white wolf, Arctic wolf, Canis lupus tundrarum	Arctic Wolf	http://dbpedia.org/resource/Arctic_Wolf
+n01693334	green lizard, Lacerta viridis	European green lizard	http://dbpedia.org/resource/European_green_lizard
+n01622779	great grey owl, great gray owl, Strix nebulosa	Great Grey Owl	http://dbpedia.org/resource/Great_Grey_Owl
+n02640242	sturgeon	Sturgeon	http://dbpedia.org/resource/Sturgeon
+n02086910	papillon	Papilio phorbanta	http://dbpedia.org/resource/Papilio_phorbanta
+n01560419	bulbul	Bulbul	http://dbpedia.org/resource/Bulbul
+n02607072	anemone fish	Amphiprioninae	http://dbpedia.org/resource/Amphiprioninae
+n02423022	gazelle	Gazelle	http://dbpedia.org/resource/Gazelle
+n02483708	siamang, Hylobates syndactylus, Symphalangus syndactylus	Siamang	http://dbpedia.org/resource/Siamang
+n01819313	sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita	Sulphur-crested Cockatoo	http://dbpedia.org/resource/Sulphur-crested_Cockatoo
+n01558993	robin, American robin, Turdus migratorius	American Robin	http://dbpedia.org/resource/American_Robin
+n02165456	ladybug, ladybeetle, lady beetle, ladybird, ladybird beetle	Coccinellidae	http://dbpedia.org/resource/Coccinellidae
+n02317335	starfish, sea star	Starfish	http://dbpedia.org/resource/Starfish
+n02085620	Chihuahua	Chihuahua chub	http://dbpedia.org/resource/Chihuahua_chub
+n01981276	king crab, Alaska crab, Alaskan king crab, Alaska king crab, Paralithodes camtschatica	King crab	http://dbpedia.org/resource/King_crab
+n02114712	red wolf, maned wolf, Canis rufus, Canis niger	Red wolf	http://dbpedia.org/resource/Red_wolf
+n02259212	leafhopper	Leafhopper	http://dbpedia.org/resource/Leafhopper
+n01685808	whiptail, whiptail lizard	Whiptail stingray	http://dbpedia.org/resource/Whiptail_stingray
+n01749939	green mamba	Mamba	http://dbpedia.org/resource/Mamba
+n01665541	leatherback turtle, leatherback, leathery turtle, Dermochelys coriacea	Leatherback sea turtle	http://dbpedia.org/resource/Leatherback_sea_turtle
+n01773157	black and gold garden spider, Argiope aurantia	Argiope aurantia	http://dbpedia.org/resource/Argiope_aurantia
+n01883070	wombat	Wombat	http://dbpedia.org/resource/Wombat
+n01796340	ptarmigan	Rock Ptarmigan	http://dbpedia.org/resource/Rock_Ptarmigan
+n02447366	badger	Badger	http://dbpedia.org/resource/Badger
+n01872401	echidna, spiny anteater, anteater	Echidna	http://dbpedia.org/resource/Echidna
+n02174001	rhinoceros beetle	Dynastinae	http://dbpedia.org/resource/Dynastinae
+n02276258	admiral	Vanessa atalanta	http://dbpedia.org/resource/Vanessa_atalanta
+n01494475	hammerhead, hammerhead shark	Hammerhead shark	http://dbpedia.org/resource/Hammerhead_shark
+n02071294	killer whale, killer, orca, grampus, sea wolf, Orcinus orca	Killer whale	http://dbpedia.org/resource/Killer_whale
+n01755581	diamondback, diamondback rattlesnake, Crotalus adamanteus	Acrolepiidae	http://dbpedia.org/resource/Acrolepiidae
+n01675722	banded gecko	Coleonyx elegans	http://dbpedia.org/resource/Coleonyx_elegans
+n01980166	fiddler crab	Fiddler crab	http://dbpedia.org/resource/Fiddler_crab
+n02264363	lacewing, lacewing fly	Neuroptera	http://dbpedia.org/resource/Neuroptera
+n02536864	coho, cohoe, coho salmon, blue jack, silver salmon, Oncorhynchus kisutch	Coho salmon	http://dbpedia.org/resource/Coho_salmon
+n02137549	mongoose	Mongoose	http://dbpedia.org/resource/Mongoose
+n02445715	skunk, polecat, wood pussy	Skunk	http://dbpedia.org/resource/Skunk
+n02443484	black-footed ferret, ferret, Mustela nigripes	Black-footed ferret	http://dbpedia.org/resource/Black-footed_ferret
+n01984695	spiny lobster, langouste, rock lobster, crawfish, crayfish, sea crawfish	Spiny lobster	http://dbpedia.org/resource/Spiny_lobster
+n01537544	indigo bunting, indigo finch, indigo bird, Passerina cyanea	Indigo Bunting	http://dbpedia.org/resource/Indigo_Bunting
+n02422106	hartebeest	Hartebeest	http://dbpedia.org/resource/Hartebeest
+n01644900	tailed frog, bell toad, ribbed toad, tailed toad, Ascaphus trui	Tailed frog	http://dbpedia.org/resource/Tailed_frog
+n02422699	impala, Aepyceros melampus	Impala	http://dbpedia.org/resource/Impala
+n02229544	cricket	Anostostomatidae	http://dbpedia.org/resource/Anostostomatidae
+n01669191	box turtle, box tortoise	Box turtle	http://dbpedia.org/resource/Box_turtle
+n01580077	jay	Corvidae	http://dbpedia.org/resource/Corvidae
+n01776313	tick	Tick	http://dbpedia.org/resource/Tick
+n01608432	kite	Kite (bird)	http://dbpedia.org/resource/Kite_(bird)
+n01730185	smooth green snake, Opheodrys vernalis	Smooth green snake	http://dbpedia.org/resource/Smooth_green_snake
+n02219486	ant, emmet, pismire	Ant	http://dbpedia.org/resource/Ant
+n02068974	dolphin	Dolphin	http://dbpedia.org/resource/Dolphin
+n02127482	bobcat, bay lynx, Lynx rufus	Bobcat	http://dbpedia.org/resource/Bobcat
+n01664065	loggerhead, loggerhead turtle, Caretta caretta	Loggerhead sea turtle	http://dbpedia.org/resource/Loggerhead_sea_turtle
+n02280649	cabbage butterfly	Pieris rapae	http://dbpedia.org/resource/Pieris_rapae
+n01824575	coucal	Greater Coucal	http://dbpedia.org/resource/Greater_Coucal
+n02321529	sea cucumber, holothurian	Sea cucumber	http://dbpedia.org/resource/Sea_cucumber
+n02114367	timber wolf, grey wolf, gray wolf, Canis lupus	Gray wolf	http://dbpedia.org/resource/Gray_wolf
+n02391049	zebra	Zebra	http://dbpedia.org/resource/Zebra
+n02526121	eel	Eel	http://dbpedia.org/resource/Eel
+n01798979	heath hen, Tympanuchus cupido cupido	Heath Hen	http://dbpedia.org/resource/Heath_Hen
+n02177972	weevil	Weevil	http://dbpedia.org/resource/Weevil
+n02138441	meerkat, mierkat	Meerkat	http://dbpedia.org/resource/Meerkat
+n01630284	newt, triton	Newt	http://dbpedia.org/resource/Newt
+n02325722	eastern cottontail, Sylvilagus floridanus	Eastern cottontail	http://dbpedia.org/resource/Eastern_cottontail
+n01855672	goose	Goose	http://dbpedia.org/resource/Goose
+n02117135	hyena, hyaena	Hyena	http://dbpedia.org/resource/Hyena
+n02226429	grasshopper, hopper	Grasshopper	http://dbpedia.org/resource/Grasshopper
+n01798706	greater prairie chicken, Tympanuchus cupido	Greater Prairie Chicken	http://dbpedia.org/resource/Greater_Prairie_Chicken
+n02120079	Arctic fox, white fox, Alopex lagopus	Arctic fox	http://dbpedia.org/resource/Arctic_fox
+n01806567	quail	Quail	http://dbpedia.org/resource/Quail
+n01805801	peafowl, bird of Juno	Peafowl	http://dbpedia.org/resource/Peafowl
+n02208280	honeybee, Apis mellifera	Honey bee	http://dbpedia.org/resource/Honey_bee
+n02125311	cougar, puma, catamount, mountain lion, painter, panther, Felis concolor	Cougar	http://dbpedia.org/resource/Cougar
+n02118333	fox	Fox	http://dbpedia.org/resource/Fox
+n01795545	black grouse	Black Grouse	http://dbpedia.org/resource/Black_Grouse
+n02437136	camel	Camel	http://dbpedia.org/resource/Camel
+n01748264	Indian cobra, Naja naja	Indian Cobra	http://dbpedia.org/resource/Indian_Cobra
+n01727646	colubrid snake, colubrid	Colubridae	http://dbpedia.org/resource/Colubridae
+n02129165	lion, king of beasts, Panthera leo	Lion	http://dbpedia.org/resource/Lion
+n01833805	hummingbird	Hummingbird	http://dbpedia.org/resource/Hummingbird
+n02444819	otter	Otter	http://dbpedia.org/resource/Otter
+n02441942	weasel	Weasel	http://dbpedia.org/resource/Weasel
+n01484850	great white shark, white shark, man-eater, man-eating shark, Carcharodon carcharias	Great white shark	http://dbpedia.org/resource/Great_white_shark
+n02025239	ruddy turnstone, Arenaria interpres	Ruddy Turnstone	http://dbpedia.org/resource/Ruddy_Turnstone
+n02415577	bighorn, bighorn sheep, cimarron, Rocky Mountain bighorn, Rocky Mountain sheep, Ovis canadensis	Bighorn sheep	http://dbpedia.org/resource/Bighorn_sheep
+n02395406	hog, pig, grunter, squealer, Sus scrofa	Pig	http://dbpedia.org/resource/Pig
+n01976957	crab	Crab	http://dbpedia.org/resource/Crab
+n02442845	mink	Mink	http://dbpedia.org/resource/Mink
+n01742172	boa constrictor, Constrictor constrictor	Boa constrictor	http://dbpedia.org/resource/Boa_constrictor
+n02326432	hare	Hare	http://dbpedia.org/resource/Hare
+n02236044	mantis, mantid	Mantis	http://dbpedia.org/resource/Mantis
+n02411705	sheep	Sheep	http://dbpedia.org/resource/Sheep
+n02480855	gorilla, Gorilla gorilla	Gorilla	http://dbpedia.org/resource/Gorilla
+n02074367	dugong, Dugong dugon	Dugong	http://dbpedia.org/resource/Dugong
+n02410702	American bison, American buffalo, buffalo, Bison bison	American bison	http://dbpedia.org/resource/American_bison
+n02374451	horse, Equus caballus	Horse	http://dbpedia.org/resource/Horse
+n02408429	water buffalo, water ox, Asiatic buffalo, Bubalus bubalis	Water buffalo	http://dbpedia.org/resource/Water_buffalo
+n01534582	dark-eyed junco, slate-colored junco, Junco hyemalis	Dark-eyed Junco	http://dbpedia.org/resource/Dark-eyed_Junco
+n01498041	stingray	Stingray	http://dbpedia.org/resource/Stingray
+n02325884	swamp rabbit, canecutter, swamp hare, Sylvilagus aquaticus	Swamp rabbit	http://dbpedia.org/resource/Swamp_rabbit
+n02065726	humpback, humpback whale, Megaptera novaeangliae	Humpback whale	http://dbpedia.org/resource/Humpback_whale
+n02064816	blue whale, sulfur bottom, Balaenoptera musculus	Blue whale	http://dbpedia.org/resource/Blue_whale
+n02355227	squirrel	Squirrel	http://dbpedia.org/resource/Squirrel
+n02330245	mouse	Mouse	http://dbpedia.org/resource/Mouse
+n02331046	rat	Rat	http://dbpedia.org/resource/Rat
+n02439033	giraffe, camelopard, Giraffa camelopardalis	Giraffe	http://dbpedia.org/resource/Giraffe
+n02430045	deer, cervid	Deer	http://dbpedia.org/resource/Deer
