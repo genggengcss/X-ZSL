@@ -1,13 +1,13 @@
 '''
-get abstract text of dbpedia entity (querying "")
+get abstract text of dbpedia entity (SPQRAL query with the property dbo:abstract)
 '''
-import urllib
-import os
-from urllib.parse import quote
-from urllib.request import Request
-from urllib.request import urlopen
+
 import json
 from SPARQLWrapper import SPARQLWrapper, JSON
+
+
+sparql = SPARQLWrapper("http://dbpedia.org/sparql")
+
 
 def loadUri(file):
     with open(file, 'r') as fp:
@@ -15,30 +15,9 @@ def loadUri(file):
         wnid2Uri = dict()
         for line in lines:
             line = line.strip().split('\t')
-            uri = line[3]
             wnid2Uri[line[0]] = line[3]  # 'wnid': 'entity uri'
     return wnid2Uri
 
-
-
-
-# Abstract = []
-#
-# for i, uri in enumerate(URI):
-#
-#     download_file = "Abstract.txt"
-#     with open(download_file, 'w') as fw:
-#         query = "SELECT ?a WHERE { <" + str(uri) + "> <http://dbpedia.org/ontology/abstract> ?a }"
-#         f = "&format=application%2Fsparql-results%2Bjson"
-#         escapeQuery = quote(query)
-#         requestURL = endpointURL + "?query=" + escapeQuery + f
-#         request = urlopen(requestURL)
-#         print(request.read())
-#         abstract = request.read().decode('utf-8')
-#         fw.write(str(uri) + '\t' + str(abstract) + '\n')
-#         print(i, uri)
-
-sparql = SPARQLWrapper("http://dbpedia.org/sparql")
 def queryAbstractText(uri):
 
 
@@ -46,7 +25,7 @@ def queryAbstractText(uri):
     sparql.setQuery(query)
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
-    print(results)
+    # print(results)
 
 
     for result in results["results"]["bindings"]:

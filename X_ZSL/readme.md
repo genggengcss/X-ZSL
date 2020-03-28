@@ -10,15 +10,22 @@ Extract Knowledge from DBpedia
 We use [DBpedia Lookup service](https://github.com/DBpedia/lookup) to match, which is based on the index of DBpedia Spotlight.
 You can refer to the script `wnid2entity.py`.
 
-With matched entities, we manually remove the incorrect ones, the final results is provided in `'../data/X_ZSL/wnid-dbEntity.txt'`.
+With matched entities, we manually remove the incorrect ones, the final results are provided in `'../data/X_ZSL/wnid-dbEntity.txt'`.
+
 ### Extract keywords from Abstract Text of DBpedia Entity
+We first use the SPQRAL query to get abstract text of entity with the property **dbo:abstract**.
+The query script is provided in `quert_abstract_text.py`.
+
+Then, we use `gensim` toolkit to extract keywords of abstract text, which packages the TextRank algorithm.
+At the same time, we label each keyword with a POS tag and a NER tag using [SpaCy](https://spacy.io/usage/linguistic-features).
+More details are in `extract_and_tag_keywords.py`.
 
 ### Extract triples using SPARQL Query 
 For extracting valid triples which describe the knowledge of seen and unseen classes, 
 we design some triple patterns and transform them into SPARQL queries to query knowledge from DBpedia.
 
 The code is in `query_triples.py`, we show the designed triple patterns and some queried results as follows.
-#### Examples of Rule Pattern
+#### Examples of Rule Patterns
 
 Taking the following classes as examples.
 * Unseen class *Crab* (*dbr:Crab*) and its impressive seen class *Fiddler crab* (*dbr:Fiddler_crab*).

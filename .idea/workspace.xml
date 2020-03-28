@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e290638-0105-4aac-b7a0-f85b30d5c31c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/X_ZSL/extract_and_tag_keywords.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/X_ZSL/query_triples.py" beforeDir="false" afterPath="$PROJECT_DIR$/X_ZSL/query_triples.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/X_ZSL/get_abstract_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/X_ZSL/query_abstract_text.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/X_ZSL/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/X_ZSL/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/X_ZSL/wnid2entity.py" beforeDir="false" afterPath="$PROJECT_DIR$/X_ZSL/wnid2entity.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/X_ZSL/IMSC2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/X_ZSL/example/IMSC.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/X_ZSL/example/agcn_seen_class1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/X_ZSL/example/wnid-dbEntity.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,11 +16,13 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/X_ZSL$data_overlap_awa_imagenet.coverage" NAME="data_overlap_awa_imagenet Coverage Results" MODIFIED="1585220605834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AWA2/Data_Pre" />
     <SUITE FILE_PATH="coverage/X_ZSL$process_awa.coverage" NAME="process_awa Coverage Results" MODIFIED="1585103893369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../X_ZSL/data" />
+    <SUITE FILE_PATH="coverage/X_ZSL$extract_keywords.coverage" NAME="extract_keywords Coverage Results" MODIFIED="1585399555031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/X_ZSL" />
     <SUITE FILE_PATH="coverage/X_ZSL$IMSC.coverage" NAME="IMSC Coverage Results" MODIFIED="1585271686021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/X_ZSL" />
+    <SUITE FILE_PATH="coverage/X_ZSL$extract.coverage" NAME="extract Coverage Results" MODIFIED="1585318267691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/X_ZSL" />
     <SUITE FILE_PATH="coverage/X_ZSL$wnid2entity.coverage" NAME="wnid2entity Coverage Results" MODIFIED="1585227624618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/X_ZSL" />
     <SUITE FILE_PATH="coverage/X_ZSL$awa_dbpedia.coverage" NAME="awa_dbpedia Coverage Results" MODIFIED="1585223400205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AWA2/X_ZSL" />
-    <SUITE FILE_PATH="coverage/X_ZSL$get_abstract_text.coverage" NAME="get_abstract_text Coverage Results" MODIFIED="1585231950200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/X_ZSL" />
     <SUITE FILE_PATH="coverage/X_ZSL$query_triples.coverage" NAME="query_triples Coverage Results" MODIFIED="1585303098982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/X_ZSL" />
+    <SUITE FILE_PATH="coverage/X_ZSL$get_abstract_text.coverage" NAME="get_abstract_text Coverage Results" MODIFIED="1585311658341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/X_ZSL" />
     <SUITE FILE_PATH="coverage/X_ZSL$test_file.coverage" NAME="test_file Coverage Results" MODIFIED="1585033974031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../X_ZSL/GCNZ/Data_Pre" />
   </component>
   <component name="DatabaseView">
@@ -58,8 +56,8 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="json" value="1" />
-          <entry key="md" value="22" />
-          <entry key="py" value="312" />
+          <entry key="md" value="23" />
+          <entry key="py" value="315" />
           <entry key="txt" value="1" />
           <entry key="yaml" value="1" />
         </counts>
@@ -67,25 +65,25 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="1" />
-          <entry key="Markdown" value="22" />
+          <entry key="Markdown" value="23" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="312" />
+          <entry key="Python" value="315" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="88" />
-          <entry key="md" value="5199" />
-          <entry key="py" value="8809" />
+          <entry key="dummy" value="110" />
+          <entry key="md" value="5907" />
+          <entry key="py" value="11185" />
           <entry key="txt" value="202" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="5199" />
-          <entry key="PLAIN_TEXT" value="290" />
-          <entry key="Python" value="8809" />
+          <entry key="Markdown" value="5907" />
+          <entry key="PLAIN_TEXT" value="312" />
+          <entry key="Python" value="11185" />
         </counts>
       </usages-collector>
     </session>
@@ -96,22 +94,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AWA2/X_ZSL/awa_dbpedia.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/X_ZSL/IMSC.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="56" column="1" lean-forward="true" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
+            <state relative-caret-position="190">
+              <caret line="16" column="55" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="55" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -120,49 +106,70 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/X_ZSL/wnid2entity.py">
+        <entry file="file://$PROJECT_DIR$/X_ZSL/extract_and_tag_keywords.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="68" column="72" lean-forward="true" selection-start-line="68" selection-start-column="3" selection-end-line="68" selection-end-column="72" />
+            <state relative-caret-position="231">
+              <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
               <folding>
-                <element signature="e#58#73#0" expanded="true" />
+                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/X_ZSL/get_abstract_text.py">
+        <entry file="file://$PROJECT_DIR$/X_ZSL/wnid2entity.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="730">
-              <caret line="71" column="23" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="23" />
+            <state relative-caret-position="-890">
+              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/X_ZSL/query_abstract_text.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-405">
+              <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
               <folding>
-                <element signature="e#58#71#0" expanded="true" />
-                <marker date="1585271299744" expanded="true" signature="1218:1573" ph="..." />
+                <element signature="e#59#70#0" expanded="true" />
+                <marker date="1585400131401" expanded="true" signature="497:854" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/X_ZSL/query_triples.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1758">
+              <caret line="2" column="104" selection-start-line="2" selection-start-column="104" selection-end-line="2" selection-end-column="104" />
+              <folding>
+                <element signature="e#43#54#0" expanded="true" />
+                <marker date="1585308951215" expanded="true" signature="2477:4596" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/X_ZSL/query_triples.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="127" column="26" selection-start-line="127" selection-start-column="26" selection-end-line="127" selection-end-column="26" />
-              <folding>
-                <element signature="e#43#54#0" expanded="true" />
-                <marker date="1585308560955" expanded="true" signature="2371:4490" ph="..." />
-              </folding>
+        <entry file="file://$PROJECT_DIR$/X_ZSL/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="-170">
+                <caret line="14" selection-start-line="14" selection-end-line="14" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/X_ZSL/readme.md">
+        <entry file="file://$PROJECT_DIR$/AZSL-G/readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="195">
-                <caret line="12" column="141" selection-start-line="12" selection-start-column="141" selection-end-line="12" selection-end-column="141" />
+              <first_editor relative-caret-position="918">
+                <caret line="54" selection-start-line="54" selection-end-line="54" />
               </first_editor>
               <second_editor />
             </state>
@@ -186,11 +193,6 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AWA2/Data_Pre/data_split.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -202,8 +204,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>scratch_dir</find>
-      <find>weasel</find>
       <find>Mat_DATA_DIR</find>
       <find>FLAGS</find>
       <find>dataset</find>
@@ -231,6 +231,8 @@
       <find>json</find>
       <find>imageCaption</find>
       <find>ordoAuthority</find>
+      <find>phone</find>
+      <find>authorities</find>
       <find>requests</find>
     </findStrings>
     <replaceStrings>
@@ -246,9 +248,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../X_ZSL/GCNZ/src/io_graph.py" />
-        <option value="$PROJECT_DIR$/../X_ZSL/GCNZ/src/io_embed.py" />
-        <option value="$PROJECT_DIR$/../X_ZSL/GCNZ/src/io_train_sample.py" />
         <option value="$PROJECT_DIR$/../X_ZSL/GCNZ/model/agcn.py" />
         <option value="$PROJECT_DIR$/../X_ZSL/GCNZ/model/gcn.py" />
         <option value="$PROJECT_DIR$/../X_ZSL/GCNZ/test_gcn.py" />
@@ -291,12 +290,15 @@
         <option value="$PROJECT_DIR$/AZSL-D/test_w.py" />
         <option value="$PROJECT_DIR$/AWA2/Data_Pre/data_overlap_awa_imagenet.py" />
         <option value="$PROJECT_DIR$/AWA2/X_ZSL/awa_dbpedia.py" />
-        <option value="$PROJECT_DIR$/X_ZSL/get_abstract_text.py" />
         <option value="$PROJECT_DIR$/X_ZSL/IMSC.py" />
         <option value="$PROJECT_DIR$/data/images/test.py" />
         <option value="$PROJECT_DIR$/X_ZSL/wnid2entity.py" />
-        <option value="$PROJECT_DIR$/X_ZSL/readme.md" />
         <option value="$PROJECT_DIR$/X_ZSL/query_triples.py" />
+        <option value="$PROJECT_DIR$/X_ZSL/get_abstract_text.py" />
+        <option value="$PROJECT_DIR$/X_ZSL/extract.py" />
+        <option value="$PROJECT_DIR$/X_ZSL/extract_keywords.py" />
+        <option value="$PROJECT_DIR$/X_ZSL/query_abstract_text.py" />
+        <option value="$PROJECT_DIR$/X_ZSL/readme.md" />
       </list>
     </option>
   </component>
@@ -364,6 +366,11 @@
               <item name="X-ZSL" type="462c0819:PsiDirectoryNode" />
               <item name="AZSL-D" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="X-ZSL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="X-ZSL" type="462c0819:PsiDirectoryNode" />
+              <item name="AZSL-G" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="X-ZSL" type="b2602c69:ProjectViewProjectNode" />
@@ -448,7 +455,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.query_triples">
+  <component name="RunManager" selected="Python.extract_keywords">
     <configuration name="IMSC" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="X-ZSL" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -471,7 +478,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="awa_dbpedia" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="extract" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="X-ZSL" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -479,12 +486,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AWA2/X_ZSL" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/X_ZSL" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AWA2/X_ZSL/awa_dbpedia.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/X_ZSL/extract_and_tag_keywords.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="extract_keywords" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="X-ZSL" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/X_ZSL" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/X_ZSL/extract_and_tag_keywords.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -506,7 +535,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/X_ZSL/get_abstract_text.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/X_ZSL/query_abstract_text.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -537,42 +566,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="wnid2entity" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="X-ZSL" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/X_ZSL" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/X_ZSL/wnid2entity.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.IMSC" />
-      <item itemvalue="Python.awa_dbpedia" />
-      <item itemvalue="Python.wnid2entity" />
       <item itemvalue="Python.get_abstract_text" />
       <item itemvalue="Python.query_triples" />
+      <item itemvalue="Python.extract_keywords" />
+      <item itemvalue="Python.extract" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.extract_keywords" />
+        <item itemvalue="Python.extract" />
+        <item itemvalue="Python.get_abstract_text" />
         <item itemvalue="Python.query_triples" />
         <item itemvalue="Python.IMSC" />
-        <item itemvalue="Python.get_abstract_text" />
-        <item itemvalue="Python.wnid2entity" />
-        <item itemvalue="Python.awa_dbpedia" />
       </list>
     </recent_temporary>
   </component>
@@ -720,7 +727,21 @@
       <option name="project" value="LOCAL" />
       <updated>1585305922654</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="readme update">
+      <created>1585308777406</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1585308777406</updated>
+    </task>
+    <task id="LOCAL-00021" summary="readme update">
+      <created>1585309423284</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1585309423284</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TodoView">
@@ -742,7 +763,7 @@
       <window_info anchor="bottom" id="File Transfer" order="0" weight="0.26624203" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.3299363" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.3299363" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4996288" weight="0.3299363" />
@@ -751,7 +772,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3299363" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5003712" side_tool="true" weight="0.34012738" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.4996288" visible="true" weight="0.20764332" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.4996288" weight="0.34267515" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.3299363" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -783,27 +804,19 @@
     <MESSAGE value="readme update" />
     <option name="LAST_COMMIT_MESSAGE" value="readme update" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" ignoreLibraries="true" exception="BaseException">
+            <option name="ignoreLibraries" value="true" />
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/AZSL-G/src/pre_test_img_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="40" column="47" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AZSL-G/src/io_train_sample.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="96" selection-start-line="96" selection-end-line="96" />
-          <folding>
-            <element signature="e#1#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AZSL-G/model/agcn.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="433">
@@ -823,16 +836,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="471">
             <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AZSL-G/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="482">
-            <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
           </first_editor>
           <second_editor />
         </state>
@@ -1140,16 +1143,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/X_ZSL/IMSC.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="56" column="1" lean-forward="true" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/images/test.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1166,45 +1159,79 @@
     <entry file="file://$PROJECT_DIR$/data/X_ZSL/IMSC2.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/X_ZSL/readme.md">
+    <entry file="file://$PROJECT_DIR$/AZSL-G/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="195">
-            <caret line="12" column="141" selection-start-line="12" selection-start-column="141" selection-end-line="12" selection-end-column="141" />
+          <first_editor relative-caret-position="918">
+            <caret line="54" selection-start-line="54" selection-end-line="54" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/X_ZSL/wnid2entity.py">
+    <entry file="file://$PROJECT_DIR$/X_ZSL/IMSC.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="68" column="72" lean-forward="true" selection-start-line="68" selection-start-column="3" selection-end-line="68" selection-end-column="72" />
+        <state relative-caret-position="190">
+          <caret line="16" column="55" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="55" />
           <folding>
-            <element signature="e#58#73#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/X_ZSL/get_abstract_text.py">
+    <entry file="file://$PROJECT_DIR$/X_ZSL/extract_and_tag_keywords.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="730">
-          <caret line="71" column="23" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="23" />
-          <folding>
-            <element signature="e#58#71#0" expanded="true" />
-            <marker date="1585271299744" expanded="true" signature="1218:1573" ph="..." />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="8" column="17" selection-end-line="10" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/X_ZSL/query_triples.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="127" column="26" selection-start-line="127" selection-start-column="26" selection-end-line="127" selection-end-column="26" />
+        <state relative-caret-position="-1758">
+          <caret line="2" column="104" selection-start-line="2" selection-start-column="104" selection-end-line="2" selection-end-column="104" />
           <folding>
             <element signature="e#43#54#0" expanded="true" />
-            <marker date="1585308560955" expanded="true" signature="2371:4490" ph="..." />
+            <marker date="1585308951215" expanded="true" signature="2477:4596" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/X_ZSL/wnid2entity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-890">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/X_ZSL/extract_and_tag_keywords.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/X_ZSL/query_abstract_text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-405">
+          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding>
+            <element signature="e#59#70#0" expanded="true" />
+            <marker date="1585400131401" expanded="true" signature="497:854" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/X_ZSL/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-170">
+            <caret line="14" selection-start-line="14" selection-end-line="14" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
