@@ -6,7 +6,7 @@ input: IMSC.json (unseen classes and their impressive seen classes), wnid-dbEnti
 import json
 from SPARQLWrapper import SPARQLWrapper, JSON
 
-# invalid relations
+# some invalid relations
 stopRelations = ['http://dbpedia.org/ontology/wikiPageWikiLink', 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
                  'http://dbpedia.org/property/statusSystem', 'http://dbpedia.org/ontology/wikiPageRedirects',
                  'http://dbpedia.org/property/infraordoAuthority', 'http://dbpedia.org/ontology/binomialAuthority',

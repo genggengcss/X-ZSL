@@ -1,10 +1,10 @@
 '''
-We provide an example of extracting keywords, labeling pos tags and labeling ner tags
+We provide an example of extracting keywords, labeling pos tags and labeling ner tags.
 The processing procedure is as follows:
 1. Extract keywords from abstract text using gensim toolkit;
-2. Get POS tag and NER tag for each word in text (save in dict);
+2. Get POS tag and NER tag for each word in text (saved in dict);
 3. Label each keyword with POS tag and NER tag;
-4. Generate natural language sentence based on tagged keywords.
+4. Generate natural language explanations based on tagged keywords.
 '''
 
 from gensim.summarization import keywords

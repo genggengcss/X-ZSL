@@ -50,6 +50,7 @@ if __name__ == '__main__':
     Entity_file = '../data/X_ZSL/wnid-dbEntity.txt'
     wnid_entity = loadUri(Entity_file)
 
+    # conduct sparql query with entity URI
     for wnid in class_list:
         if wnid in wnid_entity:
             entity_uri = wnid_entity[wnid]
