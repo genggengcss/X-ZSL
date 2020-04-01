@@ -38,6 +38,6 @@ python src/make_induced_graph.py
 python train_predict_adgp.py
 python test_adgp.py --pred 680
 ```
-* You can run the testing commands with the predicted model we trained (the file `'epoch-680.pred'`).
+* You can run the testing commands with the predicted model we trained (the file `'epoch-680.pred'` saved [here]()).
 * Note that `train_predict_dgp.py` and `test_dgp.py` is the original implementation of DGP. 
-
+* `test_weights.py` is used for selecting the impressive seen classes for each unseen class using learned attention weights.

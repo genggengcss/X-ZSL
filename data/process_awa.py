@@ -54,13 +54,8 @@ if __name__ == '__main__':
     DIR_PATH = os.path.join(args.data_root, 'images', 'Animals_with_Attributes2/JPEGImages/')
 
 
-    wnids = list()
-    wnids.extend(train_wnid)
-    wnids.extend(test_wnid)
-
-    names = list()
-    names.extend(train_name)
-    names.extend(test_name)
+    wnids = train_wnid + test_wnid
+    names = train_name + test_name
 
     rename_images()
 

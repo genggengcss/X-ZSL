@@ -1,12 +1,12 @@
+'''
+extract the attention weights and impressive seen classes from predicted results
+'''
+
 import argparse
 import json
 import os
-import os.path as osp
-import sys
-import time
 import torch
 import numpy as np
-from torch.utils.data import DataLoader
 
 from nltk.corpus import wordnet as wn
 
@@ -24,7 +24,7 @@ if __name__ == '__main__':
 
     parser.add_argument('--data_root', type=str, default='/home/gyx/X-ZSL/data', help='root directory')
     parser.add_argument('--data_dir', type=str, default='AZSL-D', help='data directory')
-    parser.add_argument('--dataset', type=str, default='AwA', help='ImNet_A, AwA')
+    parser.add_argument('--dataset', type=str, default='ImNet_A', help='ImNet_A, AwA')
     parser.add_argument('--gpu', default='0')
     parser.add_argument('--consider-trains', action='store_true')
     parser.add_argument('--no-pred', action='store_true')
@@ -58,8 +58,7 @@ if __name__ == '__main__':
     split = json.load(open(data_split, 'r'))
     train_wnids = split['train']
     test_wnids = split['test']
-    train_names = split['train_names']
-    test_names = split['test_names']
+
 
 
     print('train: {}, test: {}'.format(len(train_wnids), len(test_wnids)))
@@ -84,13 +83,11 @@ if __name__ == '__main__':
     for wnid in test_wnids:
 
         coefs = coef_dic[wnid]
-        print "--------", test_names[test_wnids.index(wnid)], "-------"
-        for coef in coefs:
-            if coef != 0:
-                index = np.argwhere(coefs == coef)
-                wnid = pred_wnids[index]
+        print "--------", getnode(wnid).lemma_names()[0], "-------"
+        for i, coef in enumerate(coefs):
+            if coef != 0 and coef > 1e-2:
 
-
+                wnid = pred_wnids[i]
                 name = getnode(wnid).lemma_names()[0]
                 print ("- coef: %.2f, name: %s - " % (coef, name))
 

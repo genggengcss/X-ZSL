@@ -35,9 +35,10 @@ The scripts are provided with two AZSL models.
 
 ### Performance of AZSL
 We introduce the training process of AZSL-G and AZSL-D in the corresponding directories.
-Please read [AZSL-G.md](/AZSL-G/readme.md) and [AZSL-D.md](/AZSL-D/readme.md).  
+Please read [AZSL-G/readme.md](/AZSL-G/readme.md) and [AZSL-D/readme.md](/AZSL-D/readme.md).  
 
-
+We report the results of AZSL on ImNet_A compared with GCNZ and DGP.
+Other results are shown in the paper.
 
 |Method|Hit@1|Hit@2|Hit@5|
 |----|-----|----|-----|
@@ -45,3 +46,12 @@ Please read [AZSL-G.md](/AZSL-G/readme.md) and [AZSL-D.md](/AZSL-D/readme.md).
 |AZSL-G|30.57|48.23|71.32|
 |DGP|34.47|51.59|74.79|
 |AZSL-D|34.81|51.72|74.54|
+
+### Impressive Seen Class
+With the attention weights learned from AZSL and the threshold, 
+we can get the impressive seen classes for each unseen class.
+
+The scripts are listed in the corresponding directories. 
+We provide the results of AZSL-G in the file `data/X_ZSL/IMSC.json`, based on which the explanations are generated.
+### Explanation Generation
+We introduce the procedure of explanation generation in detail in the directory `X_ZSL`, please read [X_ZSL/readme.md](/X_ZSL/readme.md).
