@@ -37,5 +37,16 @@ The scripts are provided with two AZSL models.
 We introduce the training process of AZSL-G and AZSL-D in the corresponding directories.
 Please read [AZSL-G.md](/AZSL-G/readme.md) and [AZSL-D.md](/AZSL-D/readme.md).  
 
+|Method|AwA (Hit@1)|
+|:----:|:-----:|
+|GCNZ|68.72|
+|AZSL-G|69.39|
+|DGP|83.98|
+|AZSL-D|84.80|
 
-
+|Method|Hit@1|Hit@2|Hit@5|
+|----|-----|----|-----|
+|GCNZ|29.31|47.11|71.63|
+|AZSL-G|30.57|48.23|71.32|
+|DGP|34.47|51.59|74.79|
+|AZSL-D|34.81|51.72|74.54|
