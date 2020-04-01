@@ -53,5 +53,6 @@ we can get the impressive seen classes for each unseen class.
 
 The scripts are listed in the corresponding directories. 
 We provide the results of AZSL-G in the file `data/X_ZSL/IMSC.json`, based on which the explanations are generated.
+
 ### Explanation Generation
 We introduce the procedure of explanation generation in detail in the directory `X_ZSL`, please read [X_ZSL/readme.md](/X_ZSL/readme.md).

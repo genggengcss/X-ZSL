@@ -47,7 +47,7 @@ python src/io_train_sample.py
 python train_predict_agcn.py
 python test_agcn.py --feat 1500
 ```
-* You can run the testing commands with the predicted model we trained (the file `'feat_1500.pkl'` saved [here]()).
+* You can run the testing commands with the predicted model we trained (the file `'feat_1500.pkl'` saved [here](https://drive.google.com/open?id=1zyhX_TiT7WWRXEFhgpsg3r-H_JkrIreT)).
 * Note that `train_predict_gcn.py` and `test_gcn.py` is the original implementation of GCNZ. 
 `test_weights.py` is used for selecting the impressive seen classes for each unseen class using learned attention weights.
 
