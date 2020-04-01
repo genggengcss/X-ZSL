@@ -1,6 +1,5 @@
 '''
-We give some examples of unseen class and its impressive seen classes
-to illustrate the Evidence Mining algorithm which extracts knowledge from Attribute Graph.
+We give some examples of unseen class and its impressive seen classes to illustrate the Evidence Mining algorithm which extracts knowledge from Attribute Graph.
 Including:
 unseen  seen
 dolphin killer+whale
@@ -152,7 +151,6 @@ def extract_attributes(graph, cls):
 
 if __name__ == '__main__':
     # load class
-    # example_class = {"n02331046": ["n02363005", "n02342885", "n02330245", "n02355227"]}
     example_class = {"n02331046": ["n02363005", "n02342885", "n02330245"]}  # rat & (hamster, beaver, mouse)
     # example_class = {'n02374451': ['n02391049']}  # horse & zebra
     # example_class = {'n02068974': ['n02071294']}  # dolphin & killer+whale
@@ -161,6 +159,7 @@ if __name__ == '__main__':
     '''
     extract attributes from Attribute Graph
     '''
+    # load attribute graph
     AttributeGraph = '../data/X_ZSL/AttributeGraph.json'
     AG = json.load(open(AttributeGraph, 'r'), encoding='utf-8')
     graph = AG['@graph']
@@ -184,13 +183,6 @@ if __name__ == '__main__':
     '''
     construct transaction datatset:  < attribute - class list>
     '''
-    atts_list = list()
-    for cls, atts in cls_att_dict.items():
-        atts_list.extend(atts)
-
-    atts_list = list(set(atts_list))
-    print(len(atts_list))
-
     att_cls_dict = defaultdict(list)
     for cls, atts in cls_att_dict.items():
         for att in atts:

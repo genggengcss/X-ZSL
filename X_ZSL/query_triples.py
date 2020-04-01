@@ -29,8 +29,8 @@ def loadUri(file):
 
 
 
-# rule1: (s,r,u)
-def queryRule1(unseen, seen):
+# pattern 1: (s,r,u)
+def queryPattern1(unseen, seen):
         query = "SELECT ?r WHERE { <" + str(seen) + "> ?r <" + str(unseen) + ">}"
         sparql.setQuery(query)
         sparql.setReturnFormat(JSON)
@@ -41,10 +41,10 @@ def queryRule1(unseen, seen):
                 query_r = result["r"]["value"]
                 if query_r in stopRelations:
                     continue
-                print("------ > rule1: (%s, %s, %s)" % (seen, query_r, unseen))
+                print("------ > pattern 1: (%s, %s, %s)" % (seen, query_r, unseen))
 
-# rule2: (u,r,s)
-def queryRule2(unseen, seen):
+# pattern 2: (u,r,s)
+def queryPattern2(unseen, seen):
     query = "SELECT ?r WHERE { <" + str(unseen) + "> ?r <" + str(seen) + ">}"
     sparql.setQuery(query)
     sparql.setReturnFormat(JSON)
@@ -55,10 +55,10 @@ def queryRule2(unseen, seen):
             query_r = result["r"]["value"]
             if query_r in stopRelations:
                 continue
-            print("------ > rule2: (%s, %s, %s)" % (unseen, query_r, seen))
+            print("------ > pattern 2: (%s, %s, %s)" % (unseen, query_r, seen))
 
-# rule3: (u, r1, t) & (s, r2, t) and rule4: (u, p, v) & (s, p, v)
-def queryRule3(unseen, seen):
+# pattern3 : (u, r1, t) & (s, r2, t) and pattern4: (u, p, v) & (s, p, v)
+def queryPattern3(unseen, seen):
     query = "SELECT ?r1 ?r2 ?t WHERE { <" + str(unseen) + "> ?r1 ?t. <" + str(seen) + "> ?r2 ?t.}"
     sparql.setQuery(query)
     sparql.setReturnFormat(JSON)
@@ -72,12 +72,12 @@ def queryRule3(unseen, seen):
             if r1 in stopRelations or r2 in stopRelations:
                 continue
             if r1 != r2:
-                print("------ > rule3: r1 != r2: ", r1)
+                print("------ > pattern 3: r1 != r2: ", r1)
             t = result["t"]["value"]
-            print("------ > rule3: (%s, %s, %s) & (%s, %s, %s)" % (unseen, r1, t, seen, r2, t))
+            print("------ > pattern 3: (%s, %s, %s) & (%s, %s, %s)" % (unseen, r1, t, seen, r2, t))
 
-# rule5: (u, r1, t) & (t, r2, s) or (s, r1, t) & (t, r2, u)
-def queryRule5(unseen, seen):
+# pattern5: (u, r1, t) & (t, r2, s) or (s, r1, t) & (t, r2, u)
+def queryPattern5(unseen, seen):
     query = "SELECT ?r1 ?r2 ?t WHERE { <" + str(unseen) + "> ?r1 ?t. ?t ?r2 <" + str(seen) + ">.}"
     sparql.setQuery(query)
     sparql.setReturnFormat(JSON)
@@ -91,7 +91,7 @@ def queryRule5(unseen, seen):
             if r1 in stopRelations or r2 in stopRelations:
                 continue
             t = result["t"]["value"]
-            print("------ > rule5: (%s, %s, %s) & (%s, %s, %s)" % (unseen, r1, t, t, r2, seen))
+            print("------ > pattern 5: (%s, %s, %s) & (%s, %s, %s)" % (unseen, r1, t, t, r2, seen))
 
     query2 = "SELECT ?r1 ?r2 ?t WHERE { <" + str(seen) + "> ?r1 ?t. ?t ?r2 <" + str(unseen) + ">.}"
     sparql.setQuery(query2)
@@ -106,7 +106,7 @@ def queryRule5(unseen, seen):
             if r1 in stopRelations or r2 in stopRelations:
                 continue
             t = result["t"]["value"]
-            print("------ > rule5: (%s, %s, %s) & (%s, %s, %s)" % (seen, r1, t, t, r2, unseen))
+            print("------ > pattern 5: (%s, %s, %s) & (%s, %s, %s)" % (seen, r1, t, t, r2, unseen))
 
 
 if __name__ == '__main__':
@@ -124,10 +124,10 @@ if __name__ == '__main__':
             print("unseen >", wnid_name[unseen])
             for seen in seens:
                 if seen in wnid_entity:
-                    queryRule1(wnid_entity[unseen], wnid_entity[seen])
-                    queryRule2(wnid_entity[unseen], wnid_entity[seen])
-                    queryRule3(wnid_entity[unseen], wnid_entity[seen])
-                    queryRule5(wnid_entity[unseen], wnid_entity[seen])
+                    queryPattern1(wnid_entity[unseen], wnid_entity[seen])
+                    queryPattern2(wnid_entity[unseen], wnid_entity[seen])
+                    queryPattern3(wnid_entity[unseen], wnid_entity[seen])
+                    queryPattern5(wnid_entity[unseen], wnid_entity[seen])
 
 
 

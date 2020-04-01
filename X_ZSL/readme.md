@@ -1,8 +1,8 @@
 # Explanation Generation
 
 We extract domain-specific and general knowledge from Attribute Graph and DBpedia, respectively.
-* Attribute Graph are available at [here](../data/X_ZSL/AttributeGraph.json)
-* DBpedia: we use online DBpedia query service, which loads DBpedia 2016-10 dump (more details at [here](https://wiki.dbpedia.org/public-sparql-endpoint))
+* Attribute Graph are available at [here](../data/X_ZSL/AttributeGraph.json).
+* DBpedia: we use online DBpedia query service, which loads DBpedia 2016-10 dump (more details at [here](https://wiki.dbpedia.org/public-sparql-endpoint)).
 
 Extract Knowledge from Attribute Graph
 ------
@@ -34,7 +34,7 @@ For extracting valid triples which describe the knowledge of seen and unseen cla
 we design some triple patterns and transform them into SPARQL queries to query knowledge from DBpedia.
 
 The code is in `query_triples.py`, we show the designed triple patterns and some queried results as follows.
-#### Examples of Rule Patterns
+#### Examples of Triple Patterns
 
 Taking the following classes as examples.
 * Unseen class *Crab* (*dbr:Crab*) and its impressive seen class *Fiddler crab* (*dbr:Fiddler_crab*).
@@ -46,10 +46,10 @@ Taking the following classes as examples.
 
 |Triple Pattern|Diagram|Examples|Illustration|
 |----|-----|----|-----|
-|<img src="img/code1.png" width="50"/>|<img src="img/rule1.png" width = "80"/>|(*dbr:Fiddler_crab, dbo:order, dbr:Crab*)|*Fiddler crab* is directly related with *Crab* via relation *hypernym*.|
-|<img src="img/code1.png" width="50"/>|<img src="img/rule2.png" width = "80"/>|(*dbr:Small_Asian_mongoose, hypernym, dbr:Mongoose*)|*Indian mongoose* is directly related with *Mongoose* via relation *hypernym*.|
-|<img src="img/code3.png" width="120"/>|<img src="img/rule3.png" width = "80"/>|(*dbr:Guanaco, hypernym, dbr:Camelid*) & <br> (*dbr:Llama, hypernym, dbr:Camelid*)<br><br>(*dbr:Smooth_hammerhead, hypernym, dbr:Shark*) & <br> (*dbr:Hammerhead_shark, dbo:order, dbr:Shark*)|*Guanaco* and *Llama* are both the members of *Camelid*. <br><br><br><br> *Smooth hammerhead* and *Hammerhead shark* are both relevant to *Shark* via relation *hypernym* and *order*.|
-|<img src="img/code4.png" width="120"/>|<img src="img/rule4.png" width = "80"/>|(*dbr:Formica, dbp:typeSpecies, Formica rufa*) &<br> (*dbr:Ant, dbp:typeSpecies, Formica rufa*)|*Wood ant* and *Ant* both have property *species type* and share the same property value *Formica rufa*.|
-|<img src="img/code5.png" width="250"/>|<img src="img/rule5.png" width = "80"/>|(*dbr:Fiddler_crab, dbo:family, dbr:Ocypodidae*) &<br>(*dbr:Ocypodidae, dbo:order, dbr:Crab*)|*Fiddler crab* and *Crab* is related via a transitional entity *Ocypodidae*.|
+|<img src="img/code1.png" width="50"/>|<img src="img/pattern1.png" width = "80"/>|(*dbr:Fiddler_crab, dbo:order, dbr:Crab*)|*Fiddler crab* is directly related with *Crab* via relation *hypernym*.|
+|<img src="img/code1.png" width="50"/>|<img src="img/pattern2.png" width = "80"/>|(*dbr:Small_Asian_mongoose, hypernym, dbr:Mongoose*)|*Indian mongoose* is directly related with *Mongoose* via relation *hypernym*.|
+|<img src="img/code3.png" width="120"/>|<img src="img/pattern3.png" width = "80"/>|(*dbr:Guanaco, hypernym, dbr:Camelid*) & <br> (*dbr:Llama, hypernym, dbr:Camelid*)<br><br>(*dbr:Smooth_hammerhead, hypernym, dbr:Shark*) & <br> (*dbr:Hammerhead_shark, dbo:order, dbr:Shark*)|*Guanaco* and *Llama* are both the members of *Camelid*. <br><br><br><br> *Smooth hammerhead* and *Hammerhead shark* are both relevant to *Shark* via relation *hypernym* and *order*.|
+|<img src="img/code4.png" width="120"/>|<img src="img/pattern4.png" width = "80"/>|(*dbr:Formica, dbp:typeSpecies, Formica rufa*) &<br> (*dbr:Ant, dbp:typeSpecies, Formica rufa*)|*Wood ant* and *Ant* both have property *species type* and share the same property value *Formica rufa*.|
+|<img src="img/code5.png" width="250"/>|<img src="img/pattern5.png" width = "80"/>|(*dbr:Fiddler_crab, dbo:family, dbr:Ocypodidae*) &<br>(*dbr:Ocypodidae, dbo:order, dbr:Crab*)|*Fiddler crab* and *Crab* is related via a transitional entity *Ocypodidae*.|
 
 
