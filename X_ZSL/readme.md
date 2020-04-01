@@ -1,8 +1,17 @@
 # Explanation Generation
 
-We extract domain-specific knowledge and general knowledge from Attribute Graph and DBpedia, respectively.
-* Attribute Graph
-* DBpedia: online
+We extract domain-specific and general knowledge from Attribute Graph and DBpedia, respectively.
+* Attribute Graph are available at [here](../data/X_ZSL/AttributeGraph.json)
+* DBpedia: we use online DBpedia query service, which loads DBpedia 2016-10 dump (more details at [here](https://wiki.dbpedia.org/public-sparql-endpoint))
+
+Extract Knowledge from Attribute Graph
+------
+### Extract Common Attributes
+Note that the ZSL classes are naturally aligned with entities in Attribute Graph,
+we begin with extract common attributes between seen and unseen classes using association rule mining algorithm (i.e., Evidence Mining algorithm in our work).
+
+We introduce the algorithm with some examples, the details are in `rule_mining.py`.
+
 
 Extract Knowledge from DBpedia
 ------
