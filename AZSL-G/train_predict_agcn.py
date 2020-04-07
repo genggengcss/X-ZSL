@@ -27,7 +27,7 @@ from model.utils import create_config_proto
 from model.utils import construct_feed_dict_agcn
 from model.agcn import GCN_dense_mse
 from model.utils import adj_to_bias
-import test_in_train
+import val_agcn
 
 
 
@@ -44,7 +44,7 @@ parser.add_argument('--data_dir', type=str, default='AZSL-G', help='data directo
 parser.add_argument('--dataset', type=str, default='ImNet_A', help='ImNet_A, AwA')
 
 parser.add_argument('--model', type=str, default='dense', help='Model type')
-parser.add_argument('--learning_rate', type=float, default=0.0001, help='Initial learning rate.')
+parser.add_argument('--learning_rate', type=float, default=0.0002, help='Initial learning rate.')
 parser.add_argument('--epochs', type=int, default=2000, help='Number of epochs to train.')
 parser.add_argument('--save_epoch', type=int, default=1000, help='epochs to save model.')
 parser.add_argument('--hidden1', type=int, default=2048, help='Number of units in hidden layer 1.')
@@ -56,6 +56,7 @@ parser.add_argument('--dropout', type=float, default=0.5, help='Dropout rate (1 
 parser.add_argument('--weight_decay', type=float, default=5e-3, help='Weight for L2 loss on embedding matrix.')
 parser.add_argument('--early_stopping', type=int, default=10, help='Tolerance for early stopping (# of epochs).')
 parser.add_argument('--max_degree', type=int, default=3, help='Maximum Chebyshev polynomial degree.')
+parser.add_argument('--trainval', action='store_true', default=False, help='validation set')
 parser.add_argument('--gpu', type=str, default='1', help='gpu id.')
 args = parser.parse_args()
 
@@ -180,16 +181,16 @@ for epoch in range(1, args.epochs+1):
         pkl.dump(attens, filehandler)
         filehandler.close()
 
-    # -- while training, while testing
+    # validation
+    if args.trainval:
+        if epoch >= args.save_epoch and epoch % 50 == 0:
+            outs = sess.run(model.outputs_atten, feed_dict=feed_dict)
+            # test
+            result = val_agcn.val(weight_pred=outs, dir=DATA_DIR, dataset=DATASET)
 
-    # if epoch >= args.save_epoch and epoch % 50 == 0:
-    #     outs = sess.run(model.outputs_atten, feed_dict=feed_dict)
-    #     # test
-    #     result = test_in_train.test_imagenet_zero(weight_pred=outs)
-    #
-    #     output = ['{:.2f}'.format(i * 100) for i in result[0]]
-    #     print('-----------Testing: Epoch = ', epoch, ' | accuracy = ',
-    #           output)
+            output = ['{:.2f}'.format(i * 100) for i in result[0]]
+            print('----------- Val: Epoch = ', epoch, ' | accuracy = ',
+                  output)
 
 print("Optimization Finished!")
 

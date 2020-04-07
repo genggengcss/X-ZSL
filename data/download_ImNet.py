@@ -108,7 +108,7 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--data_root', type=str, default='/home/gyx/X_ZSL/data', help='root directory')
+    parser.add_argument('--data_root', type=str, default='/home/gyx/X-ZSL/data', help='root directory')
     parser.add_argument('--dataset', type=str, default='ImNet_A', help='ImNet_A')
     parser.add_argument('--user', type=str, default='',
                         help='your username', required=False)

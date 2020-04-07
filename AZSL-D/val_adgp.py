@@ -15,23 +15,23 @@ from model.utils import pick_vectors
 
 
 
-Mat_DATA_DIR = '/home/gyx/X_ZSL/data/materials'
-DATA_DIR = '/home/gyx/X_ZSL/data/DGP'
-# DATASET = 'ImNet_A'
-DATASET = 'AwA'
 
-test_feat = os.path.join(DATA_DIR, DATASET, 'Test_DATA_feats')
+def val(pred, dir, dataset):
 
-
-def test_in_train(pred):
-
+    val_feat = os.path.join(dir, dataset, 'Val_DATA_feats')
     '''
     awa2-split.json:
     awa2_split[train], awa2_split[test], awa2_split[train_names], awa2_split[test_names]
     '''
-    awa2_split = json.load(open(os.path.join(DATA_DIR, DATASET, 'awa2-split.json'), 'r'))
-    train_wnids = awa2_split['train']
-    test_wnids = awa2_split['test']
+
+    if dataset == 'ImNet_A':
+        data_split = os.path.join(dir, dataset, 'seen-unseen-split.json')
+    if dataset == 'AwA':
+        data_split = os.path.join(dir, dataset, 'awa2-split.json')
+
+    data_split = json.load(open(data_split, 'r'))
+    train_wnids = data_split['train']
+    test_wnids = data_split['test']
 
 
     # print('train: {}, test: {}'.format(len(train_wnids), len(test_wnids)))
@@ -58,7 +58,7 @@ def test_in_train(pred):
     results = {}
 
     # the directory of AWA2 testing data features
-    awa2_test_path = test_feat
+    awa2_test_path = val_feat
 
     total_hits, total_imgs = 0, 0
     for i, name in enumerate(test_wnids, 1):
@@ -113,7 +113,3 @@ def test_in_train(pred):
     print('overall accuracy: {:.2f}%'.format(overall_acc * 100))
 
 
-# if __name__ == '__main__':
-#     pred_path = os.path.join(DATA_DIR_PREFIX, EXP_NAME, 'save-gpm1/epoch-300.pred')
-#     pred = torch.load(pred_path)
-#     test_in_train(pred)

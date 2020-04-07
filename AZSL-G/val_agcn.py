@@ -12,38 +12,38 @@ test total accuracy of attentive gcn model
 '''
 
 
-DATA_DIR = '/home/gyx/X-ZSL/data/AZSL-G'
-# DATASET = 'ImNet_A'
-DATASET = 'AwA'
-
-feat_dim = 2048  # the dimension of CNN features
-# the word embedidngs of graph nodes, to ensure that the testing classes have initialization
-word2vec_file = os.path.join(DATA_DIR, DATASET, 'glove_w2v.pkl')
-# mark the type of graph nodes (seen, unseen, others)
-classids_file_retrain = os.path.join(DATA_DIR, DATASET, 'corresp.json')
-
-# testing image list
-# testlist_folder = os.path.join(DATA_DIR, DATASET, 'test_img_list_100.txt')
-testlist_folder = os.path.join(DATA_DIR, DATASET, 'test_img_list.txt')
-
-# img features of test images
-test_img_feat_folder = os.path.join(DATA_DIR, DATASET, 'Test_DATA_feats')
 
 
-def test_imagenet_zero(weight_pred):
+def val(weight_pred, dir, dataset):
+
+    PATH = os.path.join(dir, dataset)
+    feat_dim = 2048  # the dimension of CNN features
+    # the word embedidngs of graph nodes, to ensure that the testing classes have initialization
+    word2vec_file = os.path.join(PATH, 'glove_w2v.pkl')
+    # mark the type of graph nodes (seen, unseen, others)
+    classids_file_retrain = os.path.join(PATH, 'corresp.json')
+
+    # testing image list
+    # testlist_folder = os.path.join(DATA_DIR, DATASET, 'test_img_list_100.txt')
+    val_list_folder = os.path.join(PATH, 'val_img_list.txt')
+
+    # img features of test images
+    val_img_feat_folder = os.path.join(PATH, 'Val_DATA_feats')
+
+
 
     test_feat_file_path = []
     testlabels = []
-    with open(testlist_folder) as fp:  # test_image_list.txt
+    with open(val_list_folder) as fp:  # test_image_list.txt
         for line in fp:
             fname, lbl = line.split()  # n03236735/n03236735_4047.JPEG 398 [image path, image label]
 
             assert int(lbl) >= 398
             # images of different dataset have different suffix
-            if DATASET == 'ImNet_A':
-                feat_name = os.path.join(test_img_feat_folder, fname.replace('.JPEG', '.npz'))  # get the image features
-            if DATASET == 'AwA':
-                feat_name = os.path.join(test_img_feat_folder, fname.replace('.jpg', '.npz'))  # get the image features
+            if dataset == 'ImNet_A':
+                feat_name = os.path.join(val_img_feat_folder, fname.replace('.JPEG', '.npz'))  # get the image features
+            if dataset == 'AwA':
+                feat_name = os.path.join(val_img_feat_folder, fname.replace('.jpg', '.npz'))  # get the image features
 
             if not os.path.exists(feat_name):
                 print('not feature', feat_name)
@@ -148,27 +148,13 @@ def test_imagenet_zero(weight_pred):
                         hit_count[top][k] = hit_count[top][k] + 1
                         break
 
-        # if j % 10000 == 0:
-        #     inter = time.time() - t
-        #     print('processing %d / %d ' % (j, len(testlabels)), ', Estimated time: ',
-        #           inter / (j - 1) * (len(testlabels) - j))
 
-    # save to file
-    # lab = 'label.txt'
-    # wr_fp = open(lab, 'w')
-    # for lal in lbl_list:
-    #     wr_fp.write('%s\n' % lal)
-    # wr_fp.close()
 
     hit_count = hit_count * 1.0 / cnt_valid
     # print(hit_count)
     # print('total: %d', cnt_valid)
 
     return hit_count
-    # output = ['{:.2f}'.format(i * 100) for i in hit_count[0]]
-    #
-    #
-    # print('--> result: ', output)
-    # print('----------------------')
+
 
 

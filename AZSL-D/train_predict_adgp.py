@@ -11,7 +11,7 @@ import torch.nn.functional as F
 
 from model import agcn
 from model import utils
-import test_in_train
+import val_adgp
 
 
 '''
@@ -60,11 +60,12 @@ if __name__ == '__main__':
     parser.add_argument('--dataset', type=str, default='ImNet_A', help='ImNet_A, AwA')
     parser.add_argument('--max_epoch', type=int, default=1500)
     parser.add_argument('--trainval', default='10,0')
-    parser.add_argument('--lr', type=float, default=0.0001)
+    parser.add_argument('--lr', type=float, default=0.0002)
     parser.add_argument('--weight_decay', type=float, default=0.0005)
     parser.add_argument('--save_epoch', type=int, default=500)
     parser.add_argument('--evaluate_epoch', type=int, default=10)
     parser.add_argument('--gpu', default='0')
+    parser.add_argument('--trainval', action='store_true', default=False, help='validation set')
 
     parser.add_argument('--no-pred', action='store_true')
     args = parser.parse_args()
@@ -143,11 +144,7 @@ if __name__ == '__main__':
 
     optimizer = torch.optim.Adam(gcn.parameters(), lr=args.lr, weight_decay=args.weight_decay)
 
-    # split seen nodes into training set and validation set
-    v_train, v_val = map(float, args.trainval.split(','))  # 10, 0
-    n_trainval = len(fc_vectors)  # 398 training number
-    n_train = int(round(n_trainval * (v_train / (v_train + v_val))))
-    print('num train: {}, num val: {}'.format(n_train, n_trainval - n_train))  # 1000, 0
+
 
     tlist = list(range(len(fc_vectors)))  # 398
     # print "tlist:", tlist
@@ -157,7 +154,6 @@ if __name__ == '__main__':
 
     trlog = {}
     trlog['train_loss'] = []
-    trlog['val_loss'] = []
     trlog['min_loss'] = 0
 
     # start learning ...
@@ -169,7 +165,7 @@ if __name__ == '__main__':
         # add attention layer
         # output_vectors_atten, coefs = add_atten_cos(output_vectors)
         # calculate the loss over training seen nodes
-        loss = mask_l2_loss(output_vectors, fc_vectors, tlist[:n_train])
+        loss = mask_l2_loss(output_vectors, fc_vectors, tlist)
         # print loss
         # loss = mask_l2_loss(output_vectors_atten, fc_vectors, tlist[:n_train])
         optimizer.zero_grad()
@@ -185,18 +181,13 @@ if __name__ == '__main__':
             output_vectors, coefs = gcn(word_vectors)
 
 
-            train_loss = mask_l2_loss(output_vectors, fc_vectors, tlist[:n_train]).item()
-            if v_val > 0:
-                val_loss = mask_l2_loss(output_vectors, fc_vectors, tlist[n_train:]).item()
-                loss = val_loss
-            else:
-                val_loss = 0
-                loss = train_loss
+            train_loss = mask_l2_loss(output_vectors, fc_vectors, tlist).item()
+
+            loss = train_loss
             # print('epoch {}, train_loss={:.4f}, lr={:.4f}'.format(epoch, train_loss, args.lr))
-            print('epoch {}, train_loss={:.4f}, val_loss={:.4f}'.format(epoch, train_loss, val_loss))
+            print('epoch {}, train_loss={:.4f}'.format(epoch, train_loss))
 
             trlog['train_loss'].append(train_loss)
-            trlog['val_loss'].append(val_loss)
             trlog['min_loss'] = min_loss
             torch.save(trlog, os.path.join(save_path, 'trlog'))
 
@@ -216,16 +207,17 @@ if __name__ == '__main__':
 
         pred_obj = None
 
-        # # while training, while testing
-        # if epoch == 10 or (epoch >= 800 and epoch % 10 == 0):
-        #     if args.no_pred:
-        #         pred_obj = None
-        #     else:
-        #         pred_obj = {
-        #             'wnids': wnids,
-        #             'pred': output_vectors
-        #         }
-        #     test_in_train.test_in_train(pred_obj)
-        # pred_obj = None
+        # validation
+        if args.trainval:
+            if epoch >= args.save_epoch and epoch % 10 == 0:
+                if args.no_pred:
+                    pred_obj = None
+                else:
+                    pred_obj = {
+                        'wnids': wnids,
+                        'pred': output_vectors
+                    }
+                val_adgp.val(pred_obj, dir=DATA_DIR, dataset=DATASET)
+            pred_obj = None
 
 
