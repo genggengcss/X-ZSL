@@ -41,3 +41,7 @@ python test_adgp.py --pred 680
 * You can run the testing commands with the predicted model we trained (the file `'epoch-680.pred'` saved [here](https://drive.google.com/open?id=1zyhX_TiT7WWRXEFhgpsg3r-H_JkrIreT)).
 * Note that `train_predict_dgp.py` and `test_dgp.py` is the original implementation of DGP. 
 * `test_weights.py` is used for selecting the impressive seen classes for each unseen class using learned attention weights.
+
+
+### ImageNet*
+* With learned attention weights, we extract a dense subset `ImageNet*` and count the prediction results on it.

@@ -51,4 +51,5 @@ python test_agcn.py --feat 1500
 * Note that `train_predict_gcn.py` and `test_gcn.py` is the original implementation of GCNZ. 
 `test_weights.py` is used for selecting the impressive seen classes for each unseen class using learned attention weights.
 
-
+### ImageNet*
+* With learned attention weights, we extract a dense subset `ImageNet*` and count the prediction results on it.
