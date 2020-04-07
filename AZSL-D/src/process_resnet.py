@@ -11,7 +11,7 @@ function: extract pre-train resnet without last layer and training classes' supe
 
 
 
-data_root = '/home/gyx/X-ZSL/data'
+data_root = '../../data'
 data_dir = 'AZSL-D'
 
 

@@ -46,13 +46,13 @@ def rename_images():
 
 if __name__ == '__main__':
 
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--data_root', type=str, default='/home/gyx/X-ZSL/data', help='root directory')
-    args = parser.parse_args()
-
-    # the directory of original images of AwA
-    DIR_PATH = os.path.join(args.data_root, 'images', 'Animals_with_Attributes2/JPEGImages/')
-
+    # parser = argparse.ArgumentParser()
+    # parser.add_argument('--data_root', type=str, default='', help='root directory')
+    # args = parser.parse_args()
+    #
+    # # the directory of original images of AwA
+    # DIR_PATH = os.path.join(args.data_root, 'images', 'Animals_with_Attributes2/JPEGImages/')
+    DIR_PATH = os.path.join('images', 'Animals_with_Attributes2/JPEGImages/')
 
     wnids = train_wnid + test_wnid
     names = train_name + test_name
