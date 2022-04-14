@@ -1,10 +1,10 @@
 # AZSL_G
-The code is for AZSL based on GCNZ.
+The code is for AZSL based on [GCNZ](https://github.com/JudyYe/zero-shot-gcn).
 
 
 ### Requirements
-* python 2
-* TensorFlow 1.4
+* `python 2`
+* `TensorFlow 1.4`
 
 ### Data Preprocess
 We start with ImNet_A dataset, AwA is processed by specifying the parameter `--dataset AwA`. 
