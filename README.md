@@ -6,8 +6,8 @@ We implement the AZSL with two state-of-the-art GCN-based ZSL models -- [GCNZ](h
 i.e., **AZSL-G** and **AZSL-D**.
 
 ### Requirements
-* python 2
-* AZSL-G is developed with TensorFlow 1.4, and AZSL-D is developed with PyTorch 1.2  
+* `python 2`
+* AZSL-G is developed with `TensorFlow 1.4`, and AZSL-D is developed with `PyTorch 1.2`  
 
 ### Dataset Preparation
 #### Images of Unseen Class
