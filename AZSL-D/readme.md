@@ -1,10 +1,10 @@
 # AZSL_D
-The code is for AZSL based on DGP.
+The code is for AZSL based on [DGP](https://github.com/yinboc/DGP).
 
 
 ### Requirements
-* python 2
-* PyTorch 1.2  
+* `python 2`
+* `PyTorch 1.2`  
 
 
 ### Data Preprocess
