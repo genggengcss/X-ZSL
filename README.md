@@ -1,5 +1,7 @@
 # X-ZSL
-The code and data is for the paper "Explainable Zero-shot Learning via Attentive Graph Convolutional Network and Knowledge Graphs".  
+Code and data for the paper "[**Explainable Zero-shot Learning via Attentive Graph Convolutional Network and Knowledge Graphs**](https://content.iospress.com/articles/semantic-web/sw210435)".
+Yuxia Geng, Jiaoyan Chen, Zhiquan Ye, Huajun Chen, et al.
+Research Article in Semantic Web Journal vol. 12, no. 5, pp. 741-765, 2021.
 
 
 We implement the AZSL with two state-of-the-art GCN-based ZSL models -- [GCNZ](https://arxiv.org/abs/1803.08035) and [DGP](https://arxiv.org/abs/1805.11724),
@@ -56,3 +58,28 @@ We provide the results of AZSL-G in the file `data/X_ZSL/IMSC.json`, based on wh
 
 ### Explanation Generation
 We introduce the procedure of explanation generation in detail in the directory `X_ZSL`, please read [X_ZSL/readme.md](/X_ZSL/readme.md).
+
+### How to Cite
+If you find this code useful, please consider citing the following paper.
+```bigquery
+@inproceedings{geng2021explainable,
+  author    = {Yuxia Geng and
+               Jiaoyan Chen and
+               Zhiquan Ye and
+               Zonggang Yuan and
+               Wei Zhang and
+               Huajun Chen},
+  title     = {Explainable zero-shot learning via attentive graph convolutional network
+               and knowledge graphs},
+  journal   = {Semantic Web},
+  volume    = {12},
+  number    = {5},
+  pages     = {741--765},
+  year      = {2021},
+  url       = {https://doi.org/10.3233/SW-210435},
+  doi       = {10.3233/SW-210435},
+  timestamp = {Mon, 20 Sep 2021 08:52:07 +0200},
+  biburl    = {https://dblp.org/rec/journals/semweb/GengCYYZC21.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+```
