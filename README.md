@@ -1,7 +1,7 @@
 # X-ZSL
 Code and data for the paper "[**Explainable Zero-shot Learning via Attentive Graph Convolutional Network and Knowledge Graphs**](https://content.iospress.com/articles/semantic-web/sw210435)".
 Yuxia Geng, Jiaoyan Chen, Zhiquan Ye, Huajun Chen and others.
-Research Article in Semantic Web Journal vol. 12, no. 5, pp. 741-765, 2021.
+A research article published in Semantic Web Journal vol. 12, no. 5, pp. 741-765, 2021.
 
 
 We implement the AZSL with two state-of-the-art GCN-based ZSL models -- [GCNZ](https://arxiv.org/abs/1803.08035) and [DGP](https://arxiv.org/abs/1805.11724),
